@@ -1,7 +1,24 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\ricar\\source\\repos\\AlexPortfolio\\",
-  "Documents": [],
+  "WorkspaceRootPath": "D:\\Proyectos Git\\Personales\\Mi portafolio cargado\\AlexPortfolio\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{35143258-D6CB-3956-66B3-41827FFA6FBE}|AlexPortfolio\\AlexPortfolio.csproj|d:\\proyectos git\\personales\\mi portafolio cargado\\alexportfolio\\alexportfolio\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{35143258-D6CB-3956-66B3-41827FFA6FBE}|AlexPortfolio\\AlexPortfolio.csproj|solutionrelative:alexportfolio\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35143258-D6CB-3956-66B3-41827FFA6FBE}|AlexPortfolio\\AlexPortfolio.csproj|d:\\proyectos git\\personales\\mi portafolio cargado\\alexportfolio\\alexportfolio\\wwwroot\\js\\stars.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{35143258-D6CB-3956-66B3-41827FFA6FBE}|AlexPortfolio\\AlexPortfolio.csproj|solutionrelative:alexportfolio\\wwwroot\\js\\stars.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35143258-D6CB-3956-66B3-41827FFA6FBE}|AlexPortfolio\\AlexPortfolio.csproj|d:\\proyectos git\\personales\\mi portafolio cargado\\alexportfolio\\alexportfolio\\wwwroot\\css\\stars.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{35143258-D6CB-3956-66B3-41827FFA6FBE}|AlexPortfolio\\AlexPortfolio.csproj|solutionrelative:alexportfolio\\wwwroot\\css\\stars.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35143258-D6CB-3956-66B3-41827FFA6FBE}|AlexPortfolio\\AlexPortfolio.csproj|d:\\proyectos git\\personales\\mi portafolio cargado\\alexportfolio\\alexportfolio\\wwwroot\\css\\base.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{35143258-D6CB-3956-66B3-41827FFA6FBE}|AlexPortfolio\\AlexPortfolio.csproj|solutionrelative:alexportfolio\\wwwroot\\css\\base.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +26,63 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "stars.js",
+              "DocumentMoniker": "D:\\Proyectos Git\\Personales\\Mi portafolio cargado\\AlexPortfolio\\AlexPortfolio\\wwwroot\\js\\stars.js",
+              "RelativeDocumentMoniker": "AlexPortfolio\\wwwroot\\js\\stars.js",
+              "ToolTip": "D:\\Proyectos Git\\Personales\\Mi portafolio cargado\\AlexPortfolio\\AlexPortfolio\\wwwroot\\js\\stars.js",
+              "RelativeToolTip": "AlexPortfolio\\wwwroot\\js\\stars.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-11-23T19:30:24.132Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "stars.css",
+              "DocumentMoniker": "D:\\Proyectos Git\\Personales\\Mi portafolio cargado\\AlexPortfolio\\AlexPortfolio\\wwwroot\\css\\stars.css",
+              "RelativeDocumentMoniker": "AlexPortfolio\\wwwroot\\css\\stars.css",
+              "ToolTip": "D:\\Proyectos Git\\Personales\\Mi portafolio cargado\\AlexPortfolio\\AlexPortfolio\\wwwroot\\css\\stars.css",
+              "RelativeToolTip": "AlexPortfolio\\wwwroot\\css\\stars.css",
+              "ViewState": "AgIAAIcAAAAAAAAAAAAAwIsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-11-23T19:29:05.49Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "base.css",
+              "DocumentMoniker": "D:\\Proyectos Git\\Personales\\Mi portafolio cargado\\AlexPortfolio\\AlexPortfolio\\wwwroot\\css\\base.css",
+              "RelativeDocumentMoniker": "AlexPortfolio\\wwwroot\\css\\base.css",
+              "ToolTip": "D:\\Proyectos Git\\Personales\\Mi portafolio cargado\\AlexPortfolio\\AlexPortfolio\\wwwroot\\css\\base.css",
+              "RelativeToolTip": "AlexPortfolio\\wwwroot\\css\\base.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-11-23T19:28:14.039Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\Proyectos Git\\Personales\\Mi portafolio cargado\\AlexPortfolio\\AlexPortfolio\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "AlexPortfolio\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\Proyectos Git\\Personales\\Mi portafolio cargado\\AlexPortfolio\\AlexPortfolio\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "AlexPortfolio\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAAC0AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-23T19:25:14.714Z",
+              "EditorCaption": ""
             }
           ]
         },

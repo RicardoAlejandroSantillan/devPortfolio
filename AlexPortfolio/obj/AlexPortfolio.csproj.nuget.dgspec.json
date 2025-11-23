@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ricar\\source\\repos\\AlexPortfolio\\AlexPortfolio\\AlexPortfolio.csproj": {}
+    "D:\\Proyectos Git\\Personales\\Mi portafolio cargado\\AlexPortfolio\\AlexPortfolio\\AlexPortfolio.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ricar\\source\\repos\\AlexPortfolio\\AlexPortfolio\\AlexPortfolio.csproj": {
+    "D:\\Proyectos Git\\Personales\\Mi portafolio cargado\\AlexPortfolio\\AlexPortfolio\\AlexPortfolio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ricar\\source\\repos\\AlexPortfolio\\AlexPortfolio\\AlexPortfolio.csproj",
+        "projectUniqueName": "D:\\Proyectos Git\\Personales\\Mi portafolio cargado\\AlexPortfolio\\AlexPortfolio\\AlexPortfolio.csproj",
         "projectName": "AlexPortfolio",
-        "projectPath": "C:\\Users\\ricar\\source\\repos\\AlexPortfolio\\AlexPortfolio\\AlexPortfolio.csproj",
+        "projectPath": "D:\\Proyectos Git\\Personales\\Mi portafolio cargado\\AlexPortfolio\\AlexPortfolio\\AlexPortfolio.csproj",
         "packagesPath": "C:\\Users\\ricar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ricar\\source\\repos\\AlexPortfolio\\AlexPortfolio\\obj\\",
+        "outputPath": "D:\\Proyectos Git\\Personales\\Mi portafolio cargado\\AlexPortfolio\\AlexPortfolio\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
