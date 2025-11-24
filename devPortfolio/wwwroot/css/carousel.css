@@ -1,0 +1,322 @@
+﻿/* ====== CAROUSELES CONTAINER ====== */
+.carouseles-container {
+    position: relative;
+    min-height: 400px;
+    margin-bottom: 2rem;
+}
+
+.professional-work,
+.personal-project {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+    .professional-work.active,
+    .personal-project.active {
+        display: block;
+        opacity: 1;
+        animation: fadeIn 0.3s ease-in-out;
+    }
+
+/* ====== CONTENEDOR DEL CARRUSEL ====== */
+.carousel-professional-work-container,
+.carousel-personal-project-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    padding: 30px 50px;
+}
+
+/* ====== PISTA DE TARJETAS ====== */
+.carousel-professional-work-track,
+.carousel-personal-project-track {
+    display: flex;
+    gap: 15px;
+    will-change: transform;
+    transform: translate3d(0, 0, 0);
+    transition: none;
+    cursor: grab;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+    .carousel-professional-work-track.dragging,
+    .carousel-personal-project-track.dragging {
+        cursor: grabbing;
+        transition: none;
+    }
+
+    .carousel-professional-work-track.snapping,
+    .carousel-personal-project-track.snapping {
+        transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+
+/* ====== TARJETAS ====== */
+.carousel-professional-work-card,
+.carousel-personal-project-card {
+    flex: 0 0 calc((100% - 45px) / 3.5);
+    min-width: calc((100% - 45px) / 3.5);
+    aspect-ratio: 4/5;
+    border-radius: 10px;
+    background: white;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    transform: translate3d(0, 0, 0);
+    will-change: transform;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+        .carousel-professional-work-card:hover,
+        .carousel-personal-project-card:hover {
+            transform: scale(1.04);
+            transition: transform 0.3s ease;
+        }
+
+        .carousel-professional-work-card img,
+        .carousel-personal-project-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            pointer-events: none;
+            user-select: none;
+            -webkit-user-drag: none;
+        }
+
+    .carousel-professional-work-card::after,
+    .carousel-personal-project-card::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 40%;
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.45), transparent);
+        pointer-events: none;
+    }
+
+/* ====== CONTENIDO DE INFORMACIÓN ====== */
+.work-information-content,
+.personal-project-content {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 12px 16px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.15));
+    color: #fff;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.35s ease;
+}
+
+.carousel-professional-work-card:hover .work-information-content,
+.carousel-personal-project-card:hover .personal-project-content {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.work-information-content h3,
+.personal-project-content h3 {
+    margin: 0;
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+.work-information-content p,
+.personal-project-content p {
+    margin: 0;
+    font-size: 0.8rem;
+    opacity: 0.9;
+}
+
+/* ====== FLECHAS DE NAVEGACIÓN ====== */
+.carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.15);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    opacity: 0.6;
+    transition: opacity 0.3s, background 0.3s;
+    backdrop-filter: blur(5px);
+}
+
+    .carousel-arrow:hover {
+        opacity: 1;
+        background: rgba(255, 255, 255, 0.3);
+    }
+
+    .carousel-arrow:focus {
+        outline: 2px solid rgba(255, 255, 255, 0.5);
+        outline-offset: 2px;
+    }
+
+    .carousel-arrow.left {
+        left: 8px;
+    }
+
+    .carousel-arrow.right {
+        right: 8px;
+    }
+
+    .carousel-arrow svg {
+        width: 20px;
+        height: 20px;
+        fill: white;
+    }
+
+/* ====== PAGINACIÓN ====== */
+.carousel-pagination {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 13px;
+    font-weight: 500;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 5px 10px;
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+}
+
+/* ====== CAROUSEL INFORMATION ====== */
+.carousel-information-container {
+    margin-top: 3rem;
+}
+
+.project-info-card {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+    .project-info-card.active {
+        display: block;
+        opacity: 1;
+        animation: fadeIn 0.3s ease-in-out;
+    }
+
+.lenguages-tech {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 1.5rem 0;
+}
+
+    .lenguages-tech span {
+        font-weight: 600;
+        color: #ffffff;
+    }
+
+.img-project-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+    .img-project-container img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        transition: transform 0.3s ease;
+    }
+
+        .img-project-container img:hover {
+            transform: scale(1.05);
+            border-color: rgba(255, 255, 255, 0.3);
+        }
+
+/*Proyectos de los trabajos*/
+.img-project-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.project-info {
+    display: flex;
+    gap: 1.5rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+    .project-info:hover {
+        background: rgba(255, 255, 255, 0.08);
+        border-color: rgba(255, 255, 255, 0.25);
+        transform: translateX(4px);
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    }
+
+.left-pnl.img-pnl {
+    flex: 0 0 320px;
+    min-width: 320px;
+    max-width: 320px;
+}
+
+    .left-pnl.img-pnl img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 8px;
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        transition: all 0.3s ease;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+        cursor: pointer;
+    }
+
+.project-info:hover .left-pnl.img-pnl img {
+    border-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+.right-pnl.info-pnl {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.75rem;
+}
+
+    .right-pnl.info-pnl h4 {
+        color: rgba(255, 255, 255, 0.95);
+        font-size: 1.25rem;
+        font-weight: 600;
+        margin: 0;
+        text-shadow: 0 1px 4px rgba(255, 255, 255, 0.2);
+    }
+
+    .right-pnl.info-pnl p {
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 0.95rem;
+        line-height: 1.6;
+        margin: 0;
+    }

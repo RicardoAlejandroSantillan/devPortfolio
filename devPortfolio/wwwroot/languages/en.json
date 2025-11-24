@@ -1,0 +1,48 @@
+{
+  "header": {
+    "hello": "#HELLO WORLD",
+    "name": "I'm Ricardo Alejandro P�rez Santill�n"
+  },
+  "navigation": {
+    "introduction": "Introduction",
+    "skills": "Skills",
+    "projects": "Projects & Experience",
+    "education": "Education"
+  },
+  "sidebar": {
+    "socialTitle": "Social Media",
+    "tooltips": {
+      "whatsapp": "WhatsApp",
+      "linkedin": "LinkedIn",
+      "github": "GitHub",
+      "twitter": "X (Twitter)",
+      "gmail": "Gmail"
+    }
+  },
+  "sections": {
+    "introduction": {
+      "title": "Hi! I'm Alejandro",
+      "subtitle": "Software Developer",
+      "description": "Full Stack Developer with experience in ASP.NET, Java and modern web technologies."
+    },
+    "skills": {
+      "title": "Skills",
+      "hardSkills": "Hard Skills",
+      "softSkills": "Soft Skills"
+    },
+    "projects": {
+      "title": "Projects & Experience",
+      "personal": "Personal Projects",
+      "professional": "Professional Experience"
+    },
+    "education": {
+      "title": "Education",
+      "academic": "Academic Background",
+      "certifications": "Certifications"
+    }
+  },
+  "languages": {
+    "english": "English",
+    "spanish": "Spanish"
+  }
+}

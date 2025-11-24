@@ -1,0 +1,115 @@
+﻿/* ====== REDES SOCIALES - PANEL LATERAL ====== */
+
+.panel-lateral {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem 0.5rem;
+    gap: 1rem;
+}
+
+    .panel-lateral h3 {
+        text-orientation: mixed;
+        font-size: 1rem;
+        font-weight: 600;
+        color: rgba(255, 255, 255, 0.9);
+        letter-spacing: 2px;
+        margin: 0;
+        text-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
+    }
+
+.social-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+}
+
+.social-link {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    overflow: hidden;
+    z-index: 1;
+}
+
+    .social-link::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('../images/social media/rs_group.webp');
+        background-repeat: no-repeat;
+        background-size: 250px 50px;
+        filter: invert(1) grayscale(1) brightness(2);
+    }
+
+/* Posiciones de cada icono en el sprite */
+.whatsapp-icon::before {
+    background-position: 0 0;
+}
+
+.linkedin-icon::before {
+    background-position: -50px 0;
+}
+
+.github-icon::before {
+    background-position: -100px 0;
+}
+
+.x-icon::before {
+    background-position: -150px 0;
+}
+
+.gmail-icon::before {
+    background-position: -200px 0;
+}
+
+/* Efectos hover */
+.social-link:hover {
+    transform: scale(1.15);
+    background-color: rgba(255, 255, 255, 0.25);
+    border-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+}
+
+/* Tooltip */
+.social-link::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    left: -180px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.85);
+    color: white;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    z-index: 10;
+    pointer-events: none;
+    font-weight: 500;
+}
+
+.social-link:hover::after {
+    opacity: 1;
+    visibility: visible;
+    left: -190px;
+}

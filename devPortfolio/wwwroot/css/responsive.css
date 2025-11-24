@@ -1,0 +1,627 @@
+﻿/* Responsive para tablets */
+@media (max-width: 1024px) {
+    .content {
+        grid-template-columns: 200px 1fr 80px;
+        padding: 1rem;
+    }
+
+    .panel .panel-izq,
+    .panel .panel-lateral {
+        width: 100%;
+    }
+
+    .panel {
+        min-height: 600px;
+    }
+
+    .top-panel {
+        padding: 1.75rem 1rem;
+        margin-top: 1.5%;
+    }
+
+        .top-panel h2 {
+            margin-bottom: 0.4rem;
+        }
+
+    .line {
+        gap: 0.4rem;
+    }
+
+    /* Social Links */
+    .social-link {
+        width: 45px;
+        height: 45px;
+    }
+
+        .social-link::before {
+            background-size: 225px 45px;
+        }
+
+    .whatsapp-icon::before {
+        background-position: 0 0;
+    }
+
+    .linkedin-icon::before {
+        background-position: -45px 0;
+    }
+
+    .github-icon::before {
+        background-position: -90px 0;
+    }
+
+    .x-icon::before {
+        background-position: -135px 0;
+    }
+
+    .gmail-icon::before {
+        background-position: -180px 0;
+    }
+
+    .social-link::after {
+        left: -160px;
+    }
+
+    .social-link:hover::after {
+        left: -170px;
+    }
+
+    /* Profile Image */
+    .profile-image-container {
+        width: 120px;
+        height: 120px;
+    }
+
+    .profile-section {
+        padding: 0 0.75rem 1.25rem 0.75rem;
+    }
+
+    /* Translation System */
+    .language-selector {
+        top: 15px;
+        right: 15px;
+        gap: 6px;
+    }
+
+    .lang-btn {
+        padding: 7px 14px;
+        font-size: 0.8rem;
+        min-width: 42px;
+    }
+}
+
+/* Responsive para móviles */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    header h2 {
+        font-size: 1.2rem;
+    }
+
+    .content {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .panel {
+        min-height: 450px;
+    }
+
+        .panel.panel-izq,
+        .panel.panel-lateral {
+            min-height: 120px;
+        }
+
+        .panel.panel-lateral {
+            writing-mode: horizontal-tb;
+            text-orientation: initial;
+        }
+
+    .nav-menu {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+
+    .nav-button {
+        flex: 1 1 calc(50% - 0.25rem);
+        min-width: 140px;
+        padding: 0.75rem 0.8rem;
+        font-size: 0.85rem;
+        text-align: center;
+    }
+
+        .nav-button:hover {
+            transform: translateY(-2px);
+        }
+
+        .nav-button.active::after {
+            left: 50%;
+            top: auto;
+            bottom: 0;
+            transform: translateX(-50%);
+            width: 60%;
+            height: 3px;
+            border-radius: 2px 2px 0 0;
+        }
+
+    .top-panel {
+        padding: 1.5rem 1rem;
+        margin-top: 1%;
+    }
+
+        .top-panel h2 {
+            letter-spacing: 0.5px;
+            margin-bottom: 0.3rem;
+        }
+
+        .top-panel h1 {
+            max-width: 100%;
+        }
+
+    .line {
+        gap: 0.3rem;
+    }
+
+    /* Social Links */
+    .panel-lateral {
+        flex-direction: row;
+        padding: 1rem;
+        gap: 1rem;
+        justify-content: center;
+    }
+
+        .panel-lateral h3 {
+            writing-mode: horizontal-tb;
+            text-orientation: initial;
+            font-size: 1.1rem;
+            letter-spacing: 1px;
+            display: none;
+        }
+
+    .social-links {
+        flex-direction: row;
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .social-link {
+        width: 45px;
+        height: 45px;
+    }
+
+        .social-link::before {
+            background-size: 225px 45px;
+        }
+
+    .whatsapp-icon::before {
+        background-position: 0 0;
+    }
+
+    .linkedin-icon::before {
+        background-position: -45px 0;
+    }
+
+    .github-icon::before {
+        background-position: -90px 0;
+    }
+
+    .x-icon::before {
+        background-position: -135px 0;
+    }
+
+    .gmail-icon::before {
+        background-position: -180px 0;
+    }
+
+    .social-link::after {
+        left: 50%;
+        top: auto;
+        bottom: 60px;
+        transform: translateX(-50%);
+    }
+
+    .social-link:hover::after {
+        left: 50%;
+        bottom: 65px;
+        transform: translateX(-50%);
+    }
+
+    /* Profile Image */
+    .profile-section {
+        padding: 0 0 1rem 0;
+    }
+
+    .profile-image-container {
+        width: 100px;
+        height: 100px;
+    }
+
+    .panel.panel-izq {
+        padding: 1.25rem 1rem;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Translation system */
+    .language-selector {
+        top: 12px;
+        right: 12px;
+        gap: 6px;
+    }
+
+    .lang-btn {
+        padding: 6px 12px;
+        font-size: 0.75rem;
+        min-width: 38px;
+        border-radius: 10px;
+    }
+
+    /* Carousel */
+    .carousel-professional-work-card,
+    .carousel-personal-project-card {
+        flex: 0 0 calc((100% - 15px) / 1.8);
+        min-width: calc((100% - 15px) / 1.8);
+    }
+
+    .carousel-professional-work-container,
+    .carousel-personal-project-container {
+        padding: 25px 40px;
+    }
+
+    /*Proyectos laborales*/
+    .project-info {
+        flex-direction: column;
+    }
+
+    .left-pnl.img-pnl {
+        flex: 1;
+        min-width: 100%;
+        max-width: 100%;
+    }
+
+    /*Modal Dialog*/
+    .modal-content {
+        max-width: 95%;
+        max-height: 85%;
+        padding: 0.75rem;
+    }
+
+        .modal-content img {
+            max-height: 70vh;
+        }
+
+    .modal-close-btn {
+        top: -8px;
+        right: -8px;
+        width: 32px;
+        height: 32px;
+    }
+
+    /*Modal Dialog*/
+    .modal-content {
+        max-width: 95%;
+        max-height: 85%;
+        padding: 0.75rem;
+    }
+
+        .modal-content img {
+            max-height: 70vh;
+        }
+
+    .modal-close-btn {
+        top: -8px;
+        right: -8px;
+        width: 32px;
+        height: 32px;
+    }
+}
+
+/* ====== MÓVILES (hasta 640px) ====== */
+@media (max-width: 640px) {
+    .top-panel {
+        padding: 1.25rem 0.75rem;
+        margin-top: 0.5%;
+    }
+
+    .line {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 0.3rem;
+        flex-wrap: wrap;
+        padding: 0 0.5rem;
+    }
+
+    .top-panel span {
+        font-size: clamp(0.95rem, 4vw, 1.3rem);
+    }
+
+    .top-panel h1 {
+        font-size: clamp(1.2rem, 4.5vw, 1.6rem);
+        padding: 0;
+        line-height: 1.3;
+    }
+
+    .top-panel h2 {
+        font-size: clamp(1rem, 4vw, 1.4rem);
+    }
+
+    /* Proyectos de trabajo */
+    .img-project-container {
+        gap: 1rem;
+    }
+
+    .project-info {
+        padding: 1rem;
+    }
+
+    .right-pnl.info-pnl h4 {
+        font-size: 1.1rem;
+    }
+
+    .right-pnl.info-pnl p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Responsive para móviles pequeños */
+@media (max-width: 480px) {
+    header {
+        padding: 1.5rem 1rem;
+    }
+
+        header h1 {
+            font-size: 1.2rem;
+        }
+
+        header h2 {
+            font-size: 1rem;
+        }
+
+    .content {
+        padding: 0.75rem;
+        gap: 0.75rem;
+    }
+
+    .panel {
+        padding: 1.5rem;
+        min-height: 300px;
+    }
+
+        .panel.panel-izq,
+        .panel.panel-lateral {
+            min-height: 100px;
+        }
+
+        .panel.panel-izq {
+            font-size: 1rem;
+        }
+
+        .panel.panel-content {
+            font-size: 1.2rem;
+        }
+
+        .panel.panel-lateral {
+            font-size: 0.9rem;
+        }
+
+    .nav-button {
+        flex: 1 1 100%;
+        font-size: 0.9rem;
+    }
+
+    .top-panel {
+        padding: 1rem 0.5rem;
+        margin-top: 0;
+    }
+
+        .top-panel h2 {
+            letter-spacing: 0.3px;
+            margin-bottom: 0.25rem;
+        }
+
+        .top-panel h1 {
+            text-shadow: 0 0 8px rgba(255, 255, 255, 0.25);
+            line-height: 1.3;
+        }
+
+        .top-panel span {
+            font-weight: 500;
+        }
+
+    /* Social links */
+
+    .panel-lateral {
+        padding: 0.75rem;
+    }
+
+        .panel-lateral h3 {
+            font-size: 1rem;
+        }
+
+    .social-links {
+        gap: 10px;
+    }
+
+    .social-link {
+        width: 40px;
+        height: 40px;
+    }
+
+        .social-link::before {
+            background-size: 200px 40px;
+        }
+
+    .whatsapp-icon::before {
+        background-position: 0 0;
+    }
+
+    .linkedin-icon::before {
+        background-position: -40px 0;
+    }
+
+    .github-icon::before {
+        background-position: -80px 0;
+    }
+
+    .x-icon::before {
+        background-position: -120px 0;
+    }
+
+    .gmail-icon::before {
+        background-position: -160px 0;
+    }
+
+    .social-link::after {
+        font-size: 0.8rem;
+        padding: 6px 10px;
+    }
+
+    /* Profile Image */
+    .profile-image-container {
+        width: 90px;
+        height: 90px;
+        border-width: 1.5px;
+    }
+
+    .profile-section {
+        padding: 0 0 0.75rem 0;
+    }
+
+    /* Translation System */
+
+    .language-selector {
+        top: 10px;
+        right: 10px;
+        gap: 5px;
+    }
+
+    .lang-btn {
+        padding: 5px 10px;
+        font-size: 0.7rem;
+        min-width: 35px;
+        border-radius: 8px;
+        letter-spacing: 0.3px;
+    }
+
+    /* Carousel */
+
+    .carousel-professional-work-card,
+    .carousel-personal-project-card {
+        flex: 0 0 calc(100% - 30px);
+        min-width: calc(100% - 30px);
+    }
+
+    .work-information-content,
+    .personal-project-content {
+        padding: 10px 12px;
+    }
+
+    .carousel-professional-work-container,
+    .carousel-personal-project-container {
+        padding: 20px 35px;
+    }
+}
+
+/* ====== MÓVILES MUY PEQUEÑOS (hasta 360px) ====== */
+@media (max-width: 360px) {
+    .top-panel {
+        padding: 0.75rem 0.5rem;
+    }
+
+        .top-panel h1 {
+            font-size: clamp(1.1rem, 6vw, 1.5rem);
+            padding: 0 0.25rem;
+        }
+
+        .top-panel h2 {
+            font-size: clamp(0.9rem, 5vw, 1.2rem);
+        }
+
+        .top-panel span {
+            font-size: clamp(0.9rem, 5vw, 1.2rem);
+        }
+
+    .line {
+        gap: 0.15rem;
+    }
+
+    /* Social Links */
+
+    .panel-lateral h3 {
+        font-size: 0.9rem;
+    }
+
+    .social-links {
+        gap: 8px;
+    }
+
+    .social-link {
+        width: 38px;
+        height: 38px;
+    }
+
+        .social-link::before {
+            background-size: 190px 38px;
+        }
+
+    .whatsapp-icon::before {
+        background-position: 0 0;
+    }
+
+    .linkedin-icon::before {
+        background-position: -38px 0;
+    }
+
+    .github-icon::before {
+        background-position: -76px 0;
+    }
+
+    .x-icon::before {
+        background-position: -114px 0;
+    }
+
+    .gmail-icon::before {
+        background-position: -152px 0;
+    }
+
+    /* Profile Image */
+    .profile-image-container {
+        width: 80px;
+        height: 80px;
+    }
+
+    /* Languages */
+
+    .language-selector {
+        top: 8px;
+        right: 8px;
+        gap: 4px;
+    }
+
+    .lang-btn {
+        padding: 4px 8px;
+        font-size: 0.65rem;
+        min-width: 32px;
+        border-radius: 6px;
+    }
+
+    /* Translation System */
+
+    .language-selector {
+        top: 8px;
+        right: 8px;
+        gap: 4px;
+    }
+
+    .lang-btn {
+        padding: 4px 8px;
+        font-size: 0.65rem;
+        min-width: 32px;
+        border-radius: 6px;
+    }
+}

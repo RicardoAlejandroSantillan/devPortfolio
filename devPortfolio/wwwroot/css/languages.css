@@ -1,0 +1,132 @@
+﻿/* ====== SELECTOR DE IDIOMAS ====== */
+.language-selector {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    display: flex;
+    gap: 8px;
+    animation: fadeInRight 0.6s ease-out;
+}
+
+.lang-btn {
+    background: rgba(240, 248, 255, 0.12);
+    backdrop-filter: blur(12px) saturate(130%);
+    -webkit-backdrop-filter: blur(12px) saturate(130%);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, 0.75);
+    padding: 8px 16px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    position: relative;
+    overflow: hidden;
+    min-width: 45px;
+    text-align: center;
+}
+
+    /* Efecto de brillo en hover */
+    .lang-btn::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.15), transparent);
+        transition: left 0.5s ease;
+    }
+
+    .lang-btn:hover::before {
+        left: 100%;
+    }
+
+    .lang-btn:hover {
+        background: rgba(240, 248, 255, 0.2);
+        color: rgba(255, 255, 255, 0.95);
+        border-color: rgba(255, 255, 255, 0.35);
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .lang-btn.active {
+        background: rgba(255, 255, 255, 0.25);
+        color: #ffffff;
+        border-color: rgba(255, 255, 255, 0.45);
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.3);
+        font-weight: 700;
+    }
+
+        /* Indicador de activo */
+        .lang-btn.active::after {
+            content: '';
+            position: absolute;
+            bottom: 3px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60%;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.8), transparent );
+            border-radius: 2px;
+        }
+
+    .lang-btn:focus {
+        outline: none;
+        border-color: rgba(255, 255, 255, 0.5);
+        box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.1);
+    }
+
+    .lang-btn:active {
+        transform: translateY(0) scale(0.98);
+    }
+
+/* ====== RESPONSIVE - TABLETS (hasta 1024px) ====== */
+@media (max-width: 1024px) {
+    .language-selector {
+        top: 15px;
+        right: 15px;
+        gap: 6px;
+    }
+
+    .lang-btn {
+        padding: 7px 14px;
+        font-size: 0.8rem;
+        min-width: 42px;
+    }
+}
+
+/* ====== RESPONSIVE - MÓVILES (hasta 768px) ====== */
+@media (max-width: 768px) {
+    .language-selector {
+        top: 12px;
+        right: 12px;
+        gap: 6px;
+    }
+
+    .lang-btn {
+        padding: 6px 12px;
+        font-size: 0.75rem;
+        min-width: 38px;
+        border-radius: 10px;
+    }
+}
+
+/* ====== RESPONSIVE - MÓVILES PEQUEÑOS (hasta 480px) ====== */
+@media (max-width: 480px) {
+    .language-selector {
+        top: 10px;
+        right: 10px;
+        gap: 5px;
+    }
+
+    .lang-btn {
+        padding: 5px 10px;
+        font-size: 0.7rem;
+        min-width: 35px;
+        border-radius: 8px;
+        letter-spacing: 0.3px;
+    }
+}

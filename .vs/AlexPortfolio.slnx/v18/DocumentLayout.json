@@ -3,28 +3,12 @@
   "WorkspaceRootPath": "D:\\Proyectos Git\\Personales\\Mi portafolio cargado\\AlexPortfolio\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{35143258-D6CB-3956-66B3-41827FFA6FBE}|AlexPortfolio\\AlexPortfolio.csproj|d:\\proyectos git\\personales\\mi portafolio cargado\\alexportfolio\\alexportfolio\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{35143258-D6CB-3956-66B3-41827FFA6FBE}|AlexPortfolio\\AlexPortfolio.csproj|solutionrelative:alexportfolio\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{35143258-D6CB-3956-66B3-41827FFA6FBE}|AlexPortfolio\\AlexPortfolio.csproj|d:\\proyectos git\\personales\\mi portafolio cargado\\alexportfolio\\alexportfolio\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{35143258-D6CB-3956-66B3-41827FFA6FBE}|AlexPortfolio\\AlexPortfolio.csproj|solutionrelative:alexportfolio\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{35143258-D6CB-3956-66B3-41827FFA6FBE}|AlexPortfolio\\AlexPortfolio.csproj|d:\\proyectos git\\personales\\mi portafolio cargado\\alexportfolio\\alexportfolio\\views\\home\\sections\\_introduction.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{35143258-D6CB-3956-66B3-41827FFA6FBE}|AlexPortfolio\\AlexPortfolio.csproj|solutionrelative:alexportfolio\\views\\home\\sections\\_introduction.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{35143258-D6CB-3956-66B3-41827FFA6FBE}|AlexPortfolio\\AlexPortfolio.csproj|d:\\proyectos git\\personales\\mi portafolio cargado\\alexportfolio\\alexportfolio\\views\\home\\sections\\_skills.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{35143258-D6CB-3956-66B3-41827FFA6FBE}|AlexPortfolio\\AlexPortfolio.csproj|solutionrelative:alexportfolio\\views\\home\\sections\\_skills.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{35143258-D6CB-3956-66B3-41827FFA6FBE}|AlexPortfolio\\AlexPortfolio.csproj|d:\\proyectos git\\personales\\mi portafolio cargado\\alexportfolio\\alexportfolio\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{35143258-D6CB-3956-66B3-41827FFA6FBE}|AlexPortfolio\\AlexPortfolio.csproj|solutionrelative:alexportfolio\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{35143258-D6CB-3956-66B3-41827FFA6FBE}|AlexPortfolio\\AlexPortfolio.csproj|d:\\proyectos git\\personales\\mi portafolio cargado\\alexportfolio\\alexportfolio\\views\\home\\sections\\_projects.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{35143258-D6CB-3956-66B3-41827FFA6FBE}|AlexPortfolio\\AlexPortfolio.csproj|solutionrelative:alexportfolio\\views\\home\\sections\\_projects.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{35143258-D6CB-3956-66B3-41827FFA6FBE}|AlexPortfolio\\AlexPortfolio.csproj|d:\\proyectos git\\personales\\mi portafolio cargado\\alexportfolio\\alexportfolio\\views\\home\\sections\\_education.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{35143258-D6CB-3956-66B3-41827FFA6FBE}|AlexPortfolio\\AlexPortfolio.csproj|solutionrelative:alexportfolio\\views\\home\\sections\\_education.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{35143258-D6CB-3956-66B3-41827FFA6FBE}|AlexPortfolio\\AlexPortfolio.csproj|d:\\proyectos git\\personales\\mi portafolio cargado\\alexportfolio\\alexportfolio\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -38,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,94 +30,40 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "site.js",
-              "DocumentMoniker": "D:\\Proyectos Git\\Personales\\Mi portafolio cargado\\AlexPortfolio\\AlexPortfolio\\wwwroot\\js\\site.js",
-              "RelativeDocumentMoniker": "AlexPortfolio\\wwwroot\\js\\site.js",
-              "ToolTip": "D:\\Proyectos Git\\Personales\\Mi portafolio cargado\\AlexPortfolio\\AlexPortfolio\\wwwroot\\js\\site.js",
-              "RelativeToolTip": "AlexPortfolio\\wwwroot\\js\\site.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-11-23T20:56:19.634Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "site.css",
-              "DocumentMoniker": "D:\\Proyectos Git\\Personales\\Mi portafolio cargado\\AlexPortfolio\\AlexPortfolio\\wwwroot\\css\\site.css",
-              "RelativeDocumentMoniker": "AlexPortfolio\\wwwroot\\css\\site.css",
-              "ToolTip": "D:\\Proyectos Git\\Personales\\Mi portafolio cargado\\AlexPortfolio\\AlexPortfolio\\wwwroot\\css\\site.css",
-              "RelativeToolTip": "AlexPortfolio\\wwwroot\\css\\site.css",
-              "ViewState": "AgIAAJQCAAAAAAAAAAAAAKMCAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-11-23T20:31:42.688Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "_Education.cshtml",
-              "DocumentMoniker": "D:\\Proyectos Git\\Personales\\Mi portafolio cargado\\AlexPortfolio\\AlexPortfolio\\Views\\Home\\sections\\_Education.cshtml",
-              "RelativeDocumentMoniker": "AlexPortfolio\\Views\\Home\\sections\\_Education.cshtml",
-              "ToolTip": "D:\\Proyectos Git\\Personales\\Mi portafolio cargado\\AlexPortfolio\\AlexPortfolio\\Views\\Home\\sections\\_Education.cshtml",
-              "RelativeToolTip": "AlexPortfolio\\Views\\Home\\sections\\_Education.cshtml",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAIwDIAAAAKAAAAAAAAAA==",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Proyectos Git\\Personales\\Mi portafolio cargado\\AlexPortfolio\\AlexPortfolio\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "AlexPortfolio\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\Proyectos Git\\Personales\\Mi portafolio cargado\\AlexPortfolio\\AlexPortfolio\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "AlexPortfolio\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAABwAAAAAAAAAAAAIwCAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-23T20:28:56.779Z",
+              "WhenOpened": "2025-11-23T21:32:55.192Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "_Projects.cshtml",
               "DocumentMoniker": "D:\\Proyectos Git\\Personales\\Mi portafolio cargado\\AlexPortfolio\\AlexPortfolio\\Views\\Home\\sections\\_Projects.cshtml",
               "RelativeDocumentMoniker": "AlexPortfolio\\Views\\Home\\sections\\_Projects.cshtml",
               "ToolTip": "D:\\Proyectos Git\\Personales\\Mi portafolio cargado\\AlexPortfolio\\AlexPortfolio\\Views\\Home\\sections\\_Projects.cshtml",
               "RelativeToolTip": "AlexPortfolio\\Views\\Home\\sections\\_Projects.cshtml",
-              "ViewState": "AgIAAGsBAAAAAAAAAAAIwIABAAAGAAAAAAAAAA==",
+              "ViewState": "AgIAAGsBAAAAAAAAAAAIwHABAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-23T20:28:41.04Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "_Skills.cshtml",
-              "DocumentMoniker": "D:\\Proyectos Git\\Personales\\Mi portafolio cargado\\AlexPortfolio\\AlexPortfolio\\Views\\Home\\sections\\_Skills.cshtml",
-              "RelativeDocumentMoniker": "AlexPortfolio\\Views\\Home\\sections\\_Skills.cshtml",
-              "ToolTip": "D:\\Proyectos Git\\Personales\\Mi portafolio cargado\\AlexPortfolio\\AlexPortfolio\\Views\\Home\\sections\\_Skills.cshtml",
-              "RelativeToolTip": "AlexPortfolio\\Views\\Home\\sections\\_Skills.cshtml",
-              "ViewState": "AgIAAEkAAAAAAAAAAAAIwF4AAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-23T20:27:39.526Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-23T20:28:41.04Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "_Introduction.cshtml",
-              "DocumentMoniker": "D:\\Proyectos Git\\Personales\\Mi portafolio cargado\\AlexPortfolio\\AlexPortfolio\\Views\\Home\\sections\\_Introduction.cshtml",
-              "RelativeDocumentMoniker": "AlexPortfolio\\Views\\Home\\sections\\_Introduction.cshtml",
-              "ToolTip": "D:\\Proyectos Git\\Personales\\Mi portafolio cargado\\AlexPortfolio\\AlexPortfolio\\Views\\Home\\sections\\_Introduction.cshtml",
-              "RelativeToolTip": "AlexPortfolio\\Views\\Home\\sections\\_Introduction.cshtml",
-              "ViewState": "AgIAAEgAAAAAAAAAAAAIwFQAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-23T20:27:08.385Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "D:\\Proyectos Git\\Personales\\Mi portafolio cargado\\AlexPortfolio\\AlexPortfolio\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "AlexPortfolio\\Views\\Shared\\_Layout.cshtml",
               "ToolTip": "D:\\Proyectos Git\\Personales\\Mi portafolio cargado\\AlexPortfolio\\AlexPortfolio\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "AlexPortfolio\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAzAAAAAAAAAA==",
+              "ViewState": "AgIAABgAAAAAAAAAAAAIwCYAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-23T19:25:14.714Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-23T19:25:14.714Z"
             }
           ]
         },

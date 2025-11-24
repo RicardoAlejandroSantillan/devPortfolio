@@ -1,0 +1,50 @@
+﻿<div class="content">
+    <div class="panel panel-izq glass">
+
+        <div class="profile-section">
+            <div class="profile-image-container">
+                <img src="~/images/profile/profile.webp" alt="Ricardo Alejandro Pérez Santillán" class="profile-image">
+            </div>
+        </div>
+
+        <nav class="nav-menu">
+            <button class="nav-button active"data-section="introduction"data-translate="navigation.introduction">Introducción</button>
+            <button class="nav-button"data-section="skills"data-translate="navigation.skills">Habilidades</button>
+            <button class="nav-button" data-section="projects-experience" data-translate="navigation.projects">Proyectos & Experiencia</button>
+            <button class="nav-button"data-section="education"data-translate="navigation.education">Educación</button>
+        </nav>
+    </div>
+
+    <div class="panel panel-content glass">
+        @* Sección: Introduction *@
+        <div class="content-section active" data-content="introduction">
+            <partial name="Sections/_Introduction" />
+        </div>
+
+        @* Sección: Skills *@
+        <div class="content-section" data-content="skills">
+            <partial name="Sections/_Skills" />
+        </div>
+
+        @* Sección: Projects & Experience *@
+        <div class="content-section" data-content="projects-experience">
+            <partial name="Sections/_Projects" />
+        </div>
+
+        @* Sección: Education *@
+        <div class="content-section" data-content="education">
+            <partial name="Sections/_Education" />
+        </div>
+    </div>
+
+    <div class="panel panel-lateral">
+        <h3>Redes Sociales</h3>
+        <div class="social-links">
+            <a href="https://wa.me/8451152129" class="social-link whatsapp-icon" data-tooltip="WhatsApp" target="_blank"></a>
+            <a href="https://www.linkedin.com/in/ricardoalejandro/" class="social-link linkedin-icon" data-tooltip="LinkedIn" target="_blank"></a>
+            <a href="https://github.com/RicardoAlejandroSantillan" class="social-link github-icon" data-tooltip="GitHub" target="_blank"></a>
+            <a href="https://x.com/AlexSantillanX?t=uR9oxlE-umuSlXCRQEx5Ew&s=09" class="social-link x-icon" data-tooltip="X (Twitter)" target="_blank"></a>
+            <a href="mailto:ricardo.a.p.santillan@gmail.com" class="social-link gmail-icon" data-tooltip="Gmail"></a>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,48 @@
+{
+  "header": {
+    "hello": "#HOLA MUNDO",
+    "name": "Soy Ricardo Alejandro P�rez Santill�n"
+  },
+  "navigation": {
+    "introduction": "Introducci�n",
+    "skills": "Habilidades",
+    "projects": "Proyectos & Experiencia",
+    "education": "Educaci�n"
+  },
+  "sidebar": {
+    "socialTitle": "Redes Sociales",
+    "tooltips": {
+      "whatsapp": "WhatsApp",
+      "linkedin": "LinkedIn",
+      "github": "GitHub",
+      "twitter": "X (Twitter)",
+      "gmail": "Gmail"
+    }
+  },
+  "sections": {
+    "introduction": {
+      "title": "�Hola! Soy Alejandro",
+      "subtitle": "Desarrollador de Software",
+      "description": "Desarrollador Full Stack con experiencia en ASP.NET, Java y tecnolog�as web modernas."
+    },
+    "skills": {
+      "title": "Habilidades",
+      "hardSkills": "Habilidades T�cnicas",
+      "softSkills": "Habilidades Blandas"
+    },
+    "projects": {
+      "title": "Proyectos & Experiencia",
+      "personal": "Proyectos Personales",
+      "professional": "Experiencia Profesional"
+    },
+    "education": {
+      "title": "Educaci�n",
+      "academic": "Formaci�n Acad�mica",
+      "certifications": "Certificaciones"
+    }
+  },
+  "languages": {
+    "english": "Ingl�s",
+    "spanish": "Espa�ol"
+  }
+}
