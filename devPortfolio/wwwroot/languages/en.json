@@ -1,7 +1,7 @@
 {
   "header": {
     "hello": "#HELLO WORLD",
-    "name": "I'm Ricardo Alejandro P�rez Santill�n"
+    "name": "I'm Ricardo Alejandro Pérez Santillán"
   },
   "navigation": {
     "introduction": "Introduction",
@@ -19,30 +19,227 @@
       "gmail": "Gmail"
     }
   },
-  "sections": {
-    "introduction": {
-      "title": "Hi! I'm Alejandro",
-      "subtitle": "Software Developer",
-      "description": "Full Stack Developer with experience in ASP.NET, Java and modern web technologies."
+  "introduction": {
+    "greeting": "Hi! I'm Alejandro",
+    "role": "Data Scientist",
+    "aboutMe": {
+      "title": "About Me",
+      "description": "I am a software developer with a recent focus on Data Science. I have worked with .NET, SQL Server, and automation, but in 2025 I began a formal transition towards data analysis and modeling. I have explored real challenges such as the WiDS 2022 datathon (breast cancer detection) and WiDS 2025 (ADHD detection in women). I am currently training in various data science tools with the goal of building complete end-to-end projects by early 2026. My solid engineering background allows me to approach data science from a practical, structured, and product-oriented perspective."
     },
     "skills": {
-      "title": "Skills",
-      "hardSkills": "Hard Skills",
-      "softSkills": "Soft Skills"
+      "title": "Skills and Technologies",
+      "webDev": "Web Development:",
+      "webDevList": "ASP.NET, Bootstrap, HTML, CSS, JavaScript",
+      "desktopDev": "Desktop Development:",
+      "desktopDevList": "C#, C, C++, Python, Java",
+      "databases": "Databases:",
+      "databasesList": "SQL and Derby",
+      "erp": "ERP:",
+      "erpList": "Oracle, SAP",
+      "versionControl": "Version Control:",
+      "versionControlList": "Git",
+      "applications": "Applications:",
+      "applicationsList": "PowerBI, Excel, Visual Studio, Visual Studio Code",
+      "methodologies": "Methodologies:",
+      "methodologiesList": "Agile and Scrum",
+      "closing": "I stand out for my passion for continuous learning and adaptability to new technologies. I am building my path towards data science while strengthening my software development skills."
     },
-    "projects": {
-      "title": "Projects & Experience",
-      "personal": "Personal Projects",
-      "professional": "Professional Experience"
+    "certifications": {
+      "title": "Certifications",
+      "linguaskill": "Linguaskill B1 Certificate - June 2024",
+      "excel": "Excel Microsoft Office Specialist - 2019",
+      "word": "Word Microsoft Office Specialist - 2019",
+      "powerpoint": "PowerPoint Microsoft Office Specialist - 2019"
     },
-    "education": {
-      "title": "Education",
-      "academic": "Academic Background",
-      "certifications": "Certifications"
+    "goals": {
+      "title": "Professional Goal",
+      "description": "Evolve towards Data Science roles while continuing to grow as a Full Stack Developer.",
+      "journeyTitle": "My Journey",
+      "journeyDescription": "My journey through technology led me to study Information Technology Engineering at UTAN campus industrias in 2022. What I am passionate about development is the creative process of building customized solutions for each project to solve. My experience developing desktop applications strengthened my interest in creating solutions that directly impact the user experience. This path has led me to be interested in data science, where I see the potential to combine development with data analysis to create more complete solutions. I stay updated by following industry leaders and developing personal projects. My methodical and proactive approach, along with my passion for continuous optimization, defines my work style."
     }
   },
-  "languages": {
-    "english": "English",
-    "spanish": "Spanish"
+  "skills": {
+    "title": "Skills",
+    "filterHard": "Technical Skills",
+    "filterSoft": "Soft Skills",
+    "hardSkills": {
+      "title": "Technical Skills",
+      "mvc": "Model View Controller (MVC) ASP .Net",
+      "languages": "C, C++ and C#",
+      "python": "Python",
+      "java": "Java",
+      "web": "HTML, CSS, JS and Bootstrap",
+      "databases": "Oracle SQL, SQL Server, MySQL and Derby DB",
+      "tools": "Power BI and Excel",
+      "versionControl": "Git and Github",
+      "dataScience": "Pandas, NumPy, Matplotlib and Seaborn"
+    },
+    "softSkills": {
+      "title": "Soft Skills",
+      "criticalThinking": "Critical Thinking",
+      "analyticalThinking": "Analytical Thinking",
+      "communication": "Effective Communication",
+      "teamwork": "Teamwork",
+      "adaptability": "Adaptability",
+      "timeManagement": "Time Management",
+      "attention": "Attention to detail",
+      "persistence": "Persistence",
+      "workEthic": "Work Ethic"
+    }
+  },
+  "projects": {
+    "title": "Experience",
+    "professional": "Professional Work",
+    "personal": "Personal Projects",
+    "daikin": {
+      "name": "Daikin",
+      "period": "September 2024 - December 2025",
+      "type": "Internship Period",
+      "fullName": "Daikin Manufacturing México",
+      "description": "Professional experience providing support and development for an application that uses the MVC model and SQL Server. Development and maintenance of APIs and databases for internal systems.",
+      "features": {
+        "title": "Main Features",
+        "maintenance": "Maintenance and improvement of existing applications",
+        "development": "Development of new functionalities according to requirements",
+        "optimization": "Optimization of SQL queries and stored procedures",
+        "ui": "Implementation of user interface improvements",
+        "collaboration": "Team collaboration using agile methodologies"
+      },
+      "technologies": "Implemented Technologies",
+      "techList": "ASP.NET MVC, C#, JavaScript, HTML, Bootstrap, Oracle SQL, SQL Server, Oracle, SAP, JQuery and JSON files",
+      "challenges": {
+        "title": "Challenges Faced",
+        "adaptation": "Adapting requirements for corporate environments",
+        "teamwork": "Teamwork",
+        "improvement": "Continuous improvement"
+      },
+      "projectsTitle": "Projects Completed",
+      "overtime": {
+        "title": "Desktop Application 'OverTime Request'",
+        "description": "I was providing support and maintenance for this section of the application that is responsible for calculating overtime costs for production workers, these costs go to the food and transportation they need and calculates an estimate."
+      },
+      "labels": {
+        "title": "Desktop Application 'Etiquetas'",
+        "description": "Web application with the purpose of keeping a record of each Master Label with errors, in order to identify patterns and thus find the cause of the problem."
+      },
+      "masterLabel": {
+        "title": "Web Application 'Master Label'",
+        "description": "Web application with the purpose of keeping a record of each Master Label with errors, in order to identify patterns and thus find the cause of the problem."
+      },
+      "budget": {
+        "title": "Web Application 'Budget Control'",
+        "description": "I was providing support and maintenance for this section of the application that is responsible for calculating overtime costs for production workers, these costs go to the food and transportation they need and calculates an estimate."
+      }
+    },
+    "devportfolio": {
+      "name": "DevPortfolio",
+      "shortDescription": "Professional developer portfolio with space design and glassmorphism",
+      "description": "Professional web portfolio project developed with a unique design that combines space design with frosted glass effects, showcasing skills, projects, and professional experience in a visual and interactive project.",
+      "features": {
+        "title": "Main Features",
+        "space": "Space design with stars and shooting star animation",
+        "glass": "Interface with modern Glassmorphism style effect",
+        "navigation": "Partial Views system for dynamic navigation system",
+        "carousel": "Interactive project carousel",
+        "social": "Social media links with animated effects",
+        "responsive": "Complete responsive design",
+        "animations": "Smooth animations and transitions"
+      },
+      "technologies": "Implemented Technologies",
+      "techList": "ASP.NET MVC, C#, JavaScript, HTML5, CSS3, jQuery",
+      "challenges": {
+        "title": "Challenges Faced",
+        "space": "Space animations for the background",
+        "carousel": "Development of a custom carousel for project preview",
+        "glass": "Integration of frosted glass effects to maintain design",
+        "transitions": "Transition management system in the navigation section"
+      }
+    },
+    "bookshelf": {
+      "name": "BookShelf",
+      "shortDescription": "Personal library management system",
+      "description": "Personal library management project that follows an organization and catalog of books, authors and literary genres, a complete solution to keep a book collection organized",
+      "features": {
+        "title": "Main Features",
+        "management": "Management of books, authors and genres",
+        "interface": "Intuitive interface with expandable panels",
+        "forms": "Dynamic forms system",
+        "ajax": "Asynchronous data loading using AJAX",
+        "search": "Advanced classification and search",
+        "tags": "Custom tagging system"
+      },
+      "technologies": "Technologies",
+      "techList": "ASP.NET MVC, C#, SQL Server, Dapper, jQuery, Bootstrap, HTML5, CSS3, JavaScript",
+      "challenges": {
+        "title": "Challenges Faced",
+        "research": "Research on functionality for a library",
+        "bootstrap": "Bootstrap research for design",
+        "database": "Database creation"
+      }
+    },
+    "prosalud": {
+      "name": "ProSalud",
+      "shortDescription": "Healthcare system for hospitals",
+      "fullName": "ProSalud - Medical management system",
+      "description": "Complete platform for managing medical offices that automates administrative and clinical processes, from appointment scheduling to medical records management and billing.",
+      "features": {
+        "title": "Main Features",
+        "records": "Management of clinical and patient records",
+        "appointments": "Appointment system and medical schedule",
+        "staff": "Staff and specialties control",
+        "billing": "Billing system and VIP program",
+        "diagnosis": "Diagnosis based on ICD-10",
+        "treatment": "Treatment monitoring"
+      },
+      "technologies": "Technologies",
+      "techList": "ASP.NET MVC, C#, SQL Server, Dapper, jQuery, Bootstrap, HTML5, CSS3, JavaScript",
+      "challenges": {
+        "title": "Challenges Faced",
+        "research": "Research on functionality for a library",
+        "bootstrap": "Bootstrap research for design",
+        "database": "Database creation"
+      }
+    }
+  },
+  "education": {
+    "title": "Education",
+    "academic": {
+      "title": "Academic Background",
+      "forge": {
+        "name": "Forge Foundation",
+        "period": "November 2025 - December 2025",
+        "current": "Currently in progress to obtain work skills",
+        "focus": "Training focused on the work world"
+      },
+      "smart": {
+        "name": "Smart Teaching",
+        "period": "February 2025 - November 2025",
+        "description": "Intensive course to polish and improve my English level",
+        "focus": "Focused on obtaining a TOEFL IBT B2 level"
+      },
+      "university": {
+        "name": "Information Technology Engineering",
+        "period": "July 2022 - August 2025",
+        "current": "Currently awaiting my professional degree",
+        "focus": "Focused on Software development and corporate solutions"
+      }
+    },
+    "certifications": {
+      "title": "Certifications",
+      "linguaskill": "Linguaskill B1",
+      "linguaskillDetail": "English Proficiency (2024)",
+      "mos": "MICROSOFT OFFICE SPECIALIST (MOS) | 2019",
+      "excel": "Excel",
+      "excelPeriod": "December 2019",
+      "word": "Word",
+      "wordPeriod": "October 2019",
+      "powerpoint": "PowerPoint",
+      "powerpointPeriod": "September 2019"
+    },
+    "professional": {
+      "title": "Professional Development",
+      "cluster": "Participation in the Automotive Cluster | Universidad Tangamanga",
+      "clusterFocus": "Focused on technological trends in the automotive sector"
+    }
   }
 }

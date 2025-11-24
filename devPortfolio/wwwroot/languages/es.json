@@ -1,13 +1,13 @@
 {
   "header": {
     "hello": "#HOLA MUNDO",
-    "name": "Soy Ricardo Alejandro P�rez Santill�n"
+    "name": "Soy Ricardo Alejandro Pérez Santillán"
   },
   "navigation": {
-    "introduction": "Introducci�n",
+    "introduction": "Introducción",
     "skills": "Habilidades",
     "projects": "Proyectos & Experiencia",
-    "education": "Educaci�n"
+    "education": "Educación"
   },
   "sidebar": {
     "socialTitle": "Redes Sociales",
@@ -19,30 +19,227 @@
       "gmail": "Gmail"
     }
   },
-  "sections": {
-    "introduction": {
-      "title": "�Hola! Soy Alejandro",
-      "subtitle": "Desarrollador de Software",
-      "description": "Desarrollador Full Stack con experiencia en ASP.NET, Java y tecnolog�as web modernas."
+  "introduction": {
+    "greeting": "¡Hola! Soy Alejandro",
+    "role": "Científico de Datos",
+    "aboutMe": {
+      "title": "Acerca de Mi",
+      "description": "Soy desarrollador de software con enfoque reciente en Ciencia de Datos. He trabajado con .NET, SQL Server y automatizaciones, pero en 2025 inicié una transición formal hacia análisis y modelado de datos. He explorado retos reales como los datathones WiDS 2022 (detección de cáncer de mama) y WiDS 2025 (detección de TDAH en mujeres). Actualmente me estoy formando en diversas herramientas de ciencia de datos con el objetivo de construir proyectos completos end-to-end de aquí a inicios de 2026. Mi base sólida en ingeniería me permite abordar la ciencia de datos desde una perspectiva práctica, estructurada y orientada a producto."
     },
     "skills": {
-      "title": "Habilidades",
-      "hardSkills": "Habilidades T�cnicas",
-      "softSkills": "Habilidades Blandas"
+      "title": "Habilidades y Tecnologías",
+      "webDev": "Desarrollo Web:",
+      "webDevList": "ASP.NET, Bootstrap, HTML, CSS, JavaScript",
+      "desktopDev": "Desarrollo de Escritorio:",
+      "desktopDevList": "C#, C, C++, Python, Java",
+      "databases": "Bases de Datos:",
+      "databasesList": "SQL y Derby",
+      "erp": "ERP:",
+      "erpList": "Oracle, SAP",
+      "versionControl": "Control de versiones:",
+      "versionControlList": "Git",
+      "applications": "Aplicaciones:",
+      "applicationsList": "PowerBI, Excel, Visual Studio, Visual Studio Code",
+      "methodologies": "Metodologías:",
+      "methodologiesList": "Agil y Scrum",
+      "closing": "Me destaco por mi pasión por el aprendizaje continuo y adaptabilidad a nuevas tecnologías. Me encuentro construyendo mi camino hacia la ciencia de datos mientras fortalezco mis habilidades en desarrollo de software."
     },
-    "projects": {
-      "title": "Proyectos & Experiencia",
-      "personal": "Proyectos Personales",
-      "professional": "Experiencia Profesional"
+    "certifications": {
+      "title": "Certificaciones",
+      "linguaskill": "Certificado Linguaskill B1 - Junio 2024",
+      "excel": "Excel Microsoft Office Specialist - 2019",
+      "word": "Word Microsoft Office Specialist - 2019",
+      "powerpoint": "PowerPoint Microsoft Office Specialist - 2019"
     },
-    "education": {
-      "title": "Educaci�n",
-      "academic": "Formaci�n Acad�mica",
-      "certifications": "Certificaciones"
+    "goals": {
+      "title": "Meta Profesional",
+      "description": "Evolucionar hacia roles de Ciencia de Datos mientras continúo creciendo como Desarrollador Full Stack.",
+      "journeyTitle": "Mi Trayectoria",
+      "journeyDescription": "Mi trayectoria a través de la tecnología me llevó a estudiar en 2022 la carrera de Ingeniería en Tecnologías de la Información en UTAN campus industrias. Lo que me apasiona del desarrollo es el proceso creativo de construir soluciones personalizadas para cada proyecto a resolver. Mi experiencia desarrollando aplicaciones de escritorio fortaleció mi interés en crear soluciones que impacten directamente en la experiencia del usuario. Este camino me ha llevado a interesarme en la ciencia de datos, donde veo el potencial de combinar el desarrollo con el análisis de datos para crear soluciones más completas. Me mantengo actualizado siguiendo a líderes de la industria y desarrollando proyectos personales. Mi enfoque metódico y proactivo, junto con mi pasión por la optimización continua, define mi estilo de trabajo."
     }
   },
-  "languages": {
-    "english": "Ingl�s",
-    "spanish": "Espa�ol"
+  "skills": {
+    "title": "Habilidades",
+    "filterHard": "Habilidades Técnicas",
+    "filterSoft": "Habilidades Blandas",
+    "hardSkills": {
+      "title": "Habilidades Técnicas",
+      "mvc": "Modelo Vista Controlador (MVC) ASP .Net",
+      "languages": "C, C++ y C#",
+      "python": "Python",
+      "java": "Java",
+      "web": "HTML, CSS, JS y Bootstrap",
+      "databases": "Oracle SQL, SQL Server, MySQL y Derby DB",
+      "tools": "Power BI y Excel",
+      "versionControl": "Git y Github",
+      "dataScience": "Pandas, NumPy, Matplotlib y Seaborn"
+    },
+    "softSkills": {
+      "title": "Habilidades Blandas",
+      "criticalThinking": "Pensamiento Crítico",
+      "analyticalThinking": "Pensamiento Analítico",
+      "communication": "Comunicación Efectiva",
+      "teamwork": "Trabajo en Equipo",
+      "adaptability": "Adaptabilidad",
+      "timeManagement": "Gestión del Tiempo",
+      "attention": "Atención al detalle",
+      "persistence": "Persistencia",
+      "workEthic": "Ética Laboral"
+    }
+  },
+  "projects": {
+    "title": "Experiencia",
+    "professional": "Trabajos",
+    "personal": "Proyectos Personales",
+    "daikin": {
+      "name": "Daikin",
+      "period": "Septiembre 2024 - Diciembre 2025",
+      "type": "Periodo de Prácticas",
+      "fullName": "Daikin Manufacturing México",
+      "description": "Experiencia profesional brindando soporte y desarrollo para una aplicación que utiliza el modelo MVC y SQL Server. Desarrollo y mantenimiento de API y bases de datos para sistemas internos.",
+      "features": {
+        "title": "Características Principales",
+        "maintenance": "Mantenimiento y mejora de las aplicaciones existentes",
+        "development": "Desarrollo de nuevas funcionalidades según los requisitos",
+        "optimization": "Optimización de consultas SQL y procedimientos almacenados",
+        "ui": "Implementación de mejoras en la interfaz de usuario",
+        "collaboration": "Colaboración en equipo mediante metodologías ágiles"
+      },
+      "technologies": "Tecnologías implementadas",
+      "techList": "ASP.NET MVC, C#, JavaScript, HTML, Bootstrap, Oracle SQL, SQL Server, Oracle, SAP, JQuery y archivos JSon",
+      "challenges": {
+        "title": "Retos presentados",
+        "adaptation": "Adaptación de requisitos para entornos empresariales",
+        "teamwork": "Trabajo en equipo",
+        "improvement": "Mejora constante"
+      },
+      "projectsTitle": "Proyectos realizados",
+      "overtime": {
+        "title": "Aplicación de escritorio 'OverTime Request'",
+        "description": "Estuve dando soporte y mantenimiento a esta sección de la aplicación que se encarga de calcular costos de los tiempos extra para los trabajadores en producción, estos costos van dirigidos a la comida y transporte que necesita y calcula un estimado."
+      },
+      "labels": {
+        "title": "Aplicación de escritorio 'Etiquetas'",
+        "description": "Aplicación web con el propósito de llevar un registro de cada Master Label con error, con la finalidad de identificar patrones y así, encontrar la causa del problema."
+      },
+      "masterLabel": {
+        "title": "Aplicación web 'Master Label'",
+        "description": "Aplicación web con el propósito de llevar un registro de cada Master Label con error, con la finalidad de identificar patrones y así, encontrar la causa del problema."
+      },
+      "budget": {
+        "title": "Aplicación web 'Budget Control'",
+        "description": "Estuve dando soporte y mantenimiento a esta sección de la aplicación que se encarga de calcular costos de los tiempos extra para los trabajadores en producción, estos costos van dirigidos a la comida y transporte que necesita y calcula un estimado."
+      }
+    },
+    "devportfolio": {
+      "name": "DevPortfolio",
+      "shortDescription": "Portafolio profesional de desarrollador con diseño espacial y glasmorfismo",
+      "description": "Proyecto de portafolio web profesional desarrollado con un diseño único que combina el diseño espacial con efectos de vidrio esmerilado, que muestra habilidades, proyectos y experiencia profesional en un proyecto visual e interactivo.",
+      "features": {
+        "title": "Características Principales",
+        "space": "Diseño espacial con estrellas y animación de estrella fugaz",
+        "glass": "Interfaz con efecto moderno estilo de Glasmorfismo",
+        "navigation": "Sistema de Vistas parciales para el sistema de navegación dinámica",
+        "carousel": "Carrusel de proyectos interactivos",
+        "social": "Links de redes sociales con efectos animados",
+        "responsive": "Diseño responsivo completo",
+        "animations": "Animaciones y transiciones suaves"
+      },
+      "technologies": "Tecnologías implementadas",
+      "techList": "ASP.NET MVC, C#, JavaScript, HTML5, CSS3, jQuery",
+      "challenges": {
+        "title": "Retos presentados",
+        "space": "Animaciones de espacio para el fondo",
+        "carousel": "Desarrollo de un carrusel personalizado para una vista previa de los proyectos",
+        "glass": "Integración de efectos de vidrio esmerilado para mantener el diseño",
+        "transitions": "Sistema de gestión de transiciones en la sección de navegación"
+      }
+    },
+    "bookshelf": {
+      "name": "BookShelf",
+      "shortDescription": "Sistema de gestión de biblioteca personal",
+      "description": "Proyecto personal de gestión de una librería que sigue una organización y catálogo de libros, autores y géneros literarios, una solución completa para mantener organizado una colección de libros",
+      "features": {
+        "title": "Características Principales",
+        "management": "Gestión de libros, autores y géneros",
+        "interface": "Interfaz intuitiva con paneles expandibles",
+        "forms": "Sistema de formularios dinámicos",
+        "ajax": "Carga asíncrona de datos mediante AJAX",
+        "search": "Clasificación y búsqueda avanzadas",
+        "tags": "Sistema de etiquetado personalizado"
+      },
+      "technologies": "Tecnologías",
+      "techList": "ASP.NET MVC, C#, SQL Server, Dapper, jQuery, Bootstrap, HTML5, CSS3, JavaScript",
+      "challenges": {
+        "title": "Retos presentados",
+        "research": "Investigación de funcionalidad para una librería",
+        "bootstrap": "investigación Bootstrap para el diseño",
+        "database": "Creación de la base de datos"
+      }
+    },
+    "prosalud": {
+      "name": "ProSalud",
+      "shortDescription": "Sistema de Salud para hospitales",
+      "fullName": "ProSalud - Sistema de gestión médica",
+      "description": "Plataforma completa para la gestión de consultorios médicos que automatiza los procesos administrativos y clínicos, desde la programación de citas hasta la gestión de historiales médicos y facturación.",
+      "features": {
+        "title": "Características Principales",
+        "records": "Gestión de historiales clínicos y de pacientes",
+        "appointments": "Sistema de citas y agenda médica",
+        "staff": "Control de personal y especialidades",
+        "billing": "Sistema de facturación y programa VIP",
+        "diagnosis": "Diagnóstico basado en la CIE-10",
+        "treatment": "Seguimiento de tratamientos"
+      },
+      "technologies": "Tecnologías",
+      "techList": "ASP.NET MVC, C#, SQL Server, Dapper, jQuery, Bootstrap, HTML5, CSS3, JavaScript",
+      "challenges": {
+        "title": "Retos presentados",
+        "research": "Investigación de funcionalidad para una librería",
+        "bootstrap": "investigación Bootstrap para el diseño",
+        "database": "Creación de la base de datos"
+      }
+    }
+  },
+  "education": {
+    "title": "Educación",
+    "academic": {
+      "title": "Formación Académica",
+      "forge": {
+        "name": "Fundación Forge",
+        "period": "Noviembre 2025 - Diciembre 2025",
+        "current": "Actualmente en curso para obtener habilidades laborales",
+        "focus": "Entrenamiento enfocado en el mundo laboral"
+      },
+      "smart": {
+        "name": "Smart Teaching",
+        "period": "Febrero 2025 - Noviembre 2025",
+        "description": "Curso intensivo para pulir y mejorar mi nivel de Inglés",
+        "focus": "Enfocado en obtener un nivel B2 de TOEFL IBT"
+      },
+      "university": {
+        "name": "Ingeniería en Tecnologías de la información",
+        "period": "Julio 2022 - Agosto 2025",
+        "current": "Actualmente en espera de mi título profesional",
+        "focus": "Enfocado en el desarrollo de Software y soluciones corporativas"
+      }
+    },
+    "certifications": {
+      "title": "Certificaciones",
+      "linguaskill": "Linguaskill B1",
+      "linguaskillDetail": "Dominio del Inglés (2024)",
+      "mos": "MICROSOFT OFFICE SPECIALIST (MOS) | 2019",
+      "excel": "Excel",
+      "excelPeriod": "Diciembre 2019",
+      "word": "Word",
+      "wordPeriod": "Octubre 2019",
+      "powerpoint": "PowerPoint",
+      "powerpointPeriod": "Septiembre 2019"
+    },
+    "professional": {
+      "title": "Desarrollo Profesional",
+      "cluster": "Participación en el Cluster Automotriz | Universidad Tangamanga",
+      "clusterFocus": "Enfocado en las tendencias tecnológicas del sector automotriz"
+    }
   }
 }

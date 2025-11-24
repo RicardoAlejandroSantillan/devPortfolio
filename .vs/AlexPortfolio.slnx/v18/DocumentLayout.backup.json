@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "D:\\Proyectos Git\\Personales\\Mi portafolio cargado\\AlexPortfolio\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{35143258-D6CB-3956-66B3-41827FFA6FBE}|AlexPortfolio\\AlexPortfolio.csproj|d:\\proyectos git\\personales\\mi portafolio cargado\\alexportfolio\\alexportfolio\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{35143258-D6CB-3956-66B3-41827FFA6FBE}|AlexPortfolio\\AlexPortfolio.csproj|solutionrelative:alexportfolio\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35143258-D6CB-3956-66B3-41827FFA6FBE}|AlexPortfolio\\AlexPortfolio.csproj|d:\\proyectos git\\personales\\mi portafolio cargado\\alexportfolio\\alexportfolio\\views\\home\\sections\\_projects.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{35143258-D6CB-3956-66B3-41827FFA6FBE}|AlexPortfolio\\AlexPortfolio.csproj|solutionrelative:alexportfolio\\views\\home\\sections\\_projects.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{35143258-D6CB-3956-66B3-41827FFA6FBE}|AlexPortfolio\\AlexPortfolio.csproj|d:\\proyectos git\\personales\\mi portafolio cargado\\alexportfolio\\alexportfolio\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{35143258-D6CB-3956-66B3-41827FFA6FBE}|AlexPortfolio\\AlexPortfolio.csproj|solutionrelative:alexportfolio\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
@@ -23,15 +31,39 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Proyectos Git\\Personales\\Mi portafolio cargado\\AlexPortfolio\\AlexPortfolio\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "AlexPortfolio\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\Proyectos Git\\Personales\\Mi portafolio cargado\\AlexPortfolio\\AlexPortfolio\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "AlexPortfolio\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAABwAAAAAAAAAAAAIwCAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-23T21:32:55.192Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_Projects.cshtml",
+              "DocumentMoniker": "D:\\Proyectos Git\\Personales\\Mi portafolio cargado\\AlexPortfolio\\AlexPortfolio\\Views\\Home\\sections\\_Projects.cshtml",
+              "RelativeDocumentMoniker": "AlexPortfolio\\Views\\Home\\sections\\_Projects.cshtml",
+              "ToolTip": "D:\\Proyectos Git\\Personales\\Mi portafolio cargado\\AlexPortfolio\\AlexPortfolio\\Views\\Home\\sections\\_Projects.cshtml",
+              "RelativeToolTip": "AlexPortfolio\\Views\\Home\\sections\\_Projects.cshtml",
+              "ViewState": "AgIAAGsBAAAAAAAAAAAIwHABAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-23T20:28:41.04Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "D:\\Proyectos Git\\Personales\\Mi portafolio cargado\\AlexPortfolio\\AlexPortfolio\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "AlexPortfolio\\Views\\Shared\\_Layout.cshtml",
               "ToolTip": "D:\\Proyectos Git\\Personales\\Mi portafolio cargado\\AlexPortfolio\\AlexPortfolio\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "AlexPortfolio\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAACcAAAAAAAAAAAAAADQAAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAABgAAAAAAAAAAAAIwCYAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-23T19:25:14.714Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-23T19:25:14.714Z"
             }
           ]
         },
