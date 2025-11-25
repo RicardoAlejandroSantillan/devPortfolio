@@ -64,15 +64,13 @@
     "filterSoft": "Habilidades Blandas",
     "hardSkills": {
       "title": "Habilidades Técnicas",
+      "webDevelopment": "Desarrollo Web",
       "mvc": "Modelo Vista Controlador (MVC) ASP .Net",
-      "languages": "C, C++ y C#",
-      "python": "Python",
-      "java": "Java",
-      "web": "HTML, CSS, JS y Bootstrap",
-      "databases": "Oracle SQL, SQL Server, MySQL y Derby DB",
-      "tools": "Power BI y Excel",
-      "versionControl": "Git y Github",
-      "dataScience": "Pandas, NumPy, Matplotlib y Seaborn"
+      "dataScience": "Ciencia de Datos",
+      "databases": "Bases de Datos",
+      "desktopDevelopment": "Desarrollo de escritorio",
+      "versionControl": "Control de Versiones",
+      "generalProgramming": "Programación General"
     },
     "softSkills": {
       "title": "Habilidades Blandas",
@@ -92,154 +90,174 @@
     "professional": "Trabajos",
     "personal": "Proyectos Personales",
     "daikin": {
-      "name": "Daikin",
+      "name": "Daikin Manufacturing México",
       "period": "Septiembre 2024 - Diciembre 2025",
-      "type": "Periodo de Prácticas",
-      "fullName": "Daikin Manufacturing México",
+      "type": "Periodo de Practicas",
       "description": "Experiencia profesional brindando soporte y desarrollo para una aplicación que utiliza el modelo MVC y SQL Server. Desarrollo y mantenimiento de API y bases de datos para sistemas internos.",
-      "features": {
-        "title": "Características Principales",
-        "maintenance": "Mantenimiento y mejora de las aplicaciones existentes",
-        "development": "Desarrollo de nuevas funcionalidades según los requisitos",
-        "optimization": "Optimización de consultas SQL y procedimientos almacenados",
-        "ui": "Implementación de mejoras en la interfaz de usuario",
-        "collaboration": "Colaboración en equipo mediante metodologías ágiles"
-      },
-      "technologies": "Tecnologías implementadas",
+      "featuresTitle": "Caracteristicas Principales",
+      "feature1": "Mantenimiento y mejora de las aplicaciones existentes",
+      "feature2": "Desarrollo de nuevas funcionalidades según los requisitos",
+      "feature3": "Optimización de consultas SQL y procedimientos almacenados",
+      "feature4": "Implementación de mejoras en la interfaz de usuario",
+      "feature5": "Colaboración en equipo mediante metodologías ágiles",
+      "techTitle": "Tecnologias implementadas",
       "techList": "ASP.NET MVC, C#, JavaScript, HTML, Bootstrap, Oracle SQL, SQL Server, Oracle, SAP, JQuery y archivos JSon",
-      "challenges": {
-        "title": "Retos presentados",
-        "adaptation": "Adaptación de requisitos para entornos empresariales",
-        "teamwork": "Trabajo en equipo",
-        "improvement": "Mejora constante"
-      },
+      "challengesTitle": "Retos presentados",
+      "challenge1": "Adaptación de requisitos para entornos empresariales",
+      "challenge2": "Trabajo en equipo",
+      "challenge3": "Mejora constante",
       "projectsTitle": "Proyectos realizados",
       "overtime": {
-        "title": "Aplicación de escritorio 'OverTime Request'",
+        "title": "Aplicacion de escritorio 'OverTime Request'",
         "description": "Estuve dando soporte y mantenimiento a esta sección de la aplicación que se encarga de calcular costos de los tiempos extra para los trabajadores en producción, estos costos van dirigidos a la comida y transporte que necesita y calcula un estimado."
       },
-      "labels": {
-        "title": "Aplicación de escritorio 'Etiquetas'",
-        "description": "Aplicación web con el propósito de llevar un registro de cada Master Label con error, con la finalidad de identificar patrones y así, encontrar la causa del problema."
+      "etiquetas": {
+        "title": "Aplicacion de escritorio 'Etiquetas'",
+        "description": "Aplicacion web con el proposito de llevar un registro de cada Master Label con error, con la finalidad de identificar patrones y asi, encontrar la causa del problema."
       },
       "masterLabel": {
-        "title": "Aplicación web 'Master Label'",
-        "description": "Aplicación web con el propósito de llevar un registro de cada Master Label con error, con la finalidad de identificar patrones y así, encontrar la causa del problema."
+        "title": "Aplicacion web 'Master Label'",
+        "description": "Aplicacion web con el proposito de llevar un registro de cada Master Label con error, con la finalidad de identificar patrones y asi, encontrar la causa del problema."
       },
-      "budget": {
-        "title": "Aplicación web 'Budget Control'",
+      "budgetControl": {
+        "title": "Aplicacion web 'Budget Control'",
         "description": "Estuve dando soporte y mantenimiento a esta sección de la aplicación que se encarga de calcular costos de los tiempos extra para los trabajadores en producción, estos costos van dirigidos a la comida y transporte que necesita y calcula un estimado."
       }
     },
     "devportfolio": {
       "name": "DevPortfolio",
       "shortDescription": "Portafolio profesional de desarrollador con diseño espacial y glasmorfismo",
-      "description": "Proyecto de portafolio web profesional desarrollado con un diseño único que combina el diseño espacial con efectos de vidrio esmerilado, que muestra habilidades, proyectos y experiencia profesional en un proyecto visual e interactivo.",
-      "features": {
-        "title": "Características Principales",
-        "space": "Diseño espacial con estrellas y animación de estrella fugaz",
-        "glass": "Interfaz con efecto moderno estilo de Glasmorfismo",
-        "navigation": "Sistema de Vistas parciales para el sistema de navegación dinámica",
-        "carousel": "Carrusel de proyectos interactivos",
-        "social": "Links de redes sociales con efectos animados",
-        "responsive": "Diseño responsivo completo",
-        "animations": "Animaciones y transiciones suaves"
-      },
-      "technologies": "Tecnologías implementadas",
+      "description": "Proyecto de portafolio web profesional desarrollado con un diseño unico que combina el diseño espacial con efectos de vidrio esmerilado, que muestra habilidades, proyectos y experiencia profesional en un proyecto visual e interactivo.",
+      "featuresTitle": "Caracteristicas Principales",
+      "feature1": "Diseño espacial con estrellas y animacion de estrella fugaz",
+      "feature2": "Interfaz con efecto moderno estilo de Glasmorphismo",
+      "feature3": "Sistema de Vistas parciales para el sistema de navegacion dynamica",
+      "feature4": "Carrusel de proyectos interactivos",
+      "feature5": "Links de redes sociales con efectos animados",
+      "feature6": "Diseño responsivo completo",
+      "feature7": "Animaciones y transiciones suaves",
+      "techTitle": "Tecnologias implementadas",
       "techList": "ASP.NET MVC, C#, JavaScript, HTML5, CSS3, jQuery",
-      "challenges": {
-        "title": "Retos presentados",
-        "space": "Animaciones de espacio para el fondo",
-        "carousel": "Desarrollo de un carrusel personalizado para una vista previa de los proyectos",
-        "glass": "Integración de efectos de vidrio esmerilado para mantener el diseño",
-        "transitions": "Sistema de gestión de transiciones en la sección de navegación"
-      }
+      "challengesTitle": "Retos presentados",
+      "challenge1": "Animaciones de espacio para el fondo",
+      "challenge2": "Desarrollo de un carrusel personalizado para una vista previa de los proyectos",
+      "challenge3": "Integracion de efectos de vidrio esmerilado para mantener el diseño",
+      "challenge4": "Sistema de gestion de transiciones en la sección de navegación"
+    },
+    "datathon2022": {
+      "name": "WiDS Datathon 2022",
+      "shortDescription": "Datathon enfocado en temas de salud",
+      "title": "WiDS Datathon 2022 – Detección temprana de cáncer de mama",
+      "description": "Participacion en el datathon WiDS 2022 donde el objetivo era desarrollar de un modelo predictivo orientado a apoyar la detección temprana del cáncer de mama, utilizando datos clínicos y técnicas de aprendizaje para clasificar riesgo de manera precisa y reproducible.",
+      "featuresTitle": "Características Principales",
+      "feature1": "Limpieza del DataSet para la manipulación de su información",
+      "feature2": "Modelos de clasificación (árboles y regresión)",
+      "feature3": "Evaluación con métricas equilibradas para datos desbalanceados (AUC, F1, recall)",
+      "feature4": "validación cruzada",
+      "techTitle": "Tecnologías implementadas",
+      "techList": "Jupyter, Python, Pandas, Scikit-learn, NumPy, Matplotlib",
+      "challengesTitle": "Retos presentados",
+      "challenge1": "Manejo del desbalance de clases en diagnósticos positivos",
+      "challenge2": "Optimización de modelos",
+      "challenge3": "Selección de variables con relevancia clínica"
+    },
+    "datathon2025": {
+      "name": "WiDS Datathon 2025",
+      "shortDescription": "Datathon enfocado en temas de salud",
+      "title": "WiDS Datathon 2025 – Detección de TDAH y TDA en mujeres adolescentes",
+      "description": "Participacion en el datathon WiDS 2022 donde el objetivo era desarrollar de un modelo predictivo orientado a identificar de forma temprana y precisa patrones asociados a TDAH y TDA en mujeres, especialmente adolescentes, un grupo donde los diagnósticos suelen retrasarse por síntomas atípicos y subrepresentación en los datos.",
+      "featuresTitle": "Características Principales",
+      "feature1": "Limpieza del DataSet para la manipulación de su información",
+      "feature2": "Procesamiento de datos neurocognitivos y conductuales",
+      "feature3": "Modelos de clasificación multietiqueta",
+      "feature4": "Análisis de señales y variables psicológicas",
+      "feature5": "Entrenamiento con técnicas de regularización para mejorar generalización",
+      "feature6": "Validación cruzada estratificada por rangos de edad y género",
+      "techTitle": "Tecnologías implementadas",
+      "techList": "Jupyter, Python, Pandas, Scikit-learn, NumPy, XGBoost",
+      "challengesTitle": "Retos presentados",
+      "challenge1": "Datos con ruido alto por variabilidad neuropsicológica individual",
+      "challenge2": "Dificultad para separar síntomas superpuestos entre TDA y TDAH",
+      "challenge3": "Desbalance entre clases y perfiles clínicos",
+      "challenge4": "Evaluación del modelo hacia comportamientos masculinos"
     },
     "bookshelf": {
       "name": "BookShelf",
-      "shortDescription": "Sistema de gestión de biblioteca personal",
-      "description": "Proyecto personal de gestión de una librería que sigue una organización y catálogo de libros, autores y géneros literarios, una solución completa para mantener organizado una colección de libros",
-      "features": {
-        "title": "Características Principales",
-        "management": "Gestión de libros, autores y géneros",
-        "interface": "Interfaz intuitiva con paneles expandibles",
-        "forms": "Sistema de formularios dinámicos",
-        "ajax": "Carga asíncrona de datos mediante AJAX",
-        "search": "Clasificación y búsqueda avanzadas",
-        "tags": "Sistema de etiquetado personalizado"
-      },
-      "technologies": "Tecnologías",
+      "shortDescription": "Portafolio profesional de desarrollador con diseño espacial y glasmorfismo",
+      "description": "Proyecto personal de gestion de una libreria que sigue una organizacion y catalogo de libros, autores y generos literarios, una solucion completa para mantener organizado una colección de libros",
+      "featuresTitle": "Caracteristicas Principales",
+      "feature1": "Gestión de libros, autores y géneros",
+      "feature2": "Interfaz intuitiva con paneles expandibles",
+      "feature3": "Sistema de formularios dinámicos",
+      "feature4": "Carga asíncrona de datos mediante AJAX",
+      "feature5": "Clasificación y búsqueda avanzadas",
+      "feature6": "Sistema de etiquetado personalizado",
+      "techTitle": "Technologies",
       "techList": "ASP.NET MVC, C#, SQL Server, Dapper, jQuery, Bootstrap, HTML5, CSS3, JavaScript",
-      "challenges": {
-        "title": "Retos presentados",
-        "research": "Investigación de funcionalidad para una librería",
-        "bootstrap": "investigación Bootstrap para el diseño",
-        "database": "Creación de la base de datos"
-      }
+      "challengesTitle": "Retos presentados",
+      "challenge1": "Investigación de funcionalidad para una libreria",
+      "challenge2": "investigación Bootstrap para el diseño",
+      "challenge3": "Creación de la base de datos"
     },
     "prosalud": {
       "name": "ProSalud",
       "shortDescription": "Sistema de Salud para hospitales",
-      "fullName": "ProSalud - Sistema de gestión médica",
+      "title": "ProSalud -Sistema de gestion medica",
       "description": "Plataforma completa para la gestión de consultorios médicos que automatiza los procesos administrativos y clínicos, desde la programación de citas hasta la gestión de historiales médicos y facturación.",
-      "features": {
-        "title": "Características Principales",
-        "records": "Gestión de historiales clínicos y de pacientes",
-        "appointments": "Sistema de citas y agenda médica",
-        "staff": "Control de personal y especialidades",
-        "billing": "Sistema de facturación y programa VIP",
-        "diagnosis": "Diagnóstico basado en la CIE-10",
-        "treatment": "Seguimiento de tratamientos"
-      },
-      "technologies": "Tecnologías",
+      "featuresTitle": "Caracteristicas Principales",
+      "feature1": "Gestión de historiales clínicos y de pacientes",
+      "feature2": "Sistema de citas y agenda médica",
+      "feature3": "Control de personal y especialidades",
+      "feature4": "Sistema de facturación y programa VIP",
+      "feature5": "Diagnóstico basado en la CIE-10",
+      "feature6": "Seguimiento de tratamientos",
+      "techTitle": "Technologies",
       "techList": "ASP.NET MVC, C#, SQL Server, Dapper, jQuery, Bootstrap, HTML5, CSS3, JavaScript",
-      "challenges": {
-        "title": "Retos presentados",
-        "research": "Investigación de funcionalidad para una librería",
-        "bootstrap": "investigación Bootstrap para el diseño",
-        "database": "Creación de la base de datos"
-      }
+      "challengesTitle": "Retos presentados",
+      "challenge1": "Investigación de funcionalidad para una libreria",
+      "challenge2": "investigación Bootstrap para el diseño",
+      "challenge3": "Creación de la base de datos"
     }
   },
   "education": {
     "title": "Educación",
-    "academic": {
-      "title": "Formación Académica",
-      "forge": {
-        "name": "Fundación Forge",
-        "period": "Noviembre 2025 - Diciembre 2025",
-        "current": "Actualmente en curso para obtener habilidades laborales",
-        "focus": "Entrenamiento enfocado en el mundo laboral"
-      },
-      "smart": {
-        "name": "Smart Teaching",
-        "period": "Febrero 2025 - Noviembre 2025",
-        "description": "Curso intensivo para pulir y mejorar mi nivel de Inglés",
-        "focus": "Enfocado en obtener un nivel B2 de TOEFL IBT"
-      },
-      "university": {
-        "name": "Ingeniería en Tecnologías de la información",
-        "period": "Julio 2022 - Agosto 2025",
-        "current": "Actualmente en espera de mi título profesional",
-        "focus": "Enfocado en el desarrollo de Software y soluciones corporativas"
-      }
+    "academicTraining": "Formación Academica",
+    "forge": {
+      "name": "Fundación Forge",
+      "period": "Noviembre 2025 - Diciembre 2025",
+      "current": "Actualmente en curso para obtener habilidades laborales",
+      "focus": "Entrenamiento enfocado en el mundo laboral"
     },
-    "certifications": {
-      "title": "Certificaciones",
-      "linguaskill": "Linguaskill B1",
-      "linguaskillDetail": "Dominio del Inglés (2024)",
-      "mos": "MICROSOFT OFFICE SPECIALIST (MOS) | 2019",
-      "excel": "Excel",
-      "excelPeriod": "Diciembre 2019",
-      "word": "Word",
-      "wordPeriod": "Octubre 2019",
-      "powerpoint": "PowerPoint",
-      "powerpointPeriod": "Septiembre 2019"
+    "smart": {
+      "name": "Smart Teaching",
+      "period": "Febrero 2025 - Noviembre 2025",
+      "description": "Curso intensivo para pulir y mejorar mi nivel de Ingles",
+      "focus": "Enfocado en obtener un nivel B2 de TOEFL IBT"
     },
-    "professional": {
-      "title": "Desarrollo Profesional",
-      "cluster": "Participación en el Cluster Automotriz | Universidad Tangamanga",
-      "clusterFocus": "Enfocado en las tendencias tecnológicas del sector automotriz"
+    "university": {
+      "name": "Universidad Tangamanga | Ingenieria en Tecnologías de la información",
+      "period": "Julio 2022 - Agosto 2025",
+      "current": "Actualmente en espera de mi titulo profesional",
+      "focus": "Enfocado en el desarrollo de Software y soluciones corporativas"
+    },
+    "certificationsTitle": "Certificaciones",
+    "linguaskill": "Linguaskill B1",
+    "linguaskillDetail": "Dominio del Inglés (2024)",
+    "mos": "MICROSOFT OFFICE SPECIALIST (MOS) | 2019",
+    "excel": "Excel",
+    "excelPeriod": "Diciembre 2019",
+    "word": "Word",
+    "wordPeriod": "Octubre 2019",
+    "powerpoint": "PowerPoint",
+    "powerpointPeriod": "Septiembre 2019",
+    "professionalDevelopment": "Desarrollo Profesional",
+    "cluster": {
+      "name": "Participación en el Cluster Automotriz | Universidad Tangamanga",
+      "focus": "Enfocado en las tendencias tecnologicas del sector automotriz"
     }
+  },
+  "modal": {
+    "close": "Cerrar",
+    "imageAlt": "Imagen ampliada"
   }
 }
