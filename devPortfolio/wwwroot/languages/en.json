@@ -60,7 +60,7 @@
   },
   "skills": {
     "title": "Skills",
-    "filterHard": "Technical Skills",
+    "filterHard": "Hard Skills",
     "filterSoft": "Soft Skills",
     "hardSkills": {
       "title": "Technical Skills",
@@ -113,7 +113,7 @@
       },
       "etiquetas": {
         "title": "Desktop Application 'Etiquetas'",
-        "description": "Web application with the purpose of keeping a record of each Master Label with errors, in order to identify patterns and thus find the cause of the problem."
+        "description": "Labels is an app developed for the warehouse area. Using the supplier's number, it allows you to search Oracle for the necessary information to be printed on the label. This label is then formatted and sent to print on the corresponding printer. The label values ​​can be modified from a .json configuration file."
       },
       "masterLabel": {
         "title": "Web Application 'Master Label'",
@@ -121,7 +121,7 @@
       },
       "budgetControl": {
         "title": "Web Application 'Budget Control'",
-        "description": "I was providing support and maintenance for this section of the application that is responsible for calculating overtime costs for production workers, these costs go to the food and transportation they need and calculates an estimate."
+        "description": "BudgetControl is an app designed for the finance department with the goal of reducing work time by automating repetitive tasks. The app can combine two Excel files, extract the important information, and calculate budgets and costs."
       }
     },
     "devportfolio": {

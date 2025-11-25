@@ -113,7 +113,7 @@
       },
       "etiquetas": {
         "title": "Aplicacion de escritorio 'Etiquetas'",
-        "description": "Aplicacion web con el proposito de llevar un registro de cada Master Label con error, con la finalidad de identificar patrones y asi, encontrar la causa del problema."
+        "description": "Etiquetas es una app desarrollada para el area de almacen, con el numero del proveedor permite buscar en Oracle la información necesaria que vendra en la etiqueta, esta etiqueta se acomoda y se manda a imprimir en la impresora correspondiente, los valores de la etiqueta pueden ser modificados desde un archivo de configuraciones .json."
       },
       "masterLabel": {
         "title": "Aplicacion web 'Master Label'",
@@ -121,7 +121,7 @@
       },
       "budgetControl": {
         "title": "Aplicacion web 'Budget Control'",
-        "description": "Estuve dando soporte y mantenimiento a esta sección de la aplicación que se encarga de calcular costos de los tiempos extra para los trabajadores en producción, estos costos van dirigidos a la comida y transporte que necesita y calcula un estimado."
+        "description": "BudgetControl es una app diseñada para el area de finanzas con el objetivo de reducir tiempos de trabajo, automatizando acciones repetitivas, la app es capaz de combinar dos archivos de excel, extraer lo importante y calcular presupuestos y costos."
       }
     },
     "devportfolio": {
