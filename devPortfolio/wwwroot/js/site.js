@@ -185,6 +185,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Función para mostrar la información del proyecto
     const showProjectInfo = (projectId) => {
+        console.log(`Showing info for project: ${projectId}`); // Debug
+
         // Ocultar todas las tarjetas de información
         infoCards.forEach(card => {
             card.classList.remove('active');
@@ -202,13 +204,15 @@ document.addEventListener('DOMContentLoaded', () => {
                     block: 'nearest'
                 });
             }, 100);
+        } else {
+            console.error(`Info card not found for: ${projectId}-info`); // Debug
         }
     };
 
     // Event listeners para tarjetas de trabajo profesional
     professionalCards.forEach(card => {
         card.addEventListener('click', () => {
-            const projectId = card.querySelector('img').alt;
+            const projectId = card.getAttribute('data-project'); // CAMBIO AQUÍ
             showProjectInfo(projectId);
         });
     });
@@ -216,7 +220,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Event listeners para tarjetas de proyectos personales
     personalCards.forEach(card => {
         card.addEventListener('click', () => {
-            const projectId = card.querySelector('img').alt;
+            const projectId = card.getAttribute('data-project'); // CAMBIO AQUÍ
             showProjectInfo(projectId);
         });
     });
