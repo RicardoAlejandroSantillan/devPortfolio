@@ -33,9 +33,9 @@ class InfiniteCarousel {
 
         // Configuración
         this.totalOriginal = this.originalCards.length;
-        this.visibleSlides = 3.5; // Según tu CSS (100% / 3.5)
-        this.clonesCount = Math.ceil(this.visibleSlides) + 1; // Cantidad de clones a cada lado
-        this.currentIndex = this.clonesCount; // Empezamos después de los clones iniciales
+        this.visibleSlides = 3.5;
+        this.clonesCount = Math.ceil(this.visibleSlides) + 1;
+        this.currentIndex = this.clonesCount;
         this.isTransitioning = false;
 
         this.init();
@@ -61,16 +61,18 @@ class InfiniteCarousel {
         // Manejar redimensionamiento de ventana
         window.addEventListener('resize', () => {
             this.updateDimensions();
-            this.updatePosition(false); // false = sin animación
+            this.updatePosition(false);
         });
 
-        // IMPORTANTE: Si los carruseles están en pestañas (display:none), 
-        // necesitamos un ResizeObserver para detectar cuando se vuelven visibles.
+        // ResizeObserver para detectar cuando se vuelven visibles
         const resizeObserver = new ResizeObserver(() => {
             this.updateDimensions();
             this.updatePosition(false);
         });
         resizeObserver.observe(this.track);
+
+        // NUEVO: Agregar event listeners a las tarjetas para scroll suave
+        this.setupCardClickListeners();
     }
 
     createClones() {
@@ -94,7 +96,6 @@ class InfiniteCarousel {
     }
 
     updateDimensions() {
-        // Obtener ancho real de la tarjeta + gap
         const firstCard = this.originalCards[0];
         if (!firstCard) return;
 
@@ -102,7 +103,6 @@ class InfiniteCarousel {
         const trackStyle = window.getComputedStyle(this.track);
 
         const cardWidth = firstCard.getBoundingClientRect().width;
-        // Obtenemos el gap del CSS (15px según tu código)
         const gap = parseFloat(trackStyle.gap) || 15;
 
         this.slideWidth = cardWidth + gap;
@@ -112,10 +112,10 @@ class InfiniteCarousel {
     }
 
     move(direction) {
-        if (this.isTransitioning) return; // Evitar clics rápidos
+        if (this.isTransitioning) return;
         this.isTransitioning = true;
 
-        this.track.style.transition = 'transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94)'; // Tu easing del CSS
+        this.track.style.transition = 'transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94)';
 
         if (direction === 'next') {
             this.currentIndex++;
@@ -140,23 +140,18 @@ class InfiniteCarousel {
         this.isTransitioning = false;
 
         // Lógica del Bucle Infinito (Teletransportación)
-        // Si llegamos a los clones del final -> saltar al inicio real
         if (this.currentIndex >= this.totalOriginal + this.clonesCount) {
             this.currentIndex = this.clonesCount;
-            this.updatePosition(false); // Salto sin animación
-        }
-        // Si llegamos a los clones del inicio -> saltar al final real
-        else if (this.currentIndex < this.clonesCount) {
+            this.updatePosition(false);
+        } else if (this.currentIndex < this.clonesCount) {
             this.currentIndex = this.totalOriginal + this.clonesCount - 1;
-            this.updatePosition(false); // Salto sin animación
+            this.updatePosition(false);
         }
     }
 
     updatePagination() {
-        // Calcular el índice lógico (1 a N) basado en la posición actual
         let realIndex = this.currentIndex - this.clonesCount;
 
-        // Normalizar índice para el loop
         if (realIndex < 0) {
             realIndex = this.totalOriginal - 1;
         } else if (realIndex >= this.totalOriginal) {
@@ -166,5 +161,29 @@ class InfiniteCarousel {
         if (this.currentSpan) {
             this.currentSpan.textContent = realIndex + 1;
         }
+    }
+
+    // NUEVO: Configurar listeners para scroll suave al hacer click en tarjetas
+    setupCardClickListeners() {
+        const allCards = this.track.querySelectorAll('[data-project]');
+
+        allCards.forEach(card => {
+            card.addEventListener('click', () => {
+                // Pequeño delay para que la información se cargue primero
+                setTimeout(() => {
+                    // Buscar el contenedor de información de proyectos
+                    const infoContainer = document.querySelector('.carousel-information-container');
+
+                    if (infoContainer) {
+                        // Scroll suave hacia el contenedor de información
+                        infoContainer.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start',
+                            inline: 'nearest'
+                        });
+                    }
+                }, 100);
+            });
+        });
     }
 }

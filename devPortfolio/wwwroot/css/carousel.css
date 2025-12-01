@@ -234,18 +234,17 @@
     }
 
 .img-project-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
     margin-top: 2rem;
 }
 
     .img-project-container img {
         width: 100%;
-        height: auto;
         border-radius: 8px;
-        border: 1px solid rgba(255, 255, 255, 0.1);
-        transition: transform 0.3s ease;
+        transition: all 0.3s ease;
+        cursor: pointer;
     }
 
         .img-project-container img:hover {
@@ -264,13 +263,8 @@
 .project-info {
     display: flex;
     gap: 1.5rem;
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 12px;
-    padding: 1.5rem;
-    transition: all 0.3s ease;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
 }
 
     .project-info:hover {
@@ -281,33 +275,149 @@
     }
 
 .left-pnl.img-pnl {
-    flex: 0 0 320px;
-    min-width: 320px;
-    max-width: 320px;
+    flex: 1;
+    min-width: 300px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    cursor: pointer;
 }
 
     .left-pnl.img-pnl img {
         width: 100%;
-        height: 100%;
-        object-fit: cover;
+        height: auto;
+        display: block;
         border-radius: 8px;
-        border: 1px solid rgba(255, 255, 255, 0.15);
-        transition: all 0.3s ease;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-        cursor: pointer;
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-.project-info:hover .left-pnl.img-pnl img {
-    border-color: rgba(255, 255, 255, 0.3);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    .left-pnl.img-pnl::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0);
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        border-radius: 8px;
+        z-index: 1;
+    }
+
+    .left-pnl.img-pnl::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0);
+        width: 60px;
+        height: 60px;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7'/%3E%3C/svg%3E");
+        background-size: 32px 32px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 2px solid rgba(255, 255, 255, 0.4);
+        border-radius: 50%;
+        opacity: 0;
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        z-index: 2;
+        pointer-events: none;
+    }
+
+    .left-pnl.img-pnl:hover::before {
+        background: rgba(0, 0, 0, 0.6);
+    }
+
+    .left-pnl.img-pnl:hover::after {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 1;
+    }
+
+    .left-pnl.img-pnl:hover img {
+        transform: scale(1.05);
+    }
+
+    .left-pnl.img-pnl:active::after {
+        transform: translate(-50%, -50%) scale(0.9);
+    }
+
+.img-project-container > img {
+    display: block;
 }
+
+.image-wrapper {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+    .image-wrapper::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0);
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        border-radius: 8px;
+        z-index: 1;
+    }
+
+    .image-wrapper::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0);
+        width: 60px;
+        height: 60px;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7'/%3E%3C/svg%3E");
+        background-size: 32px 32px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 2px solid rgba(255, 255, 255, 0.4);
+        border-radius: 50%;
+        opacity: 0;
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        z-index: 2;
+    }
+
+    .image-wrapper:hover::before {
+        background: rgba(0, 0, 0, 0.6);
+    }
+
+    .image-wrapper:hover::after {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 1;
+    }
+
+    .image-wrapper:hover img {
+        transform: scale(1.05);
+    }
+
+    .image-wrapper img {
+        display: block;
+        width: 100%;
+        transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .img-project-container > img:hover {
+        transform: scale(1.02);
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+    }
 
 .right-pnl.info-pnl {
     flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 0.75rem;
+    min-width: 300px;
 }
 
     .right-pnl.info-pnl h4 {

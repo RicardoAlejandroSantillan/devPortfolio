@@ -241,6 +241,50 @@ header {
     flex-direction: column;
 }
 
+/* ====== BOTÓN HAMBURGUESA ====== */
+.menu-toggle {
+    display: none;
+    position: fixed;
+    top: 20px;
+    .menu-toggle left: 20px;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 12px;
+    padding: 12px;
+    cursor: pointer;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+}
+
+    .menu-toggle:hover {
+        background: rgba(255, 255, 255, 0.25);
+        transform: scale(1.05);
+    }
+
+    .menu-toggle span {
+        display: block;
+        width: 25px;
+        height: 2px;
+        background: white;
+        margin: 5px 0;
+        transition: all 0.3s ease;
+        border-radius: 2px;
+    }
+
+    .menu-toggle.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .menu-toggle.active span:nth-child(2) {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+
+    .menu-toggle.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(6px, -6px);
+    }
+
 /* Profile image */
 
 /* ====== IMAGEN DE PERFIL ====== */

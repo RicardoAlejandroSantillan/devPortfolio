@@ -83,7 +83,7 @@
         transform: translateY(0) scale(0.98);
     }
 
-/* ====== RESPONSIVE - TABLETS (hasta 1024px) ====== */
+/* ====== RESPONSIVE - TABLETS ====== */
 @media (max-width: 1024px) {
     .language-selector {
         top: 15px;
@@ -98,7 +98,7 @@
     }
 }
 
-/* ====== RESPONSIVE - MÓVILES (hasta 768px) ====== */
+/* ====== RESPONSIVE - MÓVILES ====== */
 @media (max-width: 768px) {
     .language-selector {
         top: 12px;
@@ -112,9 +112,24 @@
         min-width: 38px;
         border-radius: 10px;
     }
+
+    .project-info {
+        flex-direction: column;
+    }
+
+    .left-pnl.img-pnl,
+    .right-pnl.info-pnl {
+        min-width: 100%;
+    }
+
+        .left-pnl.img-pnl::after {
+            width: 50px;
+            height: 50px;
+            background-size: 28px 28px;
+        }
 }
 
-/* ====== RESPONSIVE - MÓVILES PEQUEÑOS (hasta 480px) ====== */
+/* ====== RESPONSIVE - MÓVILES PEQUEÑOS ====== */
 @media (max-width: 480px) {
     .language-selector {
         top: 10px;
