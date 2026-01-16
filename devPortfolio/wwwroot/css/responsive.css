@@ -439,6 +439,33 @@
         width: 32px;
         height: 32px;
     }
+
+    /* Sistema de Certificados */
+    .certificates-grid {
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+        gap: 1rem;
+    }
+
+    .certificate-card {
+        border-radius: 10px;
+    }
+
+    .certificate-image-container {
+        padding: 0.75rem;
+    }
+
+    .certificate-info {
+        padding: 0.75rem 1rem;
+    }
+
+    .certificate-modal .modal-content {
+        max-width: 95%;
+        padding: 1rem;
+    }
+
+        .certificate-modal .modal-content img {
+            max-height: 65vh;
+        }
 }
 
 /* ====== MÓVILES (hasta 640px) ====== */
@@ -674,6 +701,29 @@
     .carousel-personal-project-container {
         padding: 20px 35px;
     }
+
+    /* Sistema de Certificados */
+
+    .certificates-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .certificate-modal .modal-content {
+        padding: 0.75rem;
+    }
+
+        .certificate-modal .modal-content img {
+            max-height: 60vh;
+        }
+
+    .certificate-modal-info h3 {
+        font-size: 1.1rem;
+    }
+
+    .certificate-modal-info p {
+        font-size: 0.9rem;
+    }
 }
 
 /* ====== MÓVILES MUY PEQUEÑOS ====== */
@@ -790,3 +840,15 @@
         border-radius: 6px;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+

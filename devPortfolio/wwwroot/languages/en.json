@@ -219,45 +219,63 @@
       "challenge3": "Database creation"
     }
   },
-  "education": {
-    "title": "Education",
-    "academicTraining": "Academic Background",
-    "forge": {
-      "name": "Fundación Forge",
-      "period": "November 2025 - December 2025",
-      "current": "Currently in progress to obtain work skills",
-      "focus": "Training focused on the work world"
-    },
-    "smart": {
-      "name": "Smart Teaching",
-      "period": "February 2025 - November 2025",
-      "description": "Intensive course to polish and improve my English level",
-      "focus": "Focused on obtaining a TOEFL IBT B2 level"
-    },
-    "university": {
-      "name": "Tangamanga University | Information Technology Engineering",
-      "period": "July 2022 - August 2025",
-      "current": "Currently awaiting my professional degree",
-      "focus": "Focused on Software development and corporate solutions"
-    },
-    "certificationsTitle": "Certifications",
-    "linguaskill": "Linguaskill B1",
-    "linguaskillDetail": "English Proficiency (2024)",
-    "mos": "MICROSOFT OFFICE SPECIALIST (MOS) | 2019",
-    "excel": "Excel",
-    "excelPeriod": "December 2019",
-    "word": "Word",
-    "wordPeriod": "October 2019",
-    "powerpoint": "PowerPoint",
-    "powerpointPeriod": "September 2019",
-    "professionalDevelopment": "Professional Development",
-    "cluster": {
-      "name": "Participation in the Automotive Cluster | Universidad Tangamanga",
-      "focus": "Focused on technological trends in the automotive sector"
+  {
+    "education": {
+      "title": "Education",
+      "filterPreparation": "Preparation",
+      "filterCertificates": "Certificates",
+      "preparation": {
+        "title": "Academic Background"
+      },
+      "forge": {
+        "name": "Fundación Forge",
+        "period": "November 2025 - December 2025",
+        "current": "Currently in progress to obtain work skills",
+        "focus": "Training focused on the work world"
+      },
+      "smart": {
+        "name": "Smart Teaching",
+        "period": "February 2025 - November 2025",
+        "description": "Intensive course to polish and improve my English level",
+        "focus": "Focused on obtaining a TOEFL IBT B2 level"
+      },
+      "university": {
+        "name": "Tangamanga University | Information Technology Engineering",
+        "period": "July 2022 - August 2025",
+        "current": "Currently awaiting my professional degree",
+        "focus": "Focused on Software development and corporate solutions"
+      },
+      "professionalDevelopment": "Professional Development",
+      "cluster": {
+        "name": "Participation in the Automotive Cluster | Universidad Tangamanga",
+        "focus": "Focused on technological trends in the automotive sector"
+      },
+      "certificates": {
+        "title": "Certificates",
+        "linguaskill": {
+          "name": "Linguaskill B1",
+          "date": "June 2024",
+          "alt": "Linguaskill B1 Certificate"
+        },
+        "excel": {
+          "name": "Excel MOS",
+          "date": "December 2019",
+          "alt": "Excel Microsoft Office Specialist Certificate"
+        },
+        "word": {
+          "name": "Word MOS",
+          "date": "October 2019",
+          "alt": "Word Microsoft Office Specialist Certificate"
+        },
+        "powerpoint": {
+          "name": "PowerPoint MOS",
+          "date": "September 2019",
+          "alt": "PowerPoint Microsoft Office Specialist Certificate"
+        },
+        "modal": {
+          "imageAlt": "Enlarged certificate"
+        }
+      }
     }
-  },
-  "modal": {
-    "close": "Close",
-    "imageAlt": "Enlarged image"
   }
 }

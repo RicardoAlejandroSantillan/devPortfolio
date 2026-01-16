@@ -372,3 +372,139 @@ document.addEventListener('DOMContentLoaded', () => {
 
     console.log('✓ Image modal system ready');
 });
+
+// ====== SISTEMA DE TOGGLE PARA EDUCATION ======
+
+document.addEventListener('DOMContentLoaded', () => {
+    console.log('Education toggle system initialized');
+
+    // Obtener los botones y las secciones
+    const preparationBtn = document.getElementById('preparation-btn');
+    const certificatesBtn = document.getElementById('certificates-btn');
+    const preparationContent = document.getElementById('preparation-content');
+    const certificatesContent = document.getElementById('certificates-content');
+
+    // Verificar que existan los elementos
+    if (!preparationBtn || !certificatesBtn || !preparationContent || !certificatesContent) {
+        console.log('Education elements not found on this page');
+        return;
+    }
+
+    // Función para mostrar preparación
+    const showPreparation = () => {
+        preparationBtn.classList.add('active');
+        certificatesBtn.classList.remove('active');
+        preparationContent.classList.add('active');
+        certificatesContent.classList.remove('active');
+    };
+
+    // Función para mostrar certificados
+    const showCertificates = () => {
+        certificatesBtn.classList.add('active');
+        preparationBtn.classList.remove('active');
+        certificatesContent.classList.add('active');
+        preparationContent.classList.remove('active');
+    };
+
+    // Event listeners
+    preparationBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        showPreparation();
+    });
+
+    certificatesBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        showCertificates();
+    });
+
+    console.log('✓ Education toggle system ready');
+});
+
+// ====== SISTEMA DE MODAL PARA CERTIFICADOS ======
+
+document.addEventListener('DOMContentLoaded', () => {
+    console.log('Certificate modal system initialized');
+
+    const modal = document.getElementById('certificateModal');
+    const modalImage = document.getElementById('certificateModalImage');
+    const modalTitle = document.getElementById('certificateModalTitle');
+    const modalDate = document.getElementById('certificateModalDate');
+    const modalCloseBtn = document.getElementById('certificateModalCloseBtn');
+    const certificateCards = document.querySelectorAll('.certificate-card');
+
+    if (!modal || !modalImage || !modalCloseBtn) {
+        console.log('Certificate modal elements not found');
+        return;
+    }
+
+    // Función para abrir el modal
+    const openCertificateModal = (card) => {
+        const img = card.querySelector('.certificate-image-container img');
+        const titleText = card.querySelector('.certificate-info p').textContent;
+        const dateText = card.querySelector('.certificate-info span').textContent;
+
+        modalImage.src = img.src;
+        modalImage.alt = img.alt;
+        modalTitle.textContent = titleText;
+        modalDate.textContent = dateText;
+
+        modal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+
+        // Scroll hacia el modal después de abrirlo
+        setTimeout(() => {
+            const modalContent = modal.querySelector('.modal-content');
+            if (modalContent) {
+                modalContent.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'center'
+                });
+            }
+        }, 100);
+    };
+
+    // Función para cerrar el modal
+    const closeCertificateModal = () => {
+        modal.classList.remove('active');
+        document.body.style.overflow = '';
+
+        // Limpiar contenido después de la animación
+        setTimeout(() => {
+            if (!modal.classList.contains('active')) {
+                modalImage.src = '';
+                modalTitle.textContent = '';
+                modalDate.textContent = '';
+            }
+        }, 300);
+    };
+
+    // Event listeners para cada tarjeta de certificado
+    certificateCards.forEach(card => {
+        card.addEventListener('click', (e) => {
+            e.stopPropagation();
+            openCertificateModal(card);
+        });
+    });
+
+    // Cerrar al hacer clic en el botón de cerrar
+    modalCloseBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        closeCertificateModal();
+    });
+
+    // Cerrar al hacer clic fuera del contenido del modal
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+            closeCertificateModal();
+        }
+    });
+
+    // Cerrar con la tecla Escape
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && modal.classList.contains('active')) {
+            closeCertificateModal();
+        }
+    });
+
+    console.log('✓ Certificate modal system ready');
+});

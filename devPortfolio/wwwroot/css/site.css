@@ -881,3 +881,252 @@ header {
         stroke-width: 2;
         stroke-linecap: round;
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ====== FILTROS DE EDUCACIÓN ====== */
+.education-filter {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin: 2rem 0;
+    flex-wrap: wrap;
+}
+
+    .education-filter button {
+        background: rgba(255, 255, 255, 0.08);
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        color: rgba(255, 255, 255, 0.85);
+        padding: 0.9rem 1.8rem;
+        border-radius: 12px;
+        font-size: 0.95rem;
+        font-weight: 500;
+        cursor: pointer;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        position: relative;
+        overflow: hidden;
+        backdrop-filter: blur(8px);
+        letter-spacing: 0.3px;
+    }
+
+        .education-filter button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .education-filter button:hover::before {
+            left: 100%;
+        }
+
+        .education-filter button:hover {
+            background: rgba(255, 255, 255, 0.15);
+            border-color: rgba(255, 255, 255, 0.3);
+            color: #ffffff;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .education-filter button.active {
+            background: rgba(255, 255, 255, 0.2);
+            border-color: rgba(255, 255, 255, 0.4);
+            color: #ffffff;
+            font-weight: 600;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+        }
+
+        .education-filter button:focus {
+            outline: none;
+            border-color: rgba(255, 255, 255, 0.5);
+            box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.1);
+        }
+
+/* ====== CONTENEDOR GENERAL EDUCATION ====== */
+.education-content {
+    position: relative;
+    min-height: 300px;
+}
+
+.preparation-content,
+.certificates-content {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+    .preparation-content.active,
+    .certificates-content.active {
+        display: block;
+        opacity: 1;
+        animation: fadeIn 0.3s ease-in-out;
+    }
+
+/* ====== GRID DE CERTIFICADOS ====== */
+.certificates-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+/* ====== TARJETA DE CERTIFICADO ====== */
+.certificate-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+    .certificate-card:hover {
+        background: rgba(255, 255, 255, 0.08);
+        border-color: rgba(255, 255, 255, 0.25);
+        transform: translateY(-5px);
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    }
+
+/* ====== CONTENEDOR DE IMAGEN DEL CERTIFICADO ====== */
+.certificate-image-container {
+    width: 100%;
+    aspect-ratio: 4/3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.03);
+    padding: 1rem;
+    overflow: hidden;
+}
+
+    .certificate-image-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        border-radius: 4px;
+        transition: transform 0.3s ease;
+        user-select: none;
+        -webkit-user-drag: none;
+    }
+
+.certificate-card:hover .certificate-image-container img {
+    transform: scale(1.05);
+}
+
+/* ====== INFORMACIÓN DEL CERTIFICADO ====== */
+.certificate-info {
+    padding: 1rem 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.2), transparent);
+}
+
+    .certificate-info p {
+        color: rgba(255, 255, 255, 0.95);
+        font-size: 1rem;
+        font-weight: 600;
+        margin: 0;
+        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    }
+
+    .certificate-info span {
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 0.85rem;
+        font-weight: 400;
+    }
+
+/* ====== MODAL DE CERTIFICADO ====== */
+.certificate-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+    .certificate-modal.active {
+        display: flex;
+        opacity: 1;
+        animation: fadeIn 0.3s ease-in-out;
+    }
+
+    .certificate-modal .modal-content {
+        position: relative;
+        max-width: 90%;
+        max-height: 90%;
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        border-radius: 12px;
+        padding: 1.5rem;
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+        animation: modalZoom 0.3s ease-out;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+        .certificate-modal .modal-content img {
+            width: 100%;
+            height: auto;
+            max-height: 70vh;
+            object-fit: contain;
+            border-radius: 8px;
+            display: block;
+        }
+
+/* ====== INFORMACIÓN EN EL MODAL ====== */
+.certificate-modal-info {
+    text-align: center;
+    padding: 0.5rem 0;
+}
+
+    .certificate-modal-info h3 {
+        color: rgba(255, 255, 255, 0.95);
+        font-size: 1.25rem;
+        font-weight: 600;
+        margin: 0 0 0.5rem 0;
+    }
+
+    .certificate-modal-info p {
+        color: rgba(255, 255, 255, 0.75);
+        font-size: 0.95rem;
+        margin: 0;
+    }

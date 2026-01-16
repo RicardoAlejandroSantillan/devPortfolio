@@ -1,51 +1,104 @@
 ﻿<h2 data-translate="education.title">Educación</h2>
 
-<section class="academic-training" id="academic-training">
-	<h3 data-translate="education.academicTraining">Formación Academica</h3>
-
-	<div class="academic-training-card">
-		<h4><span data-translate="education.forge.name">Fundación Forge</span> | <span data-translate="education.forge.period">Noviembre 2025 - Diciembre 2025</span></h4>
-
-		<p data-translate="education.forge.current">Actualmente en curso para obtener habilidades laborales</p>
-
-		<p data-translate="education.forge.focus">Entrenamiento enfocado en el mundo laboral</p>
-	</div>
-
-	<div class="academic-training-card">
-		<h4><span data-translate="education.smart.name">Smart Teaching</span> | <span data-translate="education.smart.period">Febrero 2025 - Noviembre 2025</span></h4>
-
-		<p data-translate="education.smart.description">Curso intensivo para pulir y mejorar mi nivel de Ingles</p>
-
-		<p data-translate="education.smart.focus">Enfocado en obtener un nivel B2 de TOEFL IBT</p>
-	</div>
-
-	<div class="academic-training-card">
-		<h4><span data-translate="education.university.name">Universidad Tangamanga | Ingenieria en Tecnologías de la información</span> | <span data-translate="education.university.period">Julio 2022 - Agosto 2025</span></h4>
-
-		<p data-translate="education.university.current">Actualmente en espera de mi titulo profesional</p>
-
-		<p data-translate="education.university.focus">Enfocado en el desarrollo de Software y soluciones corporativas</p>
-	</div>
+<section class="education-filter filter">
+    <button class="preparation-btn active" id="preparation-btn" data-translate="education.filterPreparation">Preparación</button>
+    <button class="certificates-btn" id="certificates-btn" data-translate="education.filterCertificates">Certificados</button>
 </section>
 
-<section class="credentials-content credentials-container">
-	<h4 data-translate="education.certificationsTitle">Certificaciones</h4>
-	<p><span data-translate="education.linguaskill">Linguaskill B1</span> | <span data-translate="education.linguaskillDetail">Dominio del Inglés (2024)</span></p>
+<div class="education-content">
+    <section class="preparation-content active" id="preparation-content">
+        <h4 data-translate="education.preparation.title">Formación Académica</h4>
 
-	<p><span data-translate="education.mos">MICROSOFT OFFICE SPECIALIST (MOS) | 2019</span></p>
-	<ul>
-		<li><p><span data-translate="education.excel">Excel</span> | <span data-translate="education.excelPeriod">Diciembre 2019</span></p></li>
-		<li><p><span data-translate="education.word">Word</span> | <span data-translate="education.wordPeriod">Octubre 2019</span></p></li>
-		<li><p><span data-translate="education.powerpoint">PowerPoint</span> | <span data-translate="education.powerpointPeriod">Septiembre 2019</span></p></li>
-	</ul>
-</section>
+        <div class="academic-training-card">
+            <h4><span data-translate="education.forge.name">Fundación Forge</span> | <span data-translate="education.forge.period">Noviembre 2025 - Diciembre 2025</span></h4>
+            <p data-translate="education.forge.current">Actualmente en curso para obtener habilidades laborales</p>
+            <p data-translate="education.forge.focus">Entrenamiento enfocado en el mundo laboral</p>
+        </div>
 
-<section class="professional-development-content">
-	<h4 data-translate="education.professionalDevelopment">Desarrollo Profesional</h4>
+        <div class="academic-training-card">
+            <h4><span data-translate="education.smart.name">Smart Teaching</span> | <span data-translate="education.smart.period">Febrero 2025 - Noviembre 2025</span></h4>
+            <p data-translate="education.smart.description">Curso intensivo para pulir y mejorar mi nivel de Ingles</p>
+            <p data-translate="education.smart.focus">Enfocado en obtener un nivel B2 de TOEFL IBT</p>
+        </div>
 
-	<div class="professional-development-card">
-		<h5 data-translate="education.cluster.name">Participación en el Cluster Automotriz | Universidad Tangamanga</h5>
+        <div class="academic-training-card">
+            <h4><span data-translate="education.university.name">Universidad Tangamanga | Ingenieria en Tecnologías de la información</span> | <span data-translate="education.university.period">Julio 2022 - Agosto 2025</span></h4>
+            <p data-translate="education.university.current">Actualmente en espera de mi titulo profesional</p>
+            <p data-translate="education.university.focus">Enfocado en el desarrollo de Software y soluciones corporativas</p>
+        </div>
 
-		<p data-translate="education.cluster.focus">Enfocado en las tendencias tecnologicas del sector automotriz</p>
-	</div>
-</section>
+        <section class="professional-development-content">
+            <h4 data-translate="education.professionalDevelopment">Desarrollo Profesional</h4>
+
+            <div class="professional-development-card">
+                <h5 data-translate="education.cluster.name">Participación en el Cluster Automotriz | Universidad Tangamanga</h5>
+                <p data-translate="education.cluster.focus">Enfocado en las tendencias tecnologicas del sector automotriz</p>
+            </div>
+        </section>
+    </section>
+
+
+
+
+
+    <section class="certificates-content" id="certificates-content">
+        <h4 data-translate="education.certificates.title">Certificados</h4>
+
+        <div class="certificates-grid">
+            <div class="certificate-card" data-certificate="JS_Udemy_Certificate">
+                <div class="certificate-image-container">
+                    <img src="~/images/certificates/js desde principiante a experto.webp" alt="JavaScript Udemy Certificate" data-translate-alt="education.certificates.js.alt">
+                </div>
+                <div class="certificate-info">
+                    <p data-translate="education.certificates.linguaskill.name">JavaScript desde Principiante hasta Experto</p>
+                    <span data-translate="education.certificates.linguaskill.date">Octubre 27</span>
+                </div>
+            </div>
+            
+            <div class="certificate-card" data-certificate="Python_Udemy_Certificate">
+                <div class="certificate-image-container">
+                    <img src="~/images/certificates/python desde cero.webp" alt="Python for Data Science Udemy Certificate" data-translate-alt="education.certificates.python.alt">
+                </div>
+                <div class="certificate-info">
+                    <p data-translate="education.certificates.excel.name">Python desde Cero + Data Analysis y Matplot</p>
+                    <span data-translate="education.certificates.excel.date">Marzo 27</span>
+                </div>
+            </div>
+@* 
+            <div class="certificate-card" data-certificate="word">
+                <div class="certificate-image-container">
+                    <img src="~/images/certificates/word-mos.webp" alt="Word MOS Certificate" data-translate-alt="education.certificates.word.alt">
+                </div>
+                <div class="certificate-info">
+                    <p data-translate="education.certificates.word.name">Word MOS</p>
+                    <span data-translate="education.certificates.word.date">Octubre 2019</span>
+                </div>
+            </div>
+
+            <div class="certificate-card" data-certificate="powerpoint">
+                <div class="certificate-image-container">
+                    <img src="~/images/certificates/powerpoint-mos.webp" alt="PowerPoint MOS Certificate" data-translate-alt="education.certificates.powerpoint.alt">
+                </div>
+                <div class="certificate-info">
+                    <p data-translate="education.certificates.powerpoint.name">PowerPoint MOS</p>
+                    <span data-translate="education.certificates.powerpoint.date">Septiembre 2019</span>
+                </div>
+            </div> *@
+        </div>
+    </section>
+</div>
+
+<div class="certificate-modal" id="certificateModal">
+    <div class="modal-content">
+        <button class="modal-close-btn" id="certificateModalCloseBtn" aria-label="Cerrar" data-translate-aria="modal.close">
+            <svg viewBox="0 0 24 24" fill="none">
+                <path d="M18 6L6 18M6 6l12 12" />
+            </svg>
+        </button>
+        <img src="" alt="Certificado ampliado" id="certificateModalImage" data-translate-alt="education.certificates.modal.imageAlt">
+        <div class="certificate-modal-info">
+            <h3 id="certificateModalTitle"></h3>
+            <p id="certificateModalDate"></p>
+        </div>
+    </div>
+</div>
