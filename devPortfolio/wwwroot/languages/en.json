@@ -192,7 +192,7 @@
       "feature4": "Asynchronous data loading using AJAX",
       "feature5": "Advanced classification and search",
       "feature6": "Custom tagging system",
-      "techTitle": "Technologies",
+      "techTitle": "Implemented Technologies",
       "techList": "ASP.NET MVC, C#, SQL Server, Dapper, jQuery, Bootstrap, HTML5, CSS3, JavaScript",
       "challengesTitle": "Challenges Faced",
       "challenge1": "Research on functionality for a library",
@@ -211,7 +211,7 @@
       "feature4": "Billing system and VIP program",
       "feature5": "Diagnosis based on ICD-10",
       "feature6": "Treatment monitoring",
-      "techTitle": "Technologies",
+      "techTitle": "Implemented Technologies",
       "techList": "ASP.NET MVC, C#, SQL Server, Dapper, jQuery, Bootstrap, HTML5, CSS3, JavaScript",
       "challengesTitle": "Challenges Faced",
       "challenge1": "Research on functionality for a library",
@@ -219,63 +219,90 @@
       "challenge3": "Database creation"
     }
   },
-  {
-    "education": {
-      "title": "Education",
-      "filterPreparation": "Preparation",
-      "filterCertificates": "Certificates",
-      "preparation": {
-        "title": "Academic Background"
+  "education": {
+    "title": "Education",
+    "filterPreparation": "Preparation",
+    "filterCertificates": "Certificates",
+    "preparation": {
+      "title": "Academic Training"
+    },
+    "forge": {
+      "name": "Forge Foundation",
+      "period": "November 2025 - December 2025",
+      "current": "Currently in progress to obtain work skills",
+      "focus": "Training focused on the job market",
+      "liderazgo": {
+        "date": "January 2026"
+      }
+    },
+    "smart": {
+      "name": "Smart Teaching",
+      "period": "February 2025 - November 2025",
+      "description": "Intensive course to polish and improve my English level",
+      "focus": "Focused on obtaining a B2 TOEFL IBT level"
+    },
+    "university": {
+      "name": "Tangamanga University | Information Technology Engineering",
+      "period": "July 2022 - August 2025",
+      "current": "Currently waiting for my professional degree",
+      "focus": "Focused on Software development and corporate solutions"
+    },
+    "professionalDevelopment": "Professional Development",
+    "cluster": {
+      "name": "Participation in the Automotive Cluster | Tangamanga University",
+      "focus": "Focused on technological trends in the automotive sector"
+    },
+    "certificates": {
+      "title": "Certificates",
+      "js": {
+        "name": "JavaScript desde Principiante hasta Experto",
+        "date": "October 2025",
+        "alt": "JavaScript Udemy Certificate"
       },
-      "forge": {
-        "name": "Fundación Forge",
-        "period": "November 2025 - December 2025",
-        "current": "Currently in progress to obtain work skills",
-        "focus": "Training focused on the work world"
+      "python": {
+        "datascience": {
+          "name": "Python desde Cero + Data Analysis y Matplot",
+          "date": "March 2025",
+          "alt": "Python for Data Science Udemy Certificate"
+        }
       },
-      "smart": {
-        "name": "Smart Teaching",
-        "period": "February 2025 - November 2025",
-        "description": "Intensive course to polish and improve my English level",
-        "focus": "Focused on obtaining a TOEFL IBT B2 level"
+      "excel": {
+        "name": "Excel Microsoft Office Specialist (MOS)",
+        "date": "December 2019",
+        "alt": "Excel MOS Certificate"
       },
-      "university": {
-        "name": "Tangamanga University | Information Technology Engineering",
-        "period": "July 2022 - August 2025",
-        "current": "Currently awaiting my professional degree",
-        "focus": "Focused on Software development and corporate solutions"
+      "word": {
+        "name": "Word Microsoft Office Specialist (MOS)",
+        "date": "October 2019",
+        "alt": "Word MOS Certificate"
       },
-      "professionalDevelopment": "Professional Development",
-      "cluster": {
-        "name": "Participation in the Automotive Cluster | Universidad Tangamanga",
-        "focus": "Focused on technological trends in the automotive sector"
+      "powerpoint": {
+        "name": "PowerPoint Microsoft Office Specialist (MOS)",
+        "date": "September 2019",
+        "alt": "PowerPoint MOS Certificate"
       },
-      "certificates": {
-        "title": "Certificates",
-        "linguaskill": {
-          "name": "Linguaskill B1",
-          "date": "June 2024",
-          "alt": "Linguaskill B1 Certificate"
-        },
-        "excel": {
-          "name": "Excel MOS",
-          "date": "December 2019",
-          "alt": "Excel Microsoft Office Specialist Certificate"
-        },
-        "word": {
-          "name": "Word MOS",
-          "date": "October 2019",
-          "alt": "Word Microsoft Office Specialist Certificate"
-        },
-        "powerpoint": {
-          "name": "PowerPoint MOS",
-          "date": "September 2019",
-          "alt": "PowerPoint Microsoft Office Specialist Certificate"
-        },
-        "modal": {
-          "imageAlt": "Enlarged certificate"
+      "modal": {
+        "imageAlt": "Enlarged certificate"
+      }
+    }
+  },
+  "insignia": {
+    "forge": {
+      "liderazgo": {
+        "personal": {
+          "alt": "Forge Personal Leadership Badge"
         }
       }
     }
+  },
+  "forge": {
+    "liderazgo": {
+      "personal": {
+        "alt": "Forge Personal Leadership Badge"
+      }
+    }
+  },
+  "modal": {
+    "close": "Close"
   }
 }

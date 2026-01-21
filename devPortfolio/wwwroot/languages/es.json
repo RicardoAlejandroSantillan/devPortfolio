@@ -192,7 +192,7 @@
       "feature4": "Carga asíncrona de datos mediante AJAX",
       "feature5": "Clasificación y búsqueda avanzadas",
       "feature6": "Sistema de etiquetado personalizado",
-      "techTitle": "Technologies",
+      "techTitle": "Tecnologías implementadas",
       "techList": "ASP.NET MVC, C#, SQL Server, Dapper, jQuery, Bootstrap, HTML5, CSS3, JavaScript",
       "challengesTitle": "Retos presentados",
       "challenge1": "Investigación de funcionalidad para una libreria",
@@ -211,7 +211,7 @@
       "feature4": "Sistema de facturación y programa VIP",
       "feature5": "Diagnóstico basado en la CIE-10",
       "feature6": "Seguimiento de tratamientos",
-      "techTitle": "Technologies",
+      "techTitle": "Tecnologías implementadas",
       "techList": "ASP.NET MVC, C#, SQL Server, Dapper, jQuery, Bootstrap, HTML5, CSS3, JavaScript",
       "challengesTitle": "Retos presentados",
       "challenge1": "Investigación de funcionalidad para una libreria",
@@ -219,63 +219,91 @@
       "challenge3": "Creación de la base de datos"
     }
   },
-  {
-    "education": {
-      "title": "Educación",
-      "filterPreparation": "Preparación",
-      "filterCertificates": "Certificados",
-      "preparation": {
-        "title": "Formación Académica"
+  "education": {
+    "title": "Educación",
+    "filterPreparation": "Preparación",
+    "filterCertificates": "Certificados",
+    "preparation": {
+      "title": "Formación Académica"
+    },
+    "forge": {
+      "name": "Fundación Forge",
+      "period": "Noviembre 2025 - Diciembre 2025",
+      "current": "Actualmente en curso para obtener habilidades laborales",
+      "focus": "Entrenamiento enfocado en el mundo laboral",
+      "liderazgo": {
+        "date": "Enero 2026"
+      }
+    },
+    "smart": {
+      "name": "Smart Teaching",
+      "period": "Febrero 2025 - Noviembre 2025",
+      "description": "Curso intensivo para pulir y mejorar mi nivel de Ingles",
+      "focus": "Enfocado en obtener un nivel B2 de TOEFL IBT"
+    },
+    "university": {
+      "name": "Universidad Tangamanga | Ingenieria en Tecnologías de la información",
+      "period": "Julio 2022 - Agosto 2025",
+      "current": "Actualmente en espera de mi titulo profesional",
+      "focus": "Enfocado en el desarrollo de Software y soluciones corporativas"
+    },
+    "professionalDevelopment": "Desarrollo Profesional",
+    "cluster": {
+      "name": "Participación en el Cluster Automotriz | Universidad Tangamanga",
+      "focus": "Enfocado en las tendencias tecnologicas del sector automotriz"
+    },
+    "certificates": {
+      "title": "Certificados",
+      "js": {
+        "name": "JavaScript desde Principiante hasta Experto",
+        "date": "Octubre 2025",
+        "alt": "Certificado JavaScript Udemy"
       },
-      "forge": {
-        "name": "Fundación Forge",
-        "period": "Noviembre 2025 - Diciembre 2025",
-        "current": "Actualmente en curso para obtener habilidades laborales",
-        "focus": "Entrenamiento enfocado en el mundo laboral"
+      "python": {
+        "datascience": {
+          "name": "Python desde Cero + Data Analysis y Matplot",
+          "date": "Marzo 2025",
+          "alt": "Certificado Python para Data Science Udemy"
+        }
       },
-      "smart": {
-        "name": "Smart Teaching",
-        "period": "Febrero 2025 - Noviembre 2025",
-        "description": "Curso intensivo para pulir y mejorar mi nivel de Ingles",
-        "focus": "Enfocado en obtener un nivel B2 de TOEFL IBT"
+      "excel": {
+        "name": "Excel Microsoft Office Specialist (MOS)",
+        "date": "Diciembre 2019",
+        "alt": "Certificado Excel MOS"
       },
-      "university": {
-        "name": "Universidad Tangamanga | Ingenieria en Tecnologías de la información",
-        "period": "Julio 2022 - Agosto 2025",
-        "current": "Actualmente en espera de mi titulo profesional",
-        "focus": "Enfocado en el desarrollo de Software y soluciones corporativas"
+      "word": {
+        "name": "Word Microsoft Office Specialist (MOS)",
+        "date": "Octubre 2019",
+        "alt": "Certificado Word MOS"
       },
-      "professionalDevelopment": "Desarrollo Profesional",
-      "cluster": {
-        "name": "Participación en el Cluster Automotriz | Universidad Tangamanga",
-        "focus": "Enfocado en las tendencias tecnologicas del sector automotriz"
+      "powerpoint": {
+        "name": "PowerPoint Microsoft Office Specialist (MOS)",
+        "date": "Septiembre 2019",
+        "alt": "Certificado PowerPoint MOS"
       },
-      "certificates": {
-        "title": "Certificados",
-        "linguaskill": {
-          "name": "Linguaskill B1",
-          "date": "Junio 2024",
-          "alt": "Certificado Linguaskill B1"
-        },
-        "excel": {
-          "name": "Excel MOS",
-          "date": "Diciembre 2019",
-          "alt": "Certificado Excel Microsoft Office Specialist"
-        },
-        "word": {
-          "name": "Word MOS",
-          "date": "Octubre 2019",
-          "alt": "Certificado Word Microsoft Office Specialist"
-        },
-        "powerpoint": {
-          "name": "PowerPoint MOS",
-          "date": "Septiembre 2019",
-          "alt": "Certificado PowerPoint Microsoft Office Specialist"
-        },
-        "modal": {
-          "imageAlt": "Certificado ampliado"
+      "modal": {
+        "imageAlt": "Certificado ampliado"
+      }
+    }
+  },
+  "insignia": {
+    "forge": {
+      "liderazgo": {
+        "personal": {
+          
+          "alt": "Insignia Forge Liderazgo Personal"
         }
       }
     }
+  },
+  "forge": {
+    "liderazgo": {
+      "personal": {
+        "alt": "Insignia Forge Liderazgo Personal"
+      }
+    }
+  },
+  "modal": {
+    "close": "Cerrar"
   }
 }
