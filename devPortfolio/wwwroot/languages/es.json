@@ -254,6 +254,11 @@
     },
     "certificates": {
       "title": "Certificados",
+      "forge": {
+        "liderazgo": {
+          "date": "Enero 2026"
+        }
+      },
       "js": {
         "name": "JavaScript desde Principiante hasta Experto",
         "date": "Octubre 2025",
@@ -290,16 +295,10 @@
     "forge": {
       "liderazgo": {
         "personal": {
-          
-          "alt": "Insignia Forge Liderazgo Personal"
+          "f_title": "Forge",
+          "name": "Liderazgo Personal",
+          "alt": "Forge Personal Leadership Badge"
         }
-      }
-    }
-  },
-  "forge": {
-    "liderazgo": {
-      "personal": {
-        "alt": "Insignia Forge Liderazgo Personal"
       }
     }
   },
