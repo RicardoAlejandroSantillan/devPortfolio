@@ -29,6 +29,12 @@ const updateContent = (translations) => {
 
     elements.forEach(element => {
         const key = element.dataset.translate;
+
+        // EXCLUIR el h1 del top-panel porque lo maneja el typewriter
+        if (element.matches('.top-panel h1')) {
+            return;
+        }
+
         const keys = key.split('.');
 
         let value = translations;
@@ -87,6 +93,12 @@ const changeLanguage = async (language) => {
         document.documentElement.lang = language;
         updateContent(translations);
         updateActiveButton(language);
+
+        // Reiniciar el typewriter con el nuevo idioma
+        if (window.initTypewriter) {
+            window.initTypewriter(language);
+        }
+
         console.log(`✓ Language changed successfully to: ${language}`);
     } else {
         console.error(`Failed to change language to: ${language}`);
