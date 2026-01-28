@@ -508,3 +508,52 @@ document.addEventListener('DOMContentLoaded', () => {
 
     console.log('✓ Certificate modal system ready');
 });
+
+// ====== SISTEMA DE DESCARGA DE CV ======
+
+document.addEventListener('DOMContentLoaded', () => {
+    console.log('CV download system initialized');
+
+    const cvDownloadBtn = document.getElementById('cvDownloadBtn');
+
+    if (!cvDownloadBtn) {
+        console.log('CV download button not found');
+        return;
+    }
+
+    const cvPaths = {
+        es: '/files/RicardoAlejandroPerezSantillan_AnalistaDeDatos.pdf',
+        en: '/files/RicardoAlejandroPerezSantillan_DataAnalyst.pdf'
+    };
+
+    // obtener el idioma actual
+    const getCurrentLanguage = () => {
+        return localStorage.getItem('preferredLanguage') || 'es';
+    };
+
+    // actualizar link de descarga
+    const updateCVLink = () => {
+        const currentLang = getCurrentLanguage();
+        cvDownloadBtn.href = cvPaths[currentLang];
+        cvDownloadBtn.download = `RicardoAlejandroPerezSantillan_CV_${currentLang.toUpperCase()}.pdf`;
+        console.log(`CV link updated to: ${cvPaths[currentLang]}`);
+    };
+
+    updateCVLink();
+
+    window.addEventListener('storage', (e) => {
+        if (e.key === 'preferredLanguage') {
+            updateCVLink();
+        }
+    });
+
+    // actualizar cuando se cambia de idioma
+    const langButtons = document.querySelectorAll('.lang-btn');
+    langButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            setTimeout(updateCVLink, 100); // delay para que localStorage se actualice
+        });
+    });
+
+    console.log('✓ CV download system ready');
+});

@@ -1108,3 +1108,56 @@ header {
         font-size: 0.95rem;
         margin: 0;
     }
+
+/* ====== BOTÓN DE DESCARGA CV ====== */
+.cv-download-section {
+    width: 100%;
+    padding: 1.5rem 1rem 0 1rem;
+    margin-top: auto;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.cv-download-btn {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: rgba(255, 255, 255, 0.85);
+    padding: 1rem 1.5rem;
+    border-radius: 12px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+    backdrop-filter: blur(8px);
+    letter-spacing: 0.3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    text-decoration: none;
+}
+
+    /* Icono de descarga */
+    .cv-download-btn::before {
+        content: '⬇';
+        font-size: 1.1rem;
+        transition: transform 0.3s ease;
+    }
+
+    .cv-download-btn:hover::before {
+        transform: translateY(3px);
+    }
+
+    .cv-download-btn:hover {
+        background: rgba(255, 255, 255, 0.15);
+        border-color: rgba(255, 255, 255, 0.3);
+        color: #ffffff;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .cv-download-btn:active {
+        transform: translateY(0);
+    }
