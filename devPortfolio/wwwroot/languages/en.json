@@ -21,10 +21,10 @@
   },
   "introduction": {
     "greeting": "Hi! I'm Alejandro",
-    "role": "Data Scientist",
+    "role": "Software Developer & Data Analyst",
     "aboutMe": {
       "title": "About Me",
-      "description": "I am a software developer with a recent focus on Data Science. I have worked with .NET, SQL Server, and automation, but in 2025 I began a formal transition towards data analysis and modeling. I have explored real challenges such as the WiDS 2022 datathon (breast cancer detection) and WiDS 2025 (ADHD detection in women). I am currently training in various data science tools with the goal of building complete end-to-end projects by early 2026. My solid engineering background allows me to approach data science from a practical, structured, and product-oriented perspective."
+      "description": "Software developer specialized in enterprise solutions with .NET, SQL Server, and process automation. My experience ranges from developing MVC applications to implementing data analysis systems. I have participated in data science competitions such as the WiDS 2022 datathon (breast cancer detection) and WiDS 2025 (ADHD detection in women), applying machine learning techniques to solve real-world health sector problems. I combine my experience in software engineering with data analysis to deliver complete solutions, from system architecture to actionable insights visualization."
     },
     "skills": {
       "title": "Skills and Technologies",
@@ -42,7 +42,7 @@
       "applicationsList": "PowerBI, Excel, Visual Studio, Visual Studio Code",
       "methodologies": "Methodologies:",
       "methodologiesList": "Agile and Scrum",
-      "closing": "I stand out for my passion for continuous learning and adaptability to new technologies. I am building my path towards data science while strengthening my software development skills."
+      "closing": "My professional approach is characterized by technological adaptability and continuous learning, allowing me to integrate new tools and methodologies to optimize processes and generate value in every project."
     },
     "certifications": {
       "title": "Certifications",
@@ -52,10 +52,10 @@
       "powerpoint": "PowerPoint Microsoft Office Specialist - 2019"
     },
     "goals": {
-      "title": "Professional Goal",
-      "description": "Evolve towards Data Science roles while continuing to grow as a Full Stack Developer.",
+      "title": "Professional Focus",
+      "description": "Specialized in developing solutions that integrate software engineering with data analysis to maximize business impact.",
       "journeyTitle": "My Journey",
-      "journeyDescription": "My journey through technology led me to study Information Technology Engineering at UTAN campus industrias in 2022. What I am passionate about development is the creative process of building customized solutions for each project to solve. My experience developing desktop applications strengthened my interest in creating solutions that directly impact the user experience. This path has led me to be interested in data science, where I see the potential to combine development with data analysis to create more complete solutions. I stay updated by following industry leaders and developing personal projects. My methodical and proactive approach, along with my passion for continuous optimization, defines my work style."
+      "journeyDescription": "My professional experience in technology began with my education in Information Technology Engineering at UTAN campus industrias. What drives my work is the creative process of designing scalable and customized solutions for each technical challenge. Developing enterprise applications, I have refined my ability to create solutions that optimize processes and improve the end-user experience. This experience has allowed me to expand my competencies toward data analysis, where I combine software development with statistical modeling to create intelligent end-to-end systems. I maintain active tracking of technological trends and develop projects that explore new technologies. My work methodology is based on technical pragmatism, continuous optimization, and delivery of measurable results."
     }
   },
   "skills": {
@@ -92,131 +92,131 @@
     "daikin": {
       "name": "Daikin Manufacturing México",
       "period": "September 2024 - December 2025",
-      "type": "Internship Period",
-      "description": "Professional experience providing support and development for an application that uses the MVC model and SQL Server. Development and maintenance of APIs and databases for internal systems.",
-      "featuresTitle": "Main Features",
-      "feature1": "Maintenance and improvement of existing applications",
-      "feature2": "Development of new functionalities according to requirements",
-      "feature3": "Optimization of SQL queries and stored procedures",
-      "feature4": "Implementation of user interface improvements",
-      "feature5": "Team collaboration using agile methodologies",
-      "techTitle": "Implemented Technologies",
+      "type": "Software Developer",
+      "description": "Development and support of enterprise applications using MVC architecture with .NET and SQL Server. Responsible for the design, implementation, and maintenance of APIs and databases for critical production systems.",
+      "featuresTitle": "Main Responsibilities",
+      "feature1": "Maintenance and evolution of business-critical applications",
+      "feature2": "Design and implementation of new functionalities according to technical specifications",
+      "feature3": "SQL query optimization and stored procedure development",
+      "feature4": "UX/UI and application performance improvements",
+      "feature5": "Collaborative development under agile methodologies",
+      "techTitle": "Technology Stack",
       "techList": "ASP.NET MVC, C#, JavaScript, HTML, Bootstrap, Oracle SQL, SQL Server, Oracle, SAP, JQuery and JSON files",
-      "challengesTitle": "Challenges Faced",
-      "challenge1": "Adapting requirements for corporate environments",
-      "challenge2": "Teamwork",
-      "challenge3": "Continuous improvement",
-      "projectsTitle": "Projects Completed",
+      "challengesTitle": "Technical Challenges Solved",
+      "challenge1": "Integration of complex requirements in high-availability enterprise environments",
+      "challenge2": "Effective collaboration in multidisciplinary teams",
+      "challenge3": "Implementation of continuous improvements in legacy systems",
+      "projectsTitle": "Featured Projects",
       "overtime": {
         "title": "Desktop Application 'OverTime Request'",
-        "description": "I was providing support and maintenance for this section of the application that is responsible for calculating overtime costs for production workers, these costs go to the food and transportation they need and calculates an estimate."
+        "description": "Development and support of the automated overtime cost calculation module, including estimation of food and transportation expenses for production staff. Implementation of complex business logic and data validations."
       },
       "etiquetas": {
         "title": "Desktop Application 'Etiquetas'",
-        "description": "Labels is an app developed for the warehouse area. Using the supplier's number, it allows you to search Oracle for the necessary information to be printed on the label. This label is then formatted and sent to print on the corresponding printer. The label values ​​can be modified from a .json configuration file."
+        "description": "Development of application for the warehouse area that queries supplier information in Oracle, generates dynamic labels and manages automated printing. Configurable system through JSON files for maximum operational flexibility."
       },
       "masterLabel": {
         "title": "Web Application 'Master Label'",
-        "description": "Web application with the purpose of keeping a record of each Master Label with errors, in order to identify patterns and thus find the cause of the problem."
+        "description": "Design and implementation of web system for recording and analyzing errors in Master Labels, facilitating pattern identification and root cause analysis through reports and dashboards."
       },
       "budgetControl": {
         "title": "Web Application 'Budget Control'",
-        "description": "BudgetControl is an app designed for the finance department with the goal of reducing work time by automating repetitive tasks. The app can combine two Excel files, extract the important information, and calculate budgets and costs."
+        "description": "Development of application for the finance area that automates repetitive processes, integrates multiple Excel data sources, and efficiently calculates budgets and costs. Significant reduction in manual processing times."
       }
     },
     "devportfolio": {
       "name": "DevPortfolio",
       "shortDescription": "Professional developer portfolio with space design and glassmorphism",
-      "description": "Professional web portfolio project developed with a unique design that combines space design with frosted glass effects, showcasing skills, projects, and professional experience in a visual and interactive project.",
+      "description": "Professional web portfolio with unique design that integrates space elements and glassmorphism effects, presenting technical skills, projects and professional trajectory in a visual and interactive way.",
       "featuresTitle": "Main Features",
-      "feature1": "Space design with stars and shooting star animation",
-      "feature2": "Interface with modern Glassmorphism style effect",
-      "feature3": "Partial Views system for dynamic navigation system",
+      "feature1": "Space design with star and shooting star animations",
+      "feature2": "Modern interface with glassmorphism effects",
+      "feature3": "Partial views system for dynamic navigation",
       "feature4": "Interactive project carousel",
-      "feature5": "Social media links with animated effects",
-      "feature6": "Complete responsive design",
+      "feature5": "Social media integration with animated effects",
+      "feature6": "Fully responsive design",
       "feature7": "Smooth animations and transitions",
       "techTitle": "Implemented Technologies",
       "techList": "ASP.NET MVC, C#, JavaScript, HTML5, CSS3, jQuery",
-      "challengesTitle": "Challenges Faced",
-      "challenge1": "Space animations for the background",
-      "challenge2": "Development of a custom carousel for project preview",
-      "challenge3": "Integration of frosted glass effects to maintain design",
-      "challenge4": "Transition management system in the navigation section"
+      "challengesTitle": "Technical Challenges",
+      "challenge1": "Implementation of performance-optimized space animations",
+      "challenge2": "Development of custom carousel with advanced controls",
+      "challenge3": "Integration of glassmorphism effects maintaining cross-browser compatibility",
+      "challenge4": "Robust system for transition management and navigation state"
     },
     "datathon2022": {
       "name": "WiDS Datathon 2022",
       "shortDescription": "Datathon focused on health topics",
       "title": "WiDS Datathon 2022 – Early Detection of Breast Cancer",
-      "description": "Participation in the WiDS 2022 datathon where the objective was to develop a predictive model aimed at supporting early detection of breast cancer, using clinical data and learning techniques to classify risk accurately and reproducibly.",
-      "featuresTitle": "Main Features",
-      "feature1": "Dataset cleaning for information manipulation",
-      "feature2": "Classification models (trees and regression)",
-      "feature3": "Evaluation with balanced metrics for imbalanced data (AUC, F1, recall)",
-      "feature4": "Cross-validation",
+      "description": "Development of predictive model for early breast cancer detection using machine learning techniques applied to clinical data, focused on accurate risk classification.",
+      "featuresTitle": "Technical Features",
+      "feature1": "Cleaning and preprocessing of complex medical datasets",
+      "feature2": "Implementation of classification models (decision trees and regression)",
+      "feature3": "Evaluation with specialized metrics for imbalanced data (AUC, F1, recall)",
+      "feature4": "Cross-validation to ensure model robustness",
       "techTitle": "Implemented Technologies",
       "techList": "Jupyter, Python, Pandas, Scikit-learn, NumPy, Matplotlib",
-      "challengesTitle": "Challenges Faced",
-      "challenge1": "Handling class imbalance in positive diagnoses",
-      "challenge2": "Model optimization",
-      "challenge3": "Selection of variables with clinical relevance"
+      "challengesTitle": "Technical Challenges",
+      "challenge1": "Treatment of class imbalance in positive diagnoses",
+      "challenge2": "Model hyperparameter optimization",
+      "challenge3": "Feature selection with clinical and statistical relevance"
     },
     "datathon2025": {
       "name": "WiDS Datathon 2025",
       "shortDescription": "Datathon focused on health topics",
       "title": "WiDS Datathon 2025 – Detection of ADHD and ADD in Adolescent Women",
-      "description": "Participation in the WiDS 2025 datathon where the objective was to develop a predictive model aimed at identifying early and accurately patterns associated with ADHD and ADD in women, especially adolescents, a group where diagnoses are often delayed due to atypical symptoms and underrepresentation in the data.",
-      "featuresTitle": "Main Features",
-      "feature1": "Dataset cleaning for information manipulation",
-      "feature2": "Processing of neurocognitive and behavioral data",
-      "feature3": "Multi-label classification models",
-      "feature4": "Analysis of signals and psychological variables",
-      "feature5": "Training with regularization techniques to improve generalization",
+      "description": "Development of predictive model for early identification of patterns associated with ADHD and ADD in adolescent female population, addressing the challenge of atypical symptoms and underrepresentation in training data.",
+      "featuresTitle": "Technical Features",
+      "feature1": "Cleaning and structuring of complex neurocognitive datasets",
+      "feature2": "Processing of neurocognitive and behavioral variables",
+      "feature3": "Development of multi-label classification models",
+      "feature4": "Signal analysis and extraction of relevant psychological variables",
+      "feature5": "Implementation of regularization techniques to improve generalization",
       "feature6": "Stratified cross-validation by age ranges and gender",
       "techTitle": "Implemented Technologies",
       "techList": "Jupyter, Python, Pandas, Scikit-learn, NumPy, XGBoost",
-      "challengesTitle": "Challenges Faced",
-      "challenge1": "Data with high noise due to individual neuropsychological variability",
-      "challenge2": "Difficulty separating overlapping symptoms between ADD and ADHD",
-      "challenge3": "Imbalance between classes and clinical profiles",
-      "challenge4": "Model evaluation towards male behaviors"
+      "challengesTitle": "Technical Challenges",
+      "challenge1": "Handling noise in data due to high individual neuropsychological variability",
+      "challenge2": "Separation of symptoms with high correlation between ADD and ADHD",
+      "challenge3": "Balancing classes and diverse clinical profiles",
+      "challenge4": "Validation of gender bias in predictions"
     },
     "bookshelf": {
       "name": "BookShelf",
       "shortDescription": "Professional developer portfolio with space design and glassmorphism",
-      "description": "Personal library management project that follows an organization and catalog of books, authors and literary genres, a complete solution to keep a book collection organized",
+      "description": "Personal library management system with cataloging of books, authors and literary genres, providing a complete solution to organize and manage bibliographic collections.",
       "featuresTitle": "Main Features",
-      "feature1": "Management of books, authors and genres",
+      "feature1": "Comprehensive management of books, authors and genres",
       "feature2": "Intuitive interface with expandable panels",
-      "feature3": "Dynamic forms system",
+      "feature3": "Dynamic forms for data capture",
       "feature4": "Asynchronous data loading using AJAX",
-      "feature5": "Advanced classification and search",
-      "feature6": "Custom tagging system",
-      "techTitle": "Implemented Technologies",
+      "feature5": "Advanced classification and search system",
+      "feature6": "Custom tagging and flexible categorization",
+      "techTitle": "Technology Stack",
       "techList": "ASP.NET MVC, C#, SQL Server, Dapper, jQuery, Bootstrap, HTML5, CSS3, JavaScript",
-      "challengesTitle": "Challenges Faced",
-      "challenge1": "Research on functionality for a library",
-      "challenge2": "Bootstrap research for design",
-      "challenge3": "Database creation"
+      "challengesTitle": "Technical Challenges",
+      "challenge1": "Design of complex relationship system between entities",
+      "challenge2": "Implementation of responsive UI with Bootstrap",
+      "challenge3": "Normalized database architecture for libraries"
     },
     "prosalud": {
       "name": "ProSalud",
       "shortDescription": "Healthcare system for hospitals",
       "title": "ProSalud - Medical Management System",
-      "description": "Complete platform for managing medical offices that automates administrative and clinical processes, from appointment scheduling to medical records management and billing.",
+      "description": "Comprehensive platform for managing medical offices that automates administrative and clinical processes, from appointment scheduling to medical records management and billing.",
       "featuresTitle": "Main Features",
-      "feature1": "Management of clinical and patient records",
-      "feature2": "Appointment system and medical schedule",
-      "feature3": "Staff and specialties control",
-      "feature4": "Billing system and VIP program",
-      "feature5": "Diagnosis based on ICD-10",
-      "feature6": "Treatment monitoring",
-      "techTitle": "Implemented Technologies",
+      "feature1": "Complete management of clinical records and patient files",
+      "feature2": "Appointment scheduling system and medical calendars",
+      "feature3": "Medical staff and specialties administration",
+      "feature4": "Integrated billing module and VIP loyalty program",
+      "feature5": "Diagnostic system based on ICD-10 classification",
+      "feature6": "Treatment and medical prescription tracking",
+      "techTitle": "Technology Stack",
       "techList": "ASP.NET MVC, C#, SQL Server, Dapper, jQuery, Bootstrap, HTML5, CSS3, JavaScript",
-      "challengesTitle": "Challenges Faced",
-      "challenge1": "Research on functionality for a library",
-      "challenge2": "Bootstrap research for design",
-      "challenge3": "Database creation"
+      "challengesTitle": "Technical Challenges",
+      "challenge1": "Architecture design for handling sensitive medical data",
+      "challenge2": "Implementation of intuitive interface with Bootstrap",
+      "challenge3": "Complex relational database modeling for health sector"
     }
   },
   "education": {
@@ -229,8 +229,8 @@
     "forge": {
       "name": "Forge Foundation",
       "period": "November 2025 - December 2025",
-      "current": "Currently in progress to obtain work skills",
-      "focus": "Training focused on the job market",
+      "current": "Professional skills development program",
+      "focus": "Specialization in skills for corporate work environment",
       "liderazgo": {
         "date": "January 2026"
       }
@@ -238,19 +238,19 @@
     "smart": {
       "name": "Smart Teaching",
       "period": "February 2025 - November 2025",
-      "description": "Intensive course to polish and improve my English level",
-      "focus": "Focused on obtaining a B2 TOEFL IBT level"
+      "description": "Intensive English language improvement program",
+      "focus": "Target level: B2 TOEFL IBT"
     },
     "university": {
       "name": "Tangamanga University | Information Technology Engineering",
       "period": "July 2022 - August 2025",
-      "current": "Currently waiting for my professional degree",
-      "focus": "Focused on Software development and corporate solutions"
+      "current": "Information Technology Engineering",
+      "focus": "Specialization in software development and enterprise solutions"
     },
     "professionalDevelopment": "Professional Development",
     "cluster": {
-      "name": "Participation in the Automotive Cluster | Tangamanga University",
-      "focus": "Focused on technological trends in the automotive sector"
+      "name": "Automotive Cluster | Tangamanga University",
+      "focus": "Focus on technological trends in the automotive sector"
     },
     "certificates": {
       "title": "Certificates",

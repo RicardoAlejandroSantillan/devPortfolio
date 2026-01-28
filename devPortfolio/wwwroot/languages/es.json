@@ -21,10 +21,10 @@
   },
   "introduction": {
     "greeting": "¡Hola! Soy Alejandro",
-    "role": "Científico de Datos",
+    "role": "Desarrollador de Software & Analista de Datos",
     "aboutMe": {
       "title": "Acerca de Mi",
-      "description": "Soy desarrollador de software con enfoque reciente en Ciencia de Datos. He trabajado con .NET, SQL Server y automatizaciones, pero en 2025 inicié una transición formal hacia análisis y modelado de datos. He explorado retos reales como los datathones WiDS 2022 (detección de cáncer de mama) y WiDS 2025 (detección de TDAH en mujeres). Actualmente me estoy formando en diversas herramientas de ciencia de datos con el objetivo de construir proyectos completos end-to-end de aquí a inicios de 2026. Mi base sólida en ingeniería me permite abordar la ciencia de datos desde una perspectiva práctica, estructurada y orientada a producto."
+      "description": "Desarrollador de software especializado en soluciones empresariales con .NET, SQL Server y automatización de procesos. Mi experiencia abarca desde el desarrollo de aplicaciones MVC hasta la implementación de sistemas de análisis de datos. He participado en competencias de ciencia de datos como los datathones WiDS 2022 (detección de cáncer de mama) y WiDS 2025 (detección de TDAH en mujeres), aplicando técnicas de machine learning para resolver problemas reales del sector salud. Combino mi experiencia en ingeniería de software con análisis de datos para entregar soluciones completas, desde la arquitectura del sistema hasta la visualización de insights accionables."
     },
     "skills": {
       "title": "Habilidades y Tecnologías",
@@ -42,7 +42,7 @@
       "applicationsList": "PowerBI, Excel, Visual Studio, Visual Studio Code",
       "methodologies": "Metodologías:",
       "methodologiesList": "Agil y Scrum",
-      "closing": "Me destaco por mi pasión por el aprendizaje continuo y adaptabilidad a nuevas tecnologías. Me encuentro construyendo mi camino hacia la ciencia de datos mientras fortalezco mis habilidades en desarrollo de software."
+      "closing": "Mi enfoque profesional se caracteriza por la adaptabilidad tecnológica y el aprendizaje continuo, permitiéndome integrar nuevas herramientas y metodologías para optimizar procesos y generar valor en cada proyecto."
     },
     "certifications": {
       "title": "Certificaciones",
@@ -52,10 +52,10 @@
       "powerpoint": "PowerPoint Microsoft Office Specialist - 2019"
     },
     "goals": {
-      "title": "Meta Profesional",
-      "description": "Evolucionar hacia roles de Ciencia de Datos mientras continúo creciendo como Desarrollador Full Stack.",
+      "title": "Enfoque Profesional",
+      "description": "Especializado en el desarrollo de soluciones que integran ingeniería de software con análisis de datos para maximizar el impacto del negocio.",
       "journeyTitle": "Mi Trayectoria",
-      "journeyDescription": "Mi trayectoria a través de la tecnología me llevó a estudiar en 2022 la carrera de Ingeniería en Tecnologías de la Información en UTAN campus industrias. Lo que me apasiona del desarrollo es el proceso creativo de construir soluciones personalizadas para cada proyecto a resolver. Mi experiencia desarrollando aplicaciones de escritorio fortaleció mi interés en crear soluciones que impacten directamente en la experiencia del usuario. Este camino me ha llevado a interesarme en la ciencia de datos, donde veo el potencial de combinar el desarrollo con el análisis de datos para crear soluciones más completas. Me mantengo actualizado siguiendo a líderes de la industria y desarrollando proyectos personales. Mi enfoque metódico y proactivo, junto con mi pasión por la optimización continua, define mi estilo de trabajo."
+      "journeyDescription": "Mi experiencia profesional en tecnología comenzó con mi formación en Ingeniería en Tecnologías de la Información en UTAN campus industrias. Lo que impulsa mi trabajo es el proceso creativo de diseñar soluciones escalables y personalizadas para cada desafío técnico. Desarrollando aplicaciones empresariales, he refinado mi capacidad para crear soluciones que optimizan procesos y mejoran la experiencia del usuario final. Esta experiencia me ha permitido expandir mis competencias hacia el análisis de datos, donde combino desarrollo de software con modelado estadístico para crear sistemas inteligentes end-to-end. Mantengo un seguimiento activo de las tendencias tecnológicas y desarrollo proyectos que exploran nuevas tecnologías. Mi metodología de trabajo se basa en el pragmatismo técnico, la optimización continua y la entrega de resultados medibles."
     }
   },
   "skills": {
@@ -92,131 +92,131 @@
     "daikin": {
       "name": "Daikin Manufacturing México",
       "period": "Septiembre 2024 - Diciembre 2025",
-      "type": "Periodo de Practicas",
-      "description": "Experiencia profesional brindando soporte y desarrollo para una aplicación que utiliza el modelo MVC y SQL Server. Desarrollo y mantenimiento de API y bases de datos para sistemas internos.",
-      "featuresTitle": "Caracteristicas Principales",
-      "feature1": "Mantenimiento y mejora de las aplicaciones existentes",
-      "feature2": "Desarrollo de nuevas funcionalidades según los requisitos",
-      "feature3": "Optimización de consultas SQL y procedimientos almacenados",
-      "feature4": "Implementación de mejoras en la interfaz de usuario",
-      "feature5": "Colaboración en equipo mediante metodologías ágiles",
-      "techTitle": "Tecnologias implementadas",
+      "type": "Desarrollador de Software",
+      "description": "Desarrollo y soporte de aplicaciones empresariales utilizando arquitectura MVC con .NET y SQL Server. Responsable del diseño, implementación y mantenimiento de APIs y bases de datos para sistemas críticos de producción.",
+      "featuresTitle": "Responsabilidades Principales",
+      "feature1": "Mantenimiento y evolución de aplicaciones críticas del negocio",
+      "feature2": "Diseño e implementación de nuevas funcionalidades según especificaciones técnicas",
+      "feature3": "Optimización de consultas SQL y desarrollo de procedimientos almacenados",
+      "feature4": "Mejoras en UX/UI y rendimiento de aplicaciones",
+      "feature5": "Desarrollo colaborativo bajo metodologías ágiles",
+      "techTitle": "Stack Tecnológico",
       "techList": "ASP.NET MVC, C#, JavaScript, HTML, Bootstrap, Oracle SQL, SQL Server, Oracle, SAP, JQuery y archivos JSon",
-      "challengesTitle": "Retos presentados",
-      "challenge1": "Adaptación de requisitos para entornos empresariales",
-      "challenge2": "Trabajo en equipo",
-      "challenge3": "Mejora constante",
-      "projectsTitle": "Proyectos realizados",
+      "challengesTitle": "Desafíos Técnicos Resueltos",
+      "challenge1": "Integración de requisitos complejos en entornos empresariales de alta disponibilidad",
+      "challenge2": "Colaboración efectiva en equipos multidisciplinarios",
+      "challenge3": "Implementación de mejoras continuas en sistemas legacy",
+      "projectsTitle": "Proyectos Destacados",
       "overtime": {
         "title": "Aplicacion de escritorio 'OverTime Request'",
-        "description": "Estuve dando soporte y mantenimiento a esta sección de la aplicación que se encarga de calcular costos de los tiempos extra para los trabajadores en producción, estos costos van dirigidos a la comida y transporte que necesita y calcula un estimado."
+        "description": "Desarrollo y soporte del módulo de cálculo automatizado de costos de tiempo extra, incluyendo la estimación de gastos de alimentación y transporte para personal de producción. Implementación de lógica de negocio compleja y validaciones de datos."
       },
       "etiquetas": {
         "title": "Aplicacion de escritorio 'Etiquetas'",
-        "description": "Etiquetas es una app desarrollada para el area de almacen, con el numero del proveedor permite buscar en Oracle la información necesaria que vendra en la etiqueta, esta etiqueta se acomoda y se manda a imprimir en la impresora correspondiente, los valores de la etiqueta pueden ser modificados desde un archivo de configuraciones .json."
+        "description": "Desarrollo de aplicación para el área de almacén que consulta información de proveedores en Oracle, genera etiquetas dinámicas y gestiona la impresión automatizada. Sistema configurable mediante archivos JSON para máxima flexibilidad operativa."
       },
       "masterLabel": {
         "title": "Aplicacion web 'Master Label'",
-        "description": "Aplicacion web con el proposito de llevar un registro de cada Master Label con error, con la finalidad de identificar patrones y asi, encontrar la causa del problema."
+        "description": "Diseño e implementación de sistema web para el registro y análisis de errores en Master Labels, facilitando la identificación de patrones y causas raíz mediante reportes y dashboards."
       },
       "budgetControl": {
         "title": "Aplicacion web 'Budget Control'",
-        "description": "BudgetControl es una app diseñada para el area de finanzas con el objetivo de reducir tiempos de trabajo, automatizando acciones repetitivas, la app es capaz de combinar dos archivos de excel, extraer lo importante y calcular presupuestos y costos."
+        "description": "Desarrollo de aplicación para el área de finanzas que automatiza procesos repetitivos, integra múltiples fuentes de datos Excel, y calcula presupuestos y costos de manera eficiente. Reducción significativa de tiempos de procesamiento manual."
       }
     },
     "devportfolio": {
       "name": "DevPortfolio",
       "shortDescription": "Portafolio profesional de desarrollador con diseño espacial y glasmorfismo",
-      "description": "Proyecto de portafolio web profesional desarrollado con un diseño unico que combina el diseño espacial con efectos de vidrio esmerilado, que muestra habilidades, proyectos y experiencia profesional en un proyecto visual e interactivo.",
+      "description": "Portafolio web profesional con diseño único que integra elementos espaciales y efectos glassmorphism, presentando de manera visual e interactiva habilidades técnicas, proyectos y trayectoria profesional.",
       "featuresTitle": "Caracteristicas Principales",
-      "feature1": "Diseño espacial con estrellas y animacion de estrella fugaz",
-      "feature2": "Interfaz con efecto moderno estilo de Glasmorphismo",
-      "feature3": "Sistema de Vistas parciales para el sistema de navegacion dynamica",
-      "feature4": "Carrusel de proyectos interactivos",
-      "feature5": "Links de redes sociales con efectos animados",
-      "feature6": "Diseño responsivo completo",
-      "feature7": "Animaciones y transiciones suaves",
+      "feature1": "Diseño espacial con animaciones de estrellas y estrella fugaz",
+      "feature2": "Interfaz moderna con efectos de glasmorfismo",
+      "feature3": "Sistema de vistas parciales para navegación dinámica",
+      "feature4": "Carrusel interactivo de proyectos",
+      "feature5": "Integración de redes sociales con efectos animados",
+      "feature6": "Diseño completamente responsivo",
+      "feature7": "Animaciones y transiciones fluidas",
       "techTitle": "Tecnologias implementadas",
       "techList": "ASP.NET MVC, C#, JavaScript, HTML5, CSS3, jQuery",
-      "challengesTitle": "Retos presentados",
-      "challenge1": "Animaciones de espacio para el fondo",
-      "challenge2": "Desarrollo de un carrusel personalizado para una vista previa de los proyectos",
-      "challenge3": "Integracion de efectos de vidrio esmerilado para mantener el diseño",
-      "challenge4": "Sistema de gestion de transiciones en la sección de navegación"
+      "challengesTitle": "Desafíos Técnicos",
+      "challenge1": "Implementación de animaciones de espacio optimizadas para rendimiento",
+      "challenge2": "Desarrollo de carrusel personalizado con controles avanzados",
+      "challenge3": "Integración de efectos glassmorphism manteniendo compatibilidad cross-browser",
+      "challenge4": "Sistema robusto de gestión de transiciones y estado de navegación"
     },
     "datathon2022": {
       "name": "WiDS Datathon 2022",
       "shortDescription": "Datathon enfocado en temas de salud",
       "title": "WiDS Datathon 2022 – Detección temprana de cáncer de mama",
-      "description": "Participacion en el datathon WiDS 2022 donde el objetivo era desarrollar de un modelo predictivo orientado a apoyar la detección temprana del cáncer de mama, utilizando datos clínicos y técnicas de aprendizaje para clasificar riesgo de manera precisa y reproducible.",
-      "featuresTitle": "Características Principales",
-      "feature1": "Limpieza del DataSet para la manipulación de su información",
-      "feature2": "Modelos de clasificación (árboles y regresión)",
-      "feature3": "Evaluación con métricas equilibradas para datos desbalanceados (AUC, F1, recall)",
-      "feature4": "validación cruzada",
+      "description": "Desarrollo de modelo predictivo para la detección temprana de cáncer de mama mediante técnicas de machine learning aplicadas a datos clínicos, enfocado en la clasificación precisa de riesgo.",
+      "featuresTitle": "Características Técnicas",
+      "feature1": "Limpieza y preprocesamiento de datasets médicos complejos",
+      "feature2": "Implementación de modelos de clasificación (árboles de decisión y regresión)",
+      "feature3": "Evaluación con métricas especializadas para datos desbalanceados (AUC, F1, recall)",
+      "feature4": "Validación cruzada para garantizar robustez del modelo",
       "techTitle": "Tecnologías implementadas",
       "techList": "Jupyter, Python, Pandas, Scikit-learn, NumPy, Matplotlib",
-      "challengesTitle": "Retos presentados",
-      "challenge1": "Manejo del desbalance de clases en diagnósticos positivos",
-      "challenge2": "Optimización de modelos",
-      "challenge3": "Selección de variables con relevancia clínica"
+      "challengesTitle": "Desafíos Técnicos",
+      "challenge1": "Tratamiento de desbalance de clases en diagnósticos positivos",
+      "challenge2": "Optimización de hiperparámetros de modelos",
+      "challenge3": "Selección de features con relevancia clínica y estadística"
     },
     "datathon2025": {
       "name": "WiDS Datathon 2025",
       "shortDescription": "Datathon enfocado en temas de salud",
       "title": "WiDS Datathon 2025 – Detección de TDAH y TDA en mujeres adolescentes",
-      "description": "Participacion en el datathon WiDS 2025 donde el objetivo era desarrollar de un modelo predictivo orientado a identificar de forma temprana y precisa patrones asociados a TDAH y TDA en mujeres, especialmente adolescentes, un grupo donde los diagnósticos suelen retrasarse por síntomas atípicos y subrepresentación en los datos.",
-      "featuresTitle": "Características Principales",
-      "feature1": "Limpieza del DataSet para la manipulación de su información",
-      "feature2": "Procesamiento de datos neurocognitivos y conductuales",
-      "feature3": "Modelos de clasificación multietiqueta",
-      "feature4": "Análisis de señales y variables psicológicas",
-      "feature5": "Entrenamiento con técnicas de regularización para mejorar generalización",
-      "feature6": "Validación cruzada estratificada por rangos de edad y género",
+      "description": "Desarrollo de modelo predictivo para la identificación temprana de patrones asociados a TDAH y TDA en población femenina adolescente, abordando el desafío de síntomas atípicos y subrepresentación en datos de entrenamiento.",
+      "featuresTitle": "Características Técnicas",
+      "feature1": "Limpieza y estructuración de datasets neurocognitivos complejos",
+      "feature2": "Procesamiento de variables neurocognitivas y conductuales",
+      "feature3": "Desarrollo de modelos de clasificación multietiqueta",
+      "feature4": "Análisis de señales y extracción de variables psicológicas relevantes",
+      "feature5": "Implementación de técnicas de regularización para mejorar generalización",
+      "feature6": "Validación cruzada estratificada por edad y género",
       "techTitle": "Tecnologías implementadas",
       "techList": "Jupyter, Python, Pandas, Scikit-learn, NumPy, XGBoost",
-      "challengesTitle": "Retos presentados",
-      "challenge1": "Datos con ruido alto por variabilidad neuropsicológica individual",
-      "challenge2": "Dificultad para separar síntomas superpuestos entre TDA y TDAH",
-      "challenge3": "Desbalance entre clases y perfiles clínicos",
-      "challenge4": "Evaluación del modelo hacia comportamientos masculinos"
+      "challengesTitle": "Desafíos Técnicos",
+      "challenge1": "Manejo de ruido en datos por alta variabilidad neuropsicológica individual",
+      "challenge2": "Separación de síntomas con alta correlación entre TDA y TDAH",
+      "challenge3": "Balanceo de clases y perfiles clínicos diversos",
+      "challenge4": "Validación de sesgo de género en predicciones"
     },
     "bookshelf": {
       "name": "BookShelf",
       "shortDescription": "Portafolio profesional de desarrollador con diseño espacial y glasmorfismo",
-      "description": "Proyecto personal de gestion de una libreria que sigue una organizacion y catalogo de libros, autores y generos literarios, una solucion completa para mantener organizado una colección de libros",
+      "description": "Sistema de gestión de biblioteca personal con catalogación de libros, autores y géneros literarios, proporcionando una solución completa para organizar y administrar colecciones bibliográficas.",
       "featuresTitle": "Caracteristicas Principales",
-      "feature1": "Gestión de libros, autores y géneros",
+      "feature1": "Administración integral de libros, autores y géneros",
       "feature2": "Interfaz intuitiva con paneles expandibles",
-      "feature3": "Sistema de formularios dinámicos",
+      "feature3": "Formularios dinámicos para captura de datos",
       "feature4": "Carga asíncrona de datos mediante AJAX",
-      "feature5": "Clasificación y búsqueda avanzadas",
-      "feature6": "Sistema de etiquetado personalizado",
-      "techTitle": "Tecnologías implementadas",
+      "feature5": "Sistema avanzado de clasificación y búsqueda",
+      "feature6": "Etiquetado personalizado y categorización flexible",
+      "techTitle": "Stack Tecnológico",
       "techList": "ASP.NET MVC, C#, SQL Server, Dapper, jQuery, Bootstrap, HTML5, CSS3, JavaScript",
-      "challengesTitle": "Retos presentados",
-      "challenge1": "Investigación de funcionalidad para una libreria",
-      "challenge2": "investigación Bootstrap para el diseño",
-      "challenge3": "Creación de la base de datos"
+      "challengesTitle": "Desafíos Técnicos",
+      "challenge1": "Diseño de sistema de relaciones complejas entre entidades",
+      "challenge2": "Implementación de UI responsive con Bootstrap",
+      "challenge3": "Arquitectura de base de datos normalizada para bibliotecas"
     },
     "prosalud": {
       "name": "ProSalud",
       "shortDescription": "Sistema de Salud para hospitales",
-      "title": "ProSalud -Sistema de gestion medica",
-      "description": "Plataforma completa para la gestión de consultorios médicos que automatiza los procesos administrativos y clínicos, desde la programación de citas hasta la gestión de historiales médicos y facturación.",
+      "title": "ProSalud - Sistema de gestión médica",
+      "description": "Plataforma integral para la gestión de consultorios médicos que automatiza procesos administrativos y clínicos, desde la programación de citas hasta el manejo de historiales médicos y facturación.",
       "featuresTitle": "Caracteristicas Principales",
-      "feature1": "Gestión de historiales clínicos y de pacientes",
-      "feature2": "Sistema de citas y agenda médica",
-      "feature3": "Control de personal y especialidades",
-      "feature4": "Sistema de facturación y programa VIP",
-      "feature5": "Diagnóstico basado en la CIE-10",
-      "feature6": "Seguimiento de tratamientos",
-      "techTitle": "Tecnologías implementadas",
+      "feature1": "Gestión completa de historiales clínicos y expedientes de pacientes",
+      "feature2": "Sistema de agendamiento de citas y calendarios médicos",
+      "feature3": "Administración de personal médico y especialidades",
+      "feature4": "Módulo de facturación integrado y programa de fidelización VIP",
+      "feature5": "Sistema de diagnóstico basado en clasificación CIE-10",
+      "feature6": "Seguimiento de tratamientos y prescripciones médicas",
+      "techTitle": "Stack Tecnológico",
       "techList": "ASP.NET MVC, C#, SQL Server, Dapper, jQuery, Bootstrap, HTML5, CSS3, JavaScript",
-      "challengesTitle": "Retos presentados",
-      "challenge1": "Investigación de funcionalidad para una libreria",
-      "challenge2": "investigación Bootstrap para el diseño",
-      "challenge3": "Creación de la base de datos"
+      "challengesTitle": "Desafíos Técnicos",
+      "challenge1": "Diseño de arquitectura para manejo de datos médicos sensibles",
+      "challenge2": "Implementación de interfaz intuitiva con Bootstrap",
+      "challenge3": "Modelado de base de datos relacional compleja para sector salud"
     }
   },
   "education": {
@@ -229,8 +229,8 @@
     "forge": {
       "name": "Fundación Forge",
       "period": "Noviembre 2025 - Diciembre 2025",
-      "current": "Actualmente en curso para obtener habilidades laborales",
-      "focus": "Entrenamiento enfocado en el mundo laboral",
+      "current": "Programa de desarrollo de competencias profesionales",
+      "focus": "Especialización en habilidades para el entorno laboral corporativo",
       "liderazgo": {
         "date": "Enero 2026"
       }
@@ -238,19 +238,19 @@
     "smart": {
       "name": "Smart Teaching",
       "period": "Febrero 2025 - Noviembre 2025",
-      "description": "Curso intensivo para pulir y mejorar mi nivel de Ingles",
-      "focus": "Enfocado en obtener un nivel B2 de TOEFL IBT"
+      "description": "Programa intensivo de perfeccionamiento del idioma inglés",
+      "focus": "Nivel objetivo: B2 TOEFL IBT"
     },
     "university": {
       "name": "Universidad Tangamanga | Ingenieria en Tecnologías de la información",
       "period": "Julio 2022 - Agosto 2025",
-      "current": "Actualmente en espera de mi titulo profesional",
-      "focus": "Enfocado en el desarrollo de Software y soluciones corporativas"
+      "current": "Ingeniería en Tecnologías de la Información",
+      "focus": "Especialización en desarrollo de software y soluciones empresariales"
     },
     "professionalDevelopment": "Desarrollo Profesional",
     "cluster": {
-      "name": "Participación en el Cluster Automotriz | Universidad Tangamanga",
-      "focus": "Enfocado en las tendencias tecnologicas del sector automotriz"
+      "name": "Cluster Automotriz | Universidad Tangamanga",
+      "focus": "Enfoque en tendencias tecnológicas del sector automotriz"
     },
     "certificates": {
       "title": "Certificados",

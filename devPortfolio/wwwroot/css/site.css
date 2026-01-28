@@ -433,11 +433,9 @@ header {
     }
 
         .content-section ul li::before {
-            content: "▹";
+            content: "";
             position: absolute;
             left: 0;
-            color: rgba(255, 255, 255, 0.6);
-            font-size: 1.2rem;
         }
 
         .content-section ul li span,
@@ -881,26 +879,6 @@ header {
         stroke-width: 2;
         stroke-linecap: round;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* ====== FILTROS DE EDUCACIÓN ====== */
 .education-filter {

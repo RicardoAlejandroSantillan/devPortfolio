@@ -8,7 +8,6 @@
 
   <ItemGroup>
     <Folder Include="wwwroot\images\projects\Datathons\" />
-    <Folder Include="wwwroot\NewFolder\" />
   </ItemGroup>
 
 </Project>
