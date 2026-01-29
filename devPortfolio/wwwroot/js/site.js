@@ -437,7 +437,7 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
     }
 
-    // Función para abrir el modal
+    // Abrir el modal
     const openCertificateModal = (card) => {
         const img = card.querySelector('.certificate-image-container img');
         const titleText = card.querySelector('.certificate-info p').textContent;
@@ -526,32 +526,34 @@ document.addEventListener('DOMContentLoaded', () => {
         en: '/files/RicardoAlejandroPerezSantillan_DataAnalyst.pdf'
     };
 
-    // obtener el idioma actual
-    const getCurrentLanguage = () => {
+    // Obtener el idioma actual
+    const getCurrentLanguage = async () => {
+        try {
+            const response = await fetch('/Home/GetCurrentLanguage');
+            if (response.ok) {
+                const data = await response.json();
+                return data.language || 'es';
+            }
+        } catch (error) {
+            console.error('Error getting language:', error);
+        }
+
         return localStorage.getItem('preferredLanguage') || 'es';
     };
 
-    // actualizar link de descarga
-    const updateCVLink = () => {
-        const currentLang = getCurrentLanguage();
+    // Función para actualizar el link de descarga
+    window.updateCVLink = async () => {
+        const currentLang = await getCurrentLanguage();
         cvDownloadBtn.href = cvPaths[currentLang];
         cvDownloadBtn.download = `RicardoAlejandroPerezSantillan_CV_${currentLang.toUpperCase()}.pdf`;
         console.log(`CV link updated to: ${cvPaths[currentLang]}`);
     };
+    window.updateCVLink();
 
-    updateCVLink();
-
-    window.addEventListener('storage', (e) => {
-        if (e.key === 'preferredLanguage') {
-            updateCVLink();
-        }
-    });
-
-    // actualizar cuando se cambia de idioma
     const langButtons = document.querySelectorAll('.lang-btn');
     langButtons.forEach(btn => {
         btn.addEventListener('click', () => {
-            setTimeout(updateCVLink, 100); // delay para que localStorage se actualice
+            setTimeout(window.updateCVLink, 200);
         });
     });
 

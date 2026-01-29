@@ -1,6 +1,20 @@
-﻿// ====== SISTEMA DE TRADUCCIONES ======
+﻿// ====== SISTEMA DE TRADUCCIONES CON BACKEND ======
 
 const DEFAULT_LANGUAGE = 'es';
+
+// Obtener el idioma actual del backend
+const getCurrentLanguageFromBackend = async () => {
+    try {
+        const response = await fetch('/Home/GetCurrentLanguage');
+        if (response.ok) {
+            const data = await response.json();
+            return data.language || DEFAULT_LANGUAGE;
+        }
+    } catch (error) {
+        console.error('Error getting language from backend:', error);
+    }
+    return DEFAULT_LANGUAGE;
+};
 
 // Cargar traducciones desde archivo JSON
 const loadTranslations = async (language) => {
@@ -82,54 +96,71 @@ const updateActiveButton = (language) => {
     });
 };
 
-// Cambiar idioma
+// Actualizar URL sin recargar
+const updateURL = (language) => {
+    const currentPath = window.location.pathname;
+    let newPath;
+
+    // Si la ruta actual ya tiene idioma
+    if (currentPath.startsWith('/es') || currentPath.startsWith('/en')) {
+        newPath = currentPath.replace(/^\/(es|en)/, `/${language}`);
+    } else {
+        // Si es la ruta raíz, agregar idioma
+        if (currentPath === '/' || currentPath === '') {
+            newPath = `/${language}`;
+        } else {
+            newPath = `/${language}${currentPath}`;
+        }
+    }
+
+    // Actualizar URL sin recargar
+    window.history.pushState({ language }, '', newPath);
+};
+
+// Cambiar idioma (con backend)
 const changeLanguage = async (language) => {
     console.log(`Changing language to: ${language}`);
 
-    const translations = await loadTranslations(language);
+    try {
+        // Notificar al backend del cambio de idioma
+        const formData = new FormData();
+        formData.append('language', language);
+        formData.append('returnUrl', window.location.pathname);
 
-    if (translations) {
-        localStorage.setItem('preferredLanguage', language);
-        document.documentElement.lang = language;
-        updateContent(translations);
-        updateActiveButton(language);
+        const response = await fetch('/Home/SetLanguage', {
+            method: 'POST',
+            body: formData
+        });
 
-        // Reiniciar el typewriter con el nuevo idioma
-        if (window.initTypewriter) {
-            window.initTypewriter(language);
+        if (response.ok) {
+            // Cargar traducciones
+            const translations = await loadTranslations(language);
+
+            if (translations) {
+                // Actualizar localStorage también (para compatibilidad)
+                localStorage.setItem('preferredLanguage', language);
+                document.documentElement.lang = language;
+                updateContent(translations);
+                updateActiveButton(language);
+                updateURL(language);
+
+                // Actualizar link de CV
+                if (window.updateCVLink) {
+                    window.updateCVLink();
+                }
+
+                // Reiniciar el typewriter con el nuevo idioma
+                if (window.initTypewriter) {
+                    window.initTypewriter(language);
+                }
+
+                console.log(`✓ Language changed successfully to: ${language}`);
+            }
+        } else {
+            console.error('Error setting language on backend');
         }
-
-        console.log(`✓ Language changed successfully to: ${language}`);
-    } else {
-        console.error(`Failed to change language to: ${language}`);
-    }
-};
-
-// Verificar traducciones faltantes (útil para desarrollo)
-const checkMissingTranslations = (translations) => {
-    const elements = document.querySelectorAll('[data-translate]');
-    const missingTranslations = [];
-
-    elements.forEach(element => {
-        const key = element.dataset.translate;
-        const keys = key.split('.');
-
-        let value = translations;
-        for (const k of keys) {
-            value = value?.[k];
-        }
-
-        if (!value) {
-            missingTranslations.push(key);
-        }
-    });
-
-    if (missingTranslations.length > 0) {
-        console.group('⚠️ Missing Translations');
-        missingTranslations.forEach(missing => console.warn(missing));
-        console.groupEnd();
-    } else {
-        console.log('✓ All translations are present');
+    } catch (error) {
+        console.error('Error changing language:', error);
     }
 };
 
@@ -137,9 +168,17 @@ const checkMissingTranslations = (translations) => {
 document.addEventListener('DOMContentLoaded', async () => {
     console.log('Initializing translation system...');
 
-    // Cargar idioma guardado o usar el predeterminado
-    const savedLanguage = localStorage.getItem('preferredLanguage') || DEFAULT_LANGUAGE;
-    await changeLanguage(savedLanguage);
+    // Obtener idioma del backend
+    let currentLanguage = await getCurrentLanguageFromBackend();
+
+    // Si hay idioma en la URL, usarlo
+    const pathLanguage = window.location.pathname.match(/^\/(es|en)/)?.[1];
+    if (pathLanguage) {
+        currentLanguage = pathLanguage;
+    }
+
+    // Cargar traducciones para el idioma actual
+    await changeLanguage(currentLanguage);
 
     // Agregar event listeners a los botones de idioma
     document.querySelectorAll('.lang-btn').forEach(btn => {
@@ -154,6 +193,13 @@ document.addEventListener('DOMContentLoaded', async () => {
 
             await changeLanguage(language);
         });
+    });
+
+    // Manejar navegación del navegador (botones atrás/adelante)
+    window.addEventListener('popstate', async (event) => {
+        if (event.state && event.state.language) {
+            await changeLanguage(event.state.language);
+        }
     });
 
     console.log('✓ Translation system initialized');
