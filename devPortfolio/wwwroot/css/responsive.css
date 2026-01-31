@@ -160,6 +160,16 @@
         padding: 0 0.75rem 1.25rem 0.75rem;
     }
 
+    /* CV Download Button */
+    .cv-download-section {
+        padding: 1rem 1rem 0.5rem 1rem;
+        margin-top: 1rem;
+    }
+
+    .panel.panel-izq {
+        padding-bottom: 1rem;
+    }
+
     /* Translation System */
     .language-selector {
         top: 15px;
@@ -270,11 +280,42 @@
         width: 85%;
         max-width: 320px;
         padding: 70px 1.25rem 1.25rem 1.25rem;
+        display: flex;
+        flex-direction: column;
+        min-height: auto;
+        height: 100vh;
     }
 
         .panel.panel-izq.active {
             left: 0;
         }
+
+    /* Ajustar el contenido del panel izquierdo */
+    .profile-section {
+        flex-shrink: 0;
+    }
+
+    .nav-menu {
+        flex-shrink: 0;
+        margin-bottom: 1rem;
+    }
+
+    /* CV Download Button - Fijo en la parte inferior */
+    .cv-download-section {
+        margin-top: auto;
+        padding: 1rem 1rem;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        flex-shrink: 0;
+        position: sticky;
+        bottom: 0;
+        background: rgba(240, 248, 255, .12);
+        backdrop-filter: blur(14px) saturate(130%);
+    }
+
+    .cv-download-btn {
+        padding: 0.85rem 1.25rem;
+        font-size: 0.9rem;
+    }
 
     /* Panel lateral va abajo en móviles */
     .panel.panel-lateral {
@@ -361,12 +402,6 @@
         height: 100px;
     }
 
-    .panel.panel-izq {
-        padding: 1.25rem 1rem;
-        flex-direction: column;
-        align-items: center;
-    }
-
     /* Translation system */
     .language-selector {
         top: 12px;
@@ -402,24 +437,6 @@
         flex: 1;
         min-width: 100%;
         max-width: 100%;
-    }
-
-    /*Modal Dialog*/
-    .modal-content {
-        max-width: 95%;
-        max-height: 85%;
-        padding: 0.75rem;
-    }
-
-        .modal-content img {
-            max-height: 70vh;
-        }
-
-    .modal-close-btn {
-        top: -8px;
-        right: -8px;
-        width: 32px;
-        height: 32px;
     }
 
     /*Modal Dialog*/
@@ -498,6 +515,22 @@
         font-size: clamp(1rem, 4vw, 1.4rem);
     }
 
+    /* Panel izquierdo ajustado */
+    .panel.panel-izq {
+        padding: 65px 1rem 0 1rem;
+    }
+
+    /* CV Download Button */
+    .cv-download-section {
+        padding: 0.85rem 0.85rem;
+        margin-top: auto;
+    }
+
+    .cv-download-btn {
+        padding: 0.8rem 1rem;
+        font-size: 0.85rem;
+    }
+
     /* Proyectos de trabajo */
     .img-project-container {
         gap: 1rem;
@@ -547,6 +580,7 @@
 
         .panel.panel-izq {
             font-size: 1rem;
+            padding: 65px 1rem 0 1rem;
         }
 
         .panel.panel-content {
@@ -596,7 +630,6 @@
     .panel.panel-izq {
         width: 90%;
         max-width: 280px;
-        padding: 65px 1rem 1rem 1rem;
     }
 
     .profile-image-container {
@@ -607,6 +640,16 @@
     .nav-button {
         padding: 0.75rem 0.85rem;
         font-size: 0.9rem;
+    }
+
+    /* CV Download Button */
+    .cv-download-section {
+        padding: 0.75rem 0.75rem;
+    }
+
+    .cv-download-btn {
+        padding: 0.75rem 0.9rem;
+        font-size: 0.8rem;
     }
 
     /* Social links */
@@ -753,6 +796,7 @@
 
     .panel.panel-izq {
         width: 95%;
+        padding: 60px 0.85rem 0 0.85rem;
     }
 
     .profile-image-container {
@@ -764,6 +808,20 @@
         padding: 0.7rem 0.8rem;
         font-size: 0.85rem;
     }
+
+    /* CV Download Button */
+    .cv-download-section {
+        padding: 0.65rem 0.65rem;
+    }
+
+    .cv-download-btn {
+        padding: 0.7rem 0.85rem;
+        font-size: 0.75rem;
+    }
+
+        .cv-download-btn::before {
+            font-size: 1rem;
+        }
 
     /* Social Links */
 
@@ -824,31 +882,4 @@
         min-width: 32px;
         border-radius: 6px;
     }
-
-    /* Translation System */
-
-    .language-selector {
-        top: 8px;
-        right: 8px;
-        gap: 4px;
-    }
-
-    .lang-btn {
-        padding: 4px 8px;
-        font-size: 0.65rem;
-        min-width: 32px;
-        border-radius: 6px;
-    }
 }
-
-
-
-
-
-
-
-
-
-
-
-
