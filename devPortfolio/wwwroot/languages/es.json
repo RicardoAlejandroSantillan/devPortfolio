@@ -234,6 +234,13 @@
       "focus": "Especialización en habilidades para el entorno laboral corporativo",
       "liderazgo": {
         "date": "Enero 2026"
+      },
+      "orientacion": {
+        "al": {
+          "logro": {
+            "date": "Enero 2026"
+          }
+        }
       }
     },
     "smart": {
@@ -248,62 +255,4 @@
       "current": "Ingeniería en Tecnologías de la Información",
       "focus": "Especialización en desarrollo de software y soluciones empresariales"
     },
-    "professionalDevelopment": "Desarrollo Profesional",
-    "cluster": {
-      "name": "Cluster Automotriz | Universidad Tangamanga",
-      "focus": "Enfoque en tendencias tecnológicas del sector automotriz"
-    },
-    "certificates": {
-      "title": "Certificados",
-      "forge": {
-        "liderazgo": {
-          "date": "Enero 2026"
-        }
-      },
-      "js": {
-        "name": "JavaScript desde Principiante hasta Experto",
-        "date": "Octubre 2025",
-        "alt": "Certificado JavaScript Udemy"
-      },
-      "python": {
-        "datascience": {
-          "name": "Python desde Cero + Data Analysis y Matplot",
-          "date": "Marzo 2025",
-          "alt": "Certificado Python para Data Science Udemy"
-        }
-      },
-      "excel": {
-        "name": "Excel Microsoft Office Specialist (MOS)",
-        "date": "Diciembre 2019",
-        "alt": "Certificado Excel MOS"
-      },
-      "word": {
-        "name": "Word Microsoft Office Specialist (MOS)",
-        "date": "Octubre 2019",
-        "alt": "Certificado Word MOS"
-      },
-      "powerpoint": {
-        "name": "PowerPoint Microsoft Office Specialist (MOS)",
-        "date": "Septiembre 2019",
-        "alt": "Certificado PowerPoint MOS"
-      },
-      "modal": {
-        "imageAlt": "Certificado ampliado"
-      }
-    }
-  },
-  "insignia": {
-    "forge": {
-      "liderazgo": {
-        "personal": {
-          "f_title": "Forge",
-          "name": "Liderazgo Personal",
-          "alt": "Forge Personal Leadership Badge"
-        }
-      }
-    }
-  },
-  "modal": {
-    "close": "Cerrar"
-  }
-}
+    "professionalDe

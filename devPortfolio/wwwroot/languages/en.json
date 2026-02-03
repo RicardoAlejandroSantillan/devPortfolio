@@ -234,6 +234,13 @@
       "focus": "Specialization in skills for corporate work environment",
       "liderazgo": {
         "date": "January 2026"
+      },
+      "orientacion": {
+        "al": {
+          "logro": {
+            "date": "January 2026"
+          }
+        }
       }
     },
     "smart": {
@@ -258,6 +265,13 @@
       "forge": {
         "liderazgo": {
           "date": "January 2026"
+        },
+        "orientacion": {
+          "al": {
+            "logro": {
+              "date": "January 2026"
+            }
+          }
         }
       },
       "js": {
@@ -299,6 +313,15 @@
           "f_title": "Forge",
           "name": "Liderazgo Personal",
           "alt": "Forge Personal Leadership Badge"
+        }
+      },
+      "orientacion": {
+        "al": {
+          "logro": {
+            "f_title": "Forge",
+            "name": "Orientación al Logro",
+            "alt": "Forge Achievement Orientation Badge"
+          }
         }
       }
     }
