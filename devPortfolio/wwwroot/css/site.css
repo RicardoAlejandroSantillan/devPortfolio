@@ -1160,13 +1160,6 @@ header {
     text-decoration: none;
 }
 
-    /* Icono de descarga */
-    .cv-download-btn::before {
-        content: '⬇';
-        font-size: 1.1rem;
-        transition: transform 0.3s ease;
-    }
-
     .cv-download-btn:hover::before {
         transform: translateY(3px);
     }

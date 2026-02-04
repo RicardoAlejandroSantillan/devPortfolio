@@ -64,10 +64,28 @@
         padding: 80px 1.5rem 1.5rem 1.5rem;
         overflow-y: auto;
         box-shadow: 4px 0 20px rgba(0, 0, 0, 0.3);
+        display: flex;
+        flex-direction: column;
     }
 
         .panel.panel-izq.active {
             left: 0;
+        }
+
+        /* Asegurar que los elementos internos no crezcan más allá del espacio disponible */
+        .panel.panel-izq .profile-section {
+            flex-shrink: 0;
+        }
+
+        .panel.panel-izq .nav-menu {
+            flex-shrink: 0;
+            margin-bottom: 1rem;
+        }
+
+        /* El botón CV debe estar siempre visible al final */
+        .panel.panel-izq .cv-download-section {
+            margin-top: auto;
+            flex-shrink: 0;
         }
 
     .menu-overlay {
@@ -277,22 +295,29 @@
 
     .panel.panel-izq {
         left: -100%;
-        width: 85%;
-        max-width: 320px;
-        padding: 70px 1.25rem 1.25rem 1.25rem;
+        width: 100%;
+        max-width: 100%;
+        padding: 70px 1.25rem 0 1.25rem;
         display: flex;
         flex-direction: column;
-        min-height: auto;
-        height: 100vh;
+        min-height: 100vh;
+        min-height: 100dvh; /* Altura dinámica del viewport para móviles */
+        height: auto;
+        max-height: 100vh;
+        max-height: 100dvh;
+        /* IMPORTANTE: Permitir scroll interno */
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
     }
 
         .panel.panel-izq.active {
             left: 0;
         }
 
-    /* Ajustar el contenido del panel izquierdo */
+    /* Ajustar el contenido del panel izquierdo para que todo sea visible */
     .profile-section {
         flex-shrink: 0;
+        padding: 0 0.5rem 1rem 0.5rem;
     }
 
     .nav-menu {
@@ -300,21 +325,28 @@
         margin-bottom: 1rem;
     }
 
-    /* CV Download Button - Fijo en la parte inferior */
+    /* CV Download Button - SIEMPRE visible con suficiente padding inferior */
     .cv-download-section {
         margin-top: auto;
-        padding: 1rem 1rem;
+        padding: 1rem 1rem 2rem 1rem;
         border-top: 1px solid rgba(255, 255, 255, 0.1);
         flex-shrink: 0;
-        position: sticky;
-        bottom: 0;
-        background: rgba(240, 248, 255, .12);
-        backdrop-filter: blur(14px) saturate(130%);
+        position: relative;
+        z-index: 10;
     }
 
     .cv-download-btn {
         padding: 0.85rem 1.25rem;
         font-size: 0.9rem;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Agregar padding inferior al panel para que el último elemento sea visible */
+    .panel.panel-izq {
+        padding-bottom: 2rem;
     }
 
     /* Panel lateral va abajo en móviles */
@@ -517,13 +549,17 @@
 
     /* Panel izquierdo ajustado */
     .panel.panel-izq {
-        padding: 65px 1rem 0 1rem;
+        padding: 65px 1rem 2rem 1rem;
+        /* Asegurar que hay espacio suficiente para todo el contenido */
+        min-height: 100vh;
+        min-height: 100dvh;
     }
 
-    /* CV Download Button */
+    /* CV Download Button con más espacio */
     .cv-download-section {
-        padding: 0.85rem 0.85rem;
+        padding: 1rem 1rem 2rem 1rem;
         margin-top: auto;
+        margin-bottom: 0.5rem;
     }
 
     .cv-download-btn {
@@ -580,7 +616,12 @@
 
         .panel.panel-izq {
             font-size: 1rem;
-            padding: 65px 1rem 0 1rem;
+            padding: 65px 1rem 2rem 1rem;
+            /* Asegurar scroll suave en dispositivos pequeños */
+            overflow-y: auto;
+            -webkit-overflow-scrolling: touch;
+            min-height: 100vh;
+            min-height: 100dvh;
         }
 
         .panel.panel-content {
@@ -628,8 +669,8 @@
         }
 
     .panel.panel-izq {
-        width: 90%;
-        max-width: 280px;
+        width: 100%;
+        max-width: 100%;
     }
 
     .profile-image-container {
@@ -642,9 +683,10 @@
         font-size: 0.9rem;
     }
 
-    /* CV Download Button */
+    /* CV Download Button - Asegurar visibilidad total */
     .cv-download-section {
-        padding: 0.75rem 0.75rem;
+        padding: 0.85rem 0.85rem 2rem 0.85rem;
+        margin-bottom: 0.75rem;
     }
 
     .cv-download-btn {
@@ -795,8 +837,10 @@
     /* menu hamburguesa */
 
     .panel.panel-izq {
-        width: 95%;
-        padding: 60px 0.85rem 0 0.85rem;
+        width: 100%;
+        padding: 60px 0.85rem 2rem 0.85rem;
+        min-height: 100vh;
+        min-height: 100dvh;
     }
 
     .profile-image-container {
@@ -809,9 +853,10 @@
         font-size: 0.85rem;
     }
 
-    /* CV Download Button */
+    /* CV Download Button - Máxima visibilidad en pantallas muy pequeñas */
     .cv-download-section {
-        padding: 0.65rem 0.65rem;
+        padding: 0.75rem 0.75rem 2rem 0.75rem;
+        margin-bottom: 1rem;
     }
 
     .cv-download-btn {
