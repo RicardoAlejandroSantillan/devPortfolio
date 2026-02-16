@@ -3,6 +3,7 @@
 <section class="skill-filter filter">
 	<button class="hard-skills active" id="hard-skills" data-translate="skills.filterHard">Habilidades Técnicas</button>
 	<button class="soft-skills" id="soft-skills" data-translate="skills.filterSoft">Habilidades Blandas</button>
+	<button class="vocational-stats" id="vocational-stats" data-translate="skills.filterStats">Estadísticas</button>
 </section>
 
 <div class="skills-content">
@@ -159,5 +160,97 @@
 				<p data-translate="skills.softSkills.workEthic">Ética Laboral</p>
 			</li>
 		</ul>
+	</section>
+
+	@* Statistics *@
+	<section class="vocational-stats-content" id="vocational-stats-content">
+		<h4 data-translate="skills.vocationalStats.title">Perfil Vocacional</h4>
+
+		<div class="vocational-container">
+			@* Gráfico Radar *@
+			<div class="vocational-chart-card radar-card">
+				<h5 data-translate="skills.vocationalStats.radarTitle">Orientación Vocacional</h5>
+				<div class="chart-container">
+					<canvas id="vocationalRadarChart"></canvas>
+				</div>
+				<div class="chart-legend">
+					<div class="legend-item">
+						<span class="legend-color" style="background: #e91e63;"></span>
+						<span data-translate="skills.vocationalStats.realistic">Realista</span>
+					</div>
+					<div class="legend-item">
+						<span class="legend-color" style="background: #f06292;"></span>
+						<span data-translate="skills.vocationalStats.investigative">Investigador</span>
+					</div>
+					<div class="legend-item">
+						<span class="legend-color" style="background: #ffb74d;"></span>
+						<span data-translate="skills.vocationalStats.artistic">Artístico</span>
+					</div>
+					<div class="legend-item">
+						<span class="legend-color" style="background: #ff9800;"></span>
+						<span data-translate="skills.vocationalStats.social">Sociales</span>
+					</div>
+					<div class="legend-item">
+						<span class="legend-color" style="background: #ff7043;"></span>
+						<span data-translate="skills.vocationalStats.enterprising">Emprendedor</span>
+					</div>
+					<div class="legend-item">
+						<span class="legend-color" style="background: #ec407a;"></span>
+						<span data-translate="skills.vocationalStats.conventional">Convencional</span>
+					</div>
+				</div>
+			</div>
+
+			@* Gráficos de Barras *@
+			<div class="vocational-bars-grid">
+				@* Habilidades de Mayor Relevancia *@
+				<div class="vocational-chart-card">
+					<h5 data-translate="skills.vocationalStats.topSkills">Habilidades de Mayor Relevancia</h5>
+					<div class="chart-container chart-container-bar">
+						<canvas id="topSkillsChart"></canvas>
+					</div>
+				</div>
+
+				@* Intereses de Mayor Importancia *@
+				<div class="vocational-chart-card">
+					<h5 data-translate="skills.vocationalStats.topInterests">Intereses de Mayor Importancia</h5>
+					<div class="chart-container chart-container-bar">
+						<canvas id="topInterestsChart"></canvas>
+					</div>
+				</div>
+
+				@* Carreras de Mayor Importancia *@
+				<div class="vocational-chart-card">
+					<h5 data-translate="skills.vocationalStats.topCareers">Carreras de Mayor Importancia</h5>
+					<div class="chart-container chart-container-bar">
+						<canvas id="topCareersChart"></canvas>
+					</div>
+				</div>
+
+				@* Habilidades de Menor Relevancia *@
+				<div class="vocational-chart-card">
+					<h5 data-translate="skills.vocationalStats.lowSkills">Habilidades de Menor Relevancia</h5>
+					<div class="chart-container chart-container-bar">
+						<canvas id="lowSkillsChart"></canvas>
+					</div>
+				</div>
+
+				@* Intereses de Menor Importancia *@
+				<div class="vocational-chart-card">
+					<h5 data-translate="skills.vocationalStats.lowInterests">Intereses de Menor Importancia</h5>
+					<div class="chart-container chart-container-bar">
+						<canvas id="lowInterestsChart"></canvas>
+					</div>
+				</div>
+
+				@* Carreras de Menor Importancia *@
+				<div class="vocational-chart-card">
+					<h5 data-translate="skills.vocationalStats.lowCareers">Carreras de Menor Importancia</h5>
+					<div class="chart-container chart-container-bar">
+						<canvas id="lowCareersChart"></canvas>
+					</div>
+				</div>
+			</div>
+		</div>
 	</section>
 </div>
