@@ -142,9 +142,7 @@ document.addEventListener('DOMContentLoaded', () => {
     console.log('✓ Navigation system ready');
 });
 
-/* Filtros de Skills */
-
-// ====== SISTEMA DE TOGGLE PARA SKILLS ======
+// ====== SISTEMA DE TOGGLE PARA SKILLS (ACTUALIZADO) ======
 
 document.addEventListener('DOMContentLoaded', () => {
     console.log('Skills toggle system initialized');
@@ -152,11 +150,14 @@ document.addEventListener('DOMContentLoaded', () => {
     // Obtener los botones y las secciones
     const hardSkillsBtn = document.getElementById('hard-skills');
     const softSkillsBtn = document.getElementById('soft-skills');
+    const vocationalStatsBtn = document.getElementById('vocational-stats');
     const hardSkillsContent = document.getElementById('hard-skills-content');
     const softSkillsContent = document.getElementById('soft-skills-content');
+    const vocationalStatsContent = document.getElementById('vocational-stats-content');
 
     // Verificar que existan los elementos
-    if (!hardSkillsBtn || !softSkillsBtn || !hardSkillsContent || !softSkillsContent) {
+    if (!hardSkillsBtn || !softSkillsBtn || !vocationalStatsBtn ||
+        !hardSkillsContent || !softSkillsContent || !vocationalStatsContent) {
         console.log('Skills elements not found on this page');
         return;
     }
@@ -165,16 +166,30 @@ document.addEventListener('DOMContentLoaded', () => {
     const showHardSkills = () => {
         hardSkillsBtn.classList.add('active');
         softSkillsBtn.classList.remove('active');
+        vocationalStatsBtn.classList.remove('active');
         hardSkillsContent.classList.add('active');
         softSkillsContent.classList.remove('active');
+        vocationalStatsContent.classList.remove('active');
     };
 
     // Función para mostrar habilidades blandas
     const showSoftSkills = () => {
         softSkillsBtn.classList.add('active');
         hardSkillsBtn.classList.remove('active');
+        vocationalStatsBtn.classList.remove('active');
         softSkillsContent.classList.add('active');
         hardSkillsContent.classList.remove('active');
+        vocationalStatsContent.classList.remove('active');
+    };
+
+    // Función para mostrar estadísticas vocacionales
+    const showVocationalStats = () => {
+        vocationalStatsBtn.classList.add('active');
+        hardSkillsBtn.classList.remove('active');
+        softSkillsBtn.classList.remove('active');
+        vocationalStatsContent.classList.add('active');
+        hardSkillsContent.classList.remove('active');
+        softSkillsContent.classList.remove('active');
     };
 
     // Event listeners
@@ -186,6 +201,11 @@ document.addEventListener('DOMContentLoaded', () => {
     softSkillsBtn.addEventListener('click', (e) => {
         e.preventDefault();
         showSoftSkills();
+    });
+
+    vocationalStatsBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        showVocationalStats();
     });
 
     console.log('✓ Skills toggle system ready');
@@ -280,7 +300,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Event listeners para tarjetas de trabajo profesional
     professionalCards.forEach(card => {
         card.addEventListener('click', () => {
-            const projectId = card.getAttribute('data-project'); // CAMBIO AQUÍ
+            const projectId = card.getAttribute('data-project');
             showProjectInfo(projectId);
         });
     });
@@ -288,7 +308,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Event listeners para tarjetas de proyectos personales
     personalCards.forEach(card => {
         card.addEventListener('click', () => {
-            const projectId = card.getAttribute('data-project'); // CAMBIO AQUÍ
+            const projectId = card.getAttribute('data-project');
             showProjectInfo(projectId);
         });
     });
@@ -296,7 +316,7 @@ document.addEventListener('DOMContentLoaded', () => {
     console.log('✓ Project info display system ready');
 });
 
-// ====== MODAL Ventana Modal ======
+// ====== MODAL DE IMAGEN COMPLETA ======
 
 document.addEventListener('DOMContentLoaded', () => {
     console.log('Image modal system initialized');
