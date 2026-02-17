@@ -63,6 +63,7 @@
     "title": "Habilidades",
     "filterHard": "Habilidades Técnicas",
     "filterSoft": "Habilidades Blandas",
+    "filterStats": "Estadísticas",
     "hardSkills": {
       "title": "Habilidades Técnicas",
       "webDevelopment": "Desarrollo Web",
@@ -84,6 +85,47 @@
       "attention": "Atención al detalle",
       "persistence": "Persistencia",
       "workEthic": "Ética Laboral"
+    },
+    "vocationalStats": {
+      "title": "Perfil Vocacional",
+      "radarBadge": "Vocacional",
+      "realistic": "Realista",
+      "investigative": "Investigador",
+      "artistic": "Artístico",
+      "social": "Sociales",
+      "enterprising": "Emprendedor",
+      "conventional": "Convencional",
+      "sectionProfile": "Resumen de Perfil",
+      "sectionAptitudes": "Aptitudes y Competencias",
+      "sectionProject": "Proyecto de Vida y Valores",
+      "topSkills": "Habilidades de Mayor Relevancia",
+      "topInterests": "Intereses de Mayor Importancia",
+      "topCareers": "Carreras de Mayor Importancia",
+      "lowSkills": "Habilidades de Menor Relevancia",
+      "lowInterests": "Intereses de Menor Importancia",
+      "lowCareers": "Carreras de Menor Importancia",
+      "aptitudesDesarrolladas": "Aptitudes Desarrolladas",
+      "competenciasEspecificas": "Competencias Específicas",
+      "aptitudesPorDesarrollar": "Aptitudes por Desarrollar",
+      "competenciasPorDesarrollar": "Competencias por Desarrollar",
+      "valoresOcupacionales": "Valores Ocupacionales",
+      "asignaturas": {
+        "title": "Tus Asignaturas",
+        "favorita": "La que más te gusta:",
+        "favorita_value": "Actividades tecnológicas",
+        "menosGusta": "La que menos te gusta:",
+        "menosGusta_value": "Metodología de la Investigación",
+        "dificil": "La que se te hace más difícil:",
+        "dificil_value": "Matemáticas"
+      },
+      "proyectoVida": {
+        "title": "Visión de Proyecto de Vida",
+        "vision1": "Formar una familia e inculcarles buenos valores a los hijos.",
+        "vision2": "Poder llevar adelante la vocación personal.",
+        "vision3": "Alcanzar la realización profesional y personal.",
+        "vision4": "Lograr un equilibrio entre lo laboral y lo afectivo.",
+        "vision5": "Estar en constante formación académica e intelectual."
+      }
     }
   },
   "projects": {
@@ -255,4 +297,78 @@
       "current": "Ingeniería en Tecnologías de la Información",
       "focus": "Especialización en desarrollo de software y soluciones empresariales"
     },
-    "professionalDe
+    "professionalDevelopment": "Desarrollo Profesional",
+    "cluster": {
+      "name": "Clúster Automotriz | Universidad Tangamanga",
+      "focus": "Enfoque en tendencias tecnológicas del sector automotriz"
+    },
+    "certificates": {
+      "title": "Certificados",
+      "forge": {
+        "liderazgo": {
+          "date": "Enero 2026"
+        },
+        "orientacion": {
+          "al": {
+            "logro": {
+              "date": "Enero 2026"
+            }
+          }
+        }
+      },
+      "js": {
+        "name": "JavaScript desde Principiante hasta Experto",
+        "date": "Octubre 2025",
+        "alt": "Certificado JavaScript Udemy"
+      },
+      "python": {
+        "datascience": {
+          "name": "Python desde Cero + Data Analysis y Matplot",
+          "date": "Marzo 2025",
+          "alt": "Certificado Python para Data Science Udemy"
+        }
+      },
+      "excel": {
+        "name": "Excel Microsoft Office Specialist (MOS)",
+        "date": "Diciembre 2019",
+        "alt": "Certificado Excel MOS"
+      },
+      "word": {
+        "name": "Word Microsoft Office Specialist (MOS)",
+        "date": "Octubre 2019",
+        "alt": "Certificado Word MOS"
+      },
+      "powerpoint": {
+        "name": "PowerPoint Microsoft Office Specialist (MOS)",
+        "date": "Septiembre 2019",
+        "alt": "Certificado PowerPoint MOS"
+      },
+      "modal": {
+        "imageAlt": "Certificado ampliado"
+      }
+    }
+  },
+  "insignia": {
+    "forge": {
+      "liderazgo": {
+        "personal": {
+          "f_title": "Forge",
+          "name": "Liderazgo Personal",
+          "alt": "Insignia Liderazgo Personal Forge"
+        }
+      },
+      "orientacion": {
+        "al": {
+          "logro": {
+            "f_title": "Forge",
+            "name": "Orientación al Logro",
+            "alt": "Insignia Orientación al Logro Forge"
+          }
+        }
+      }
+    }
+  },
+  "modal": {
+    "close": "Cerrar"
+  }
+}

@@ -91,98 +91,163 @@
 		</ul>
 	</section>
 
-	@* Statistics *@
-	<section class="vocational-stats-content" id="vocational-stats-content">
-		<h4 data-translate="skills.vocationalStats.title">Perfil Vocacional</h4>
+    @* Statistics *@
+    <section class="vocational-stats-content" id="vocational-stats-content">
+        <h4 data-translate="skills.vocationalStats.title">Perfil Vocacional</h4>
 
-		<div class="vocational-container">
+        <div class="vocational-container">
 
-			@* ── RADAR CARD (estilo imagen de referencia) ── *@
-			<div class="vocational-chart-card radar-card">
+            @* RADAR CARD (permanece igual) *@
+            <div class="vocational-chart-card radar-card">
+                <div class="radar-title-badge">
+                    <span data-translate="skills.vocationalStats.radarBadge">Vocacional</span>
+                </div>
+                <div class="chart-container">
+                    <canvas id="vocationalRadarChart"></canvas>
+                </div>
+                <div class="radar-legend">
+                    <div class="radar-legend-item" data-cat="realistic">
+                        <div class="radar-legend-diamond"></div>
+                        <span data-translate="skills.vocationalStats.realistic">Realista</span>
+                    </div>
+                    <div class="radar-legend-item" data-cat="investigative">
+                        <div class="radar-legend-diamond"></div>
+                        <span data-translate="skills.vocationalStats.investigative">Investigador</span>
+                    </div>
+                    <div class="radar-legend-item" data-cat="artistic">
+                        <div class="radar-legend-diamond"></div>
+                        <span data-translate="skills.vocationalStats.artistic">Artístico</span>
+                    </div>
+                    <div class="radar-legend-item" data-cat="social">
+                        <div class="radar-legend-diamond"></div>
+                        <span data-translate="skills.vocationalStats.social">Sociales</span>
+                    </div>
+                    <div class="radar-legend-item" data-cat="enterprising">
+                        <div class="radar-legend-diamond"></div>
+                        <span data-translate="skills.vocationalStats.enterprising">Emprendedor</span>
+                    </div>
+                    <div class="radar-legend-item" data-cat="conventional">
+                        <div class="radar-legend-diamond"></div>
+                        <span data-translate="skills.vocationalStats.conventional">Convencional</span>
+                    </div>
+                </div>
+            </div>
 
-				@* Badge amarillo "Vocacional" *@
-				<div class="radar-title-badge">
-					<span data-translate="skills.vocationalStats.radarBadge">Vocacional</span>
-				</div>
+            @* FILTROS DE SECCIONES*@
+            <div class="vocational-section-filter">
+                <button class="vocational-section-btn active" data-section="profile">Resumen de Perfil</button>
+                <button class="vocational-section-btn" data-section="aptitudes">Aptitudes y Competencias</button>
+                <button class="vocational-section-btn" data-section="proyecto">Proyecto de Vida y Valores</button>
+            </div>
 
-				@* Canvas *@
-				<div class="chart-container">
-					<canvas id="vocationalRadarChart"></canvas>
-				</div>
+            @* SECCIÓN 1: RESUMEN DE PERFIL *@
+            <div class="vocational-section-content active" data-section-content="profile">
+                <div class="vocational-bars-grid">
+                    <div class="vocational-chart-card">
+                        <h5>Habilidades de Mayor Relevancia</h5>
+                        <div class="chart-container chart-container-bar">
+                            <canvas id="topSkillsChart"></canvas>
+                        </div>
+                    </div>
+                    <div class="vocational-chart-card">
+                        <h5>Intereses de Mayor Importancia</h5>
+                        <div class="chart-container chart-container-bar">
+                            <canvas id="topInterestsChart"></canvas>
+                        </div>
+                    </div>
+                    <div class="vocational-chart-card">
+                        <h5>Carreras de Mayor Importancia</h5>
+                        <div class="chart-container chart-container-bar">
+                            <canvas id="topCareersChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+                <div class="vocational-bars-grid">
+                    <div class="vocational-chart-card">
+                        <h5>Habilidades de Menor Relevancia</h5>
+                        <div class="chart-container chart-container-bar">
+                            <canvas id="lowSkillsChart"></canvas>
+                        </div>
+                    </div>
+                    <div class="vocational-chart-card">
+                        <h5>Intereses de Menor Importancia</h5>
+                        <div class="chart-container chart-container-bar">
+                            <canvas id="lowInterestsChart"></canvas>
+                        </div>
+                    </div>
+                    <div class="vocational-chart-card">
+                        <h5>Carreras de Menor Importancia</h5>
+                        <div class="chart-container chart-container-bar">
+                            <canvas id="lowCareersChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-				@* Leyenda inferior con rombos (igual que la imagen) *@
-				<div class="radar-legend">
-					<div class="radar-legend-item" data-cat="realistic">
-						<div class="radar-legend-diamond"></div>
-						<span data-translate="skills.vocationalStats.realistic">Realista</span>
-					</div>
-					<div class="radar-legend-item" data-cat="investigative">
-						<div class="radar-legend-diamond"></div>
-						<span data-translate="skills.vocationalStats.investigative">Investigador</span>
-					</div>
-					<div class="radar-legend-item" data-cat="artistic">
-						<div class="radar-legend-diamond"></div>
-						<span data-translate="skills.vocationalStats.artistic">Artístico</span>
-					</div>
-					<div class="radar-legend-item" data-cat="social">
-						<div class="radar-legend-diamond"></div>
-						<span data-translate="skills.vocationalStats.social">Sociales</span>
-					</div>
-					<div class="radar-legend-item" data-cat="enterprising">
-						<div class="radar-legend-diamond"></div>
-						<span data-translate="skills.vocationalStats.enterprising">Emprendedor</span>
-					</div>
-					<div class="radar-legend-item" data-cat="conventional">
-						<div class="radar-legend-diamond"></div>
-						<span data-translate="skills.vocationalStats.conventional">Convencional</span>
-					</div>
-				</div>
-			</div>
+            @* SECCIÓN 2: APTITUDES Y COMPETENCIAS *@
+            <div class="vocational-section-content" data-section-content="aptitudes">
+                <div class="vocational-bars-grid">
+                    <div class="vocational-chart-card">
+                        <h5>Aptitudes Desarrolladas</h5>
+                        <div class="chart-container chart-container-bar">
+                            <canvas id="aptitudesDesarrolladasChart"></canvas>
+                        </div>
+                    </div>
+                    <div class="vocational-chart-card">
+                        <h5>Competencias Específicas</h5>
+                        <div class="chart-container chart-container-bar">
+                            <canvas id="competenciasEspecificasChart"></canvas>
+                        </div>
+                    </div>
+                    <div class="vocational-chart-card">
+                        <h5>Aptitudes por Desarrollar</h5>
+                        <div class="chart-container chart-container-bar">
+                            <canvas id="aptitudesPorDesarrollarChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+                <div class="vocational-bars-grid">
+                    <div class="vocational-chart-card">
+                        <h5>Competencias por Desarrollar</h5>
+                        <div class="chart-container chart-container-bar">
+                            <canvas id="competenciasPorDesarrollarChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-			@* Gráficos de Barras *@
-			<div class="vocational-bars-grid">
-				<div class="vocational-chart-card">
-					<h5 data-translate="skills.vocationalStats.topSkills">Habilidades de Mayor Relevancia</h5>
-					<div class="chart-container chart-container-bar">
-						<canvas id="topSkillsChart"></canvas>
-					</div>
-				</div>
+            @* SECCIÓN 3: PROYECTO DE VIDA Y VALORES *@
+            <div class="vocational-section-content" data-section-content="proyecto">
+                <div class="vocational-text-section">
+                    <h5>Tus Asignaturas</h5>
+                    <ul>
+                        <li><strong>La que más te gusta:</strong> Actividades tecnológicas</li>
+                        <li><strong>La que menos te gusta:</strong> Metodología de la Investigación</li>
+                        <li><strong>La que se te hace más difícil:</strong> Matemáticas</li>
+                    </ul>
+                </div>
 
-				<div class="vocational-chart-card">
-					<h5 data-translate="skills.vocationalStats.topInterests">Intereses de Mayor Importancia</h5>
-					<div class="chart-container chart-container-bar">
-						<canvas id="topInterestsChart"></canvas>
-					</div>
-				</div>
+                <div class="vocational-bars-grid">
+                    <div class="vocational-chart-card">
+                        <h5>Valores Ocupacionales</h5>
+                        <div class="chart-container chart-container-bar">
+                            <canvas id="valoresOcupacionalesChart"></canvas>
+                        </div>
+                    </div>
+                </div>
 
-				<div class="vocational-chart-card">
-					<h5 data-translate="skills.vocationalStats.topCareers">Carreras de Mayor Importancia</h5>
-					<div class="chart-container chart-container-bar">
-						<canvas id="topCareersChart"></canvas>
-					</div>
-				</div>
+                <div class="vocational-text-section">
+                    <h5>Visión de Proyecto de Vida</h5>
+                    <ul>
+                        <li>Formar una familia e inculcarles buenos valores a los hijos.</li>
+                        <li>Poder llevar adelante la vocación personal.</li>
+                        <li>Alcanzar la realización profesional y personal.</li>
+                        <li>Lograr un equilibrio entre lo laboral y lo afectivo.</li>
+                        <li>Estar en constante formación académica e intelectual.</li>
+                    </ul>
+                </div>
+            </div>
 
-				<div class="vocational-chart-card">
-					<h5 data-translate="skills.vocationalStats.lowSkills">Habilidades de Menor Relevancia</h5>
-					<div class="chart-container chart-container-bar">
-						<canvas id="lowSkillsChart"></canvas>
-					</div>
-				</div>
-
-				<div class="vocational-chart-card">
-					<h5 data-translate="skills.vocationalStats.lowInterests">Intereses de Menor Importancia</h5>
-					<div class="chart-container chart-container-bar">
-						<canvas id="lowInterestsChart"></canvas>
-					</div>
-				</div>
-
-				<div class="vocational-chart-card">
-					<h5 data-translate="skills.vocationalStats.lowCareers">Carreras de Menor Importancia</h5>
-					<div class="chart-container chart-container-bar">
-						<canvas id="lowCareersChart"></canvas>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+        </div>
+    </section>
 </div>

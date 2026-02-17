@@ -63,6 +63,7 @@
     "title": "Skills",
     "filterHard": "Hard Skills",
     "filterSoft": "Soft Skills",
+    "filterStats": "Statistics",
     "hardSkills": {
       "title": "Technical Skills",
       "webDevelopment": "Web Development",
@@ -84,6 +85,47 @@
       "attention": "Attention to detail",
       "persistence": "Persistence",
       "workEthic": "Work Ethic"
+    },
+    "vocationalStats": {
+      "title": "Vocational Profile",
+      "radarBadge": "Vocational",
+      "realistic": "Realistic",
+      "investigative": "Investigative",
+      "artistic": "Artistic",
+      "social": "Social",
+      "enterprising": "Enterprising",
+      "conventional": "Conventional",
+      "sectionProfile": "Profile Summary",
+      "sectionAptitudes": "Aptitudes and Competencies",
+      "sectionProject": "Life Project and Values",
+      "topSkills": "Top Skills",
+      "topInterests": "Top Interests",
+      "topCareers": "Top Careers",
+      "lowSkills": "Lower Relevance Skills",
+      "lowInterests": "Lower Relevance Interests",
+      "lowCareers": "Lower Relevance Careers",
+      "aptitudesDesarrolladas": "Developed Aptitudes",
+      "competenciasEspecificas": "Specific Competencies",
+      "aptitudesPorDesarrollar": "Aptitudes to Develop",
+      "competenciasPorDesarrollar": "Competencies to Develop",
+      "valoresOcupacionales": "Occupational Values",
+      "asignaturas": {
+        "title": "Your Subjects",
+        "favorita": "Your favorite:",
+        "favorita_value": "Technological activities",
+        "menosGusta": "Your least favorite:",
+        "menosGusta_value": "Research Methodology",
+        "dificil": "The most difficult for you:",
+        "dificil_value": "Mathematics"
+      },
+      "proyectoVida": {
+        "title": "Your Life Project Vision",
+        "vision1": "Build a family and instill good values in the children.",
+        "vision2": "Be able to pursue personal vocation.",
+        "vision3": "Achieve professional and personal fulfillment.",
+        "vision4": "Find a balance between work and personal life.",
+        "vision5": "Be in constant academic and intellectual training."
+      }
     }
   },
   "projects": {

@@ -1,16 +1,11 @@
-﻿/* ══════════════════════════════════════════════════════════
-   VOCATIONAL CHARTS — integrado al tema glassmorphism oscuro
-   ══════════════════════════════════════════════════════════ */
-
-/* ── Contenedor principal ── */
-.vocational-container {
+﻿.vocational-container {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1.75rem;
     margin-top: 1.5rem;
 }
 
-/* ── Tarjeta genérica de gráfico ── */
+/* Tarjeta genérica de gráfico */
 .vocational-chart-card {
     background: rgba(240, 248, 255, 0.07);
     border: 1px solid rgba(255, 255, 255, 0.12);
@@ -39,7 +34,7 @@
         letter-spacing: 0.3px;
     }
 
-/* ── Contenedores de gráfica ── */
+/* Contenedores de gráfica */
 .chart-container {
     position: relative;
     width: 100%;
@@ -50,16 +45,14 @@
     height: 240px;
 }
 
-/* ── Grid de barras ── */
+/* Grid de barras */
 .vocational-bars-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 1.5rem;
 }
 
-/* ═══════════════════════════════════════════════════════════
-   RADAR CARD — glassmorphism oscuro, coherente con el resto
-   ═══════════════════════════════════════════════════════════ */
+/* RADAR CARD — glassmorphism oscuro, coherente con el resto */
 .radar-card {
     grid-column: 1 / -1;
     background: rgba(240, 248, 255, 0.09) !important;
@@ -78,7 +71,7 @@
         box-shadow: 0 12px 36px rgba(0, 0, 0, 0.38) !important;
     }
 
-/* ── Badge "Vocacional" ── */
+/* Badge "Vocacional" */
 .radar-title-badge {
     display: flex;
     justify-content: center;
@@ -100,14 +93,14 @@
         font-family: 'Segoe UI', Arial, sans-serif;
     }
 
-/* ── Canvas del radar ── */
+/* Canvas del radar */
 .radar-card .chart-container {
     height: 460px;
     max-width: 560px;
     margin: 0 auto;
 }
 
-/* ── Leyenda inferior RIASEC ── */
+/* Leyenda inferior RIASEC */
 .radar-legend {
     display: flex;
     flex-wrap: wrap;
@@ -132,7 +125,7 @@
         color: rgba(255, 255, 255, 1);
     }
 
-/* ── Rombos de leyenda ── */
+/* Rombos de leyenda */
 .radar-legend-diamond {
     width: 11px;
     height: 11px;
@@ -172,9 +165,7 @@
     display: none !important;
 }
 
-/* ═══════════════════════════════════════════════════════════
-   RESPONSIVE
-   ═══════════════════════════════════════════════════════════ */
+/* RESPONSIVE */
 
 @media (max-width: 1024px) {
     .vocational-container {
@@ -314,4 +305,213 @@
     .radar-legend-item {
         font-size: 0.75rem;
     }
+}
+
+/* FILTROS DE SECCIONES */
+.vocational-section-filter {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin: 2rem 0 1.5rem 0;
+    flex-wrap: wrap;
+}
+
+.vocational-section-btn {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: rgba(255, 255, 255, 0.85);
+    padding: 0.85rem 1.6rem;
+    border-radius: 12px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+    backdrop-filter: blur(8px);
+    letter-spacing: 0.3px;
+}
+
+    .vocational-section-btn::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+        transition: left 0.5s ease;
+    }
+
+    .vocational-section-btn:hover::before {
+        left: 100%;
+    }
+
+    .vocational-section-btn:hover {
+        background: rgba(255, 255, 255, 0.15);
+        border-color: rgba(255, 255, 255, 0.3);
+        color: #ffffff;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .vocational-section-btn.active {
+        background: rgba(255, 255, 255, 0.2);
+        border-color: rgba(255, 255, 255, 0.4);
+        color: #ffffff;
+        font-weight: 600;
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    }
+
+/* CONTENIDOS DE SECCIONES */
+.vocational-section-content {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+    .vocational-section-content.active {
+        display: block;
+        opacity: 1;
+        animation: fadeIn 0.3s ease;
+    }
+
+/* GRIDS DE BARRAS — 3 COLUMNAS + ALTURA REDUCIDA */
+.vocational-bars-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+    margin-bottom: 1.25rem;
+}
+
+/* Altura reducida de barras */
+.chart-container-bar {
+    height: 180px;
+}
+
+/* SECCIÓN DE TEXTO (Asignaturas y Proyecto de Vida) */
+.vocational-text-section {
+    background: rgba(240, 248, 255, 0.07);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 16px;
+    padding: 1.5rem;
+    margin-bottom: 1.25rem;
+    backdrop-filter: blur(14px) saturate(130%);
+    -webkit-backdrop-filter: blur(14px) saturate(130%);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+    .vocational-text-section h5 {
+        color: rgba(255, 255, 255, 0.92);
+        font-size: 1.05rem;
+        font-weight: 600;
+        margin: 0 0 1rem 0;
+        text-shadow: 0 1px 6px rgba(255, 255, 255, 0.2);
+    }
+
+    .vocational-text-section ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+        .vocational-text-section ul li {
+            color: rgba(255, 255, 255, 0.82);
+            font-size: 0.95rem;
+            line-height: 1.7;
+            margin-bottom: 0.6rem;
+            padding-left: 1.2rem;
+            position: relative;
+        }
+
+            .vocational-text-section ul li::before {
+                content: '▹';
+                position: absolute;
+                left: 0;
+                color: rgba(79, 195, 247, 0.8);
+                font-size: 1.1rem;
+            }
+
+            .vocational-text-section ul li strong {
+                color: rgba(255, 255, 255, 0.95);
+                font-weight: 600;
+            }
+
+/* Contenedor principal - evitar desbordamiento */
+.vocational-container {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* Asegurar que las tarjetas no se salgan */
+.vocational-chart-card {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+/* Grid responsivo sin desbordamiento */
+.vocational-bars-grid {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+/* Canvas contenidos apropiadamente */
+.chart-container {
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+}
+
+    .chart-container canvas {
+        max-width: 100%;
+        height: auto !important;
+    }
+
+/* Títulos que no se salgan */
+.vocational-chart-card h5 {
+    width: 100%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+}
+
+/* Filtros de sección responsive */
+.vocational-section-filter {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+/* Secciones de texto sin desbordamiento */
+.vocational-text-section {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+}
+
+    .vocational-text-section ul li {
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+
+/* Radar card */
+.radar-card {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+    .radar-card .chart-container {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+.chart-container-bar canvas {
+    cursor: pointer !important;
 }
