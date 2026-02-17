@@ -57,7 +57,6 @@ const updateContent = (translations) => {
         }
 
         if (value) {
-            // Determinar si es un input o textarea
             if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') {
                 if (element.hasAttribute('placeholder')) {
                     element.placeholder = value;
@@ -101,11 +100,9 @@ const updateURL = (language) => {
     const currentPath = window.location.pathname;
     let newPath;
 
-    // Si la ruta actual ya tiene idioma
     if (currentPath.startsWith('/es') || currentPath.startsWith('/en')) {
         newPath = currentPath.replace(/^\/(es|en)/, `/${language}`);
     } else {
-        // Si es la ruta raíz, agregar idioma
         if (currentPath === '/' || currentPath === '') {
             newPath = `/${language}`;
         } else {
@@ -113,16 +110,40 @@ const updateURL = (language) => {
         }
     }
 
-    // Actualizar URL sin recargar
     window.history.pushState({ language }, '', newPath);
 };
 
-// Cambiar idioma (con backend)
+// Cambiar idioma — las traducciones se aplican directamente sin depender
+// del éxito del backend, evitando que un fallo de CSRF bloquee el cambio.
 const changeLanguage = async (language) => {
     console.log(`Changing language to: ${language}`);
 
+    // 1. Cargar y aplicar traducciones de inmediato
+    const translations = await loadTranslations(language);
+
+    if (translations) {
+        localStorage.setItem('preferredLanguage', language);
+        document.documentElement.lang = language;
+        updateContent(translations);
+        updateActiveButton(language);
+        updateURL(language);
+
+        if (window.updateCVLink) {
+            window.updateCVLink();
+        }
+
+        if (window.initTypewriter) {
+            window.initTypewriter(language);
+        }
+
+        console.log(`✓ Language applied: ${language}`);
+    } else {
+        console.error(`Could not load translations for: ${language}`);
+        return;
+    }
+
+    // 2. Notificar al backend de forma asíncrona (fire-and-forget)
     try {
-        // Notificar al backend del cambio de idioma
         const formData = new FormData();
         formData.append('language', language);
         formData.append('returnUrl', window.location.pathname);
@@ -133,34 +154,12 @@ const changeLanguage = async (language) => {
         });
 
         if (response.ok) {
-            // Cargar traducciones
-            const translations = await loadTranslations(language);
-
-            if (translations) {
-                // Actualizar localStorage también (para compatibilidad)
-                localStorage.setItem('preferredLanguage', language);
-                document.documentElement.lang = language;
-                updateContent(translations);
-                updateActiveButton(language);
-                updateURL(language);
-
-                // Actualizar link de CV
-                if (window.updateCVLink) {
-                    window.updateCVLink();
-                }
-
-                // Reiniciar el typewriter con el nuevo idioma
-                if (window.initTypewriter) {
-                    window.initTypewriter(language);
-                }
-
-                console.log(`✓ Language changed successfully to: ${language}`);
-            }
+            console.log(`✓ Backend notified of language change: ${language}`);
         } else {
-            console.error('Error setting language on backend');
+            console.warn('Backend language update failed (translations already applied client-side)');
         }
     } catch (error) {
-        console.error('Error changing language:', error);
+        console.warn('Could not notify backend of language change:', error);
     }
 };
 
@@ -171,7 +170,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     // Obtener idioma del backend
     let currentLanguage = await getCurrentLanguageFromBackend();
 
-    // Si hay idioma en la URL, usarlo
+    // Si hay idioma en la URL, tiene prioridad
     const pathLanguage = window.location.pathname.match(/^\/(es|en)/)?.[1];
     if (pathLanguage) {
         currentLanguage = pathLanguage;
@@ -180,13 +179,12 @@ document.addEventListener('DOMContentLoaded', async () => {
     // Cargar traducciones para el idioma actual
     await changeLanguage(currentLanguage);
 
-    // Agregar event listeners a los botones de idioma
+    // Event listeners en los botones de idioma
     document.querySelectorAll('.lang-btn').forEach(btn => {
         btn.addEventListener('click', async (e) => {
             e.preventDefault();
             const language = btn.dataset.lang;
 
-            // Prevenir cambio si ya está activo
             if (btn.classList.contains('active')) {
                 return;
             }
