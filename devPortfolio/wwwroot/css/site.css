@@ -22,7 +22,7 @@ header {
     text-align: center;
 }
 
-/* ====== PANEL SUPERIOR  ====== */
+/* ====== PANEL SUPERIOR ====== */
 .top-panel {
     position: relative;
     padding: 2rem 1.5rem;
@@ -34,35 +34,38 @@ header {
     margin-top: 2%;
 }
 
+    /* FIX #7: una sola regla consolidada para h2 */
     .top-panel h2 {
+        color: #FFF;
         font-size: clamp(1.2rem, 2.5vw, 1.8rem);
         font-weight: 700;
         margin: 0 0 0.5rem 0;
         letter-spacing: 1px;
-        text-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
+        text-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
         animation: fadeInDown 0.6s ease-out;
         position: relative;
         z-index: 2;
     }
 
+    /* FIX #7: una sola regla consolidada para h1 */
     .top-panel h1 {
         color: #FFF;
         font-size: clamp(1.4rem, 4vw, 2rem);
         font-family: Arial, sans-serif;
         font-weight: bold;
-        text-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
         position: relative;
-        margin: 0;
+        margin: 0 0 1rem 0;
         text-align: center;
         max-width: 90%;
         line-height: 1.3;
     }
 
-.top-panel h3 {
-    font-size: 1.1rem;
-    font-weight: 600;
-    margin: 4px 0 0 0;
-}
+    .top-panel h3 {
+        font-size: 1.1rem;
+        font-weight: 600;
+        margin: 4px 0 0 0;
+    }
 
 .line {
     display: flex;
@@ -72,25 +75,6 @@ header {
     gap: 0.5rem;
     width: 100%;
     flex-wrap: wrap;
-}
-
-.top-panel h1 {
-    color: #ffffff;
-    font-size: 1.9em;
-    margin-bottom: 1rem;
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
-}
-
-.top-panel h2 {
-    color: #FFF;
-    position: absolute;
-    top: 8%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 45px;
-    font-family: Arial, sans-serif;
-    font-weight: bold;
-    text-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
 }
 
 /* Panels */
@@ -118,6 +102,10 @@ header {
     .panel.panel-izq {
         font-size: 1.2rem;
         font-weight: 600;
+        padding: 1.5rem 1rem;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
     }
 
     .panel.panel-content {
@@ -132,7 +120,6 @@ header {
         position: relative;
     }
 
-
 /* Glassmorphism */
 .glass {
     background: rgba(240, 248, 255, .12);
@@ -140,8 +127,6 @@ header {
     backdrop-filter: blur(14px) saturate(130%);
     border: 0;
 }
-
-
 
 /* ====== NAVEGACIÓN LATERAL ====== */
 .nav-menu {
@@ -168,7 +153,6 @@ header {
     letter-spacing: 0.3px;
 }
 
-    /* Efecto de brillo sutil en hover */
     .nav-button::before {
         content: '';
         position: absolute;
@@ -176,7 +160,7 @@ header {
         left: -100%;
         width: 100%;
         height: 100%;
-        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent );
+        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
         transition: left 0.5s ease;
     }
 
@@ -184,7 +168,6 @@ header {
         left: 100%;
     }
 
-    /* Estado hover */
     .nav-button:hover {
         background: rgba(255, 255, 255, 0.15);
         border-color: rgba(255, 255, 255, 0.3);
@@ -193,7 +176,6 @@ header {
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     }
 
-    /* Estado activo */
     .nav-button.active {
         background: rgba(255, 255, 255, 0.2);
         border-color: rgba(255, 255, 255, 0.4);
@@ -202,7 +184,6 @@ header {
         box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
     }
 
-        /* Indicador lateral en botón activo */
         .nav-button.active::after {
             content: '';
             position: absolute;
@@ -211,18 +192,16 @@ header {
             transform: translateY(-50%);
             width: 3px;
             height: 60%;
-            background: linear-gradient(180deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.4) );
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.4));
             border-radius: 0 2px 2px 0;
         }
 
-    /* Estado focus para accesibilidad */
     .nav-button:focus {
         outline: none;
         border-color: rgba(255, 255, 255, 0.5);
         box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.1);
     }
 
-    /* Estado pressed */
     .nav-button:active {
         transform: translateX(2px) scale(0.98);
     }
@@ -251,12 +230,6 @@ header {
         box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
     }
 
-/* Ajuste del panel izquierdo */
-.panel.panel-izq {
-    padding: 1.5rem 1rem;
-    justify-content: flex-start;
-}
-
 .panel-lateral {
     display: flex;
     flex-direction: column;
@@ -267,7 +240,7 @@ header {
     display: none;
     position: fixed;
     top: 20px;
-    .menu-toggle left: 20px;
+    left: 20px;
     z-index: 1000;
     background: rgba(255, 255, 255, 0.15);
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -305,8 +278,6 @@ header {
     .menu-toggle.active span:nth-child(3) {
         transform: rotate(-45deg) translate(6px, -6px);
     }
-
-/* Profile image */
 
 /* ====== IMAGEN DE PERFIL ====== */
 .profile-section {
@@ -349,15 +320,7 @@ header {
         opacity: 1;
     }
 
-.panel.panel-izq {
-    padding: 1.5rem 1rem;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
-}
-
 /* Partial Views */
-
 .panel-content {
     position: relative;
     overflow: hidden;
@@ -378,15 +341,7 @@ header {
         animation: fadeIn 0.4s ease-in-out;
     }
 
-.content-section h2 {
-    color: #ffffff;
-    font-size: 2rem;
-    font-weight: 700;
-    margin-bottom: 1.5rem;
-    text-shadow: 0 2px 8px rgba(255, 255, 255, 0.3);
-}
-
-    .content-section > h2 {
+    .content-section h2 {
         color: #ffffff;
         font-size: 2rem;
         font-weight: 700;
@@ -410,7 +365,6 @@ header {
         margin-bottom: 0.75rem;
         text-shadow: 0 1px 4px rgba(255, 255, 255, 0.2);
     }
-    }
 
     .content-section h5 {
         color: rgba(255, 255, 255, 0.9);
@@ -421,57 +375,56 @@ header {
         text-shadow: 0 1px 3px rgba(255, 255, 255, 0.15);
     }
 
-.content-section span,
-.content-section strong {
-    color: rgba(255, 255, 255, 0.88);
-    font-weight: 600;
-}
-
-.content-section p {
-    color: rgba(255, 255, 255, 0.8);
-    font-size: 1rem;
-    line-height: 1.6;
-    margin-bottom: 1rem;
-    font-weight: 400;
-}
-
-.content-section section {
-    margin-bottom: 2rem;
-}
-
-.content-section ul {
-    list-style: none;
-    padding-left: 0;
-}
-
-    .content-section ul li {
-        color: rgba(255, 255, 255, 0.85);
-        font-size: 1rem;
-        line-height: 1.6;
-        margin-bottom: 0.75rem;
-        padding-left: 1.5rem;
-        position: relative;
+    .content-section span,
+    .content-section strong {
+        color: rgba(255, 255, 255, 0.88);
+        font-weight: 600;
     }
 
-        .content-section ul li::before {
-            content: "";
-            position: absolute;
-            left: 0;
+    .content-section p {
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 1rem;
+        line-height: 1.6;
+        margin-bottom: 1rem;
+        font-weight: 400;
+    }
+
+    .content-section section {
+        margin-bottom: 2rem;
+    }
+
+    .content-section ul {
+        list-style: none;
+        padding-left: 0;
+    }
+
+        .content-section ul li {
+            color: rgba(255, 255, 255, 0.85);
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-bottom: 0.75rem;
+            padding-left: 1.5rem;
+            position: relative;
         }
 
-        .content-section ul li span,
-        .content-section ul li strong {
-            color: #ffffff;
-            font-weight: 600;
-        }
+            .content-section ul li::before {
+                content: "";
+                position: absolute;
+                left: 0;
+            }
 
-        .content-section ul li p {
-            color: rgba(255, 255, 255, 0.8);
-            margin-bottom: 0.5rem;
-        }
+            .content-section ul li span,
+            .content-section ul li strong {
+                color: #ffffff;
+                font-weight: 600;
+            }
+
+            .content-section ul li p {
+                color: rgba(255, 255, 255, 0.8);
+                margin-bottom: 0.5rem;
+            }
 
 /* Education partial View */
-
 .academic-training-card,
 .professional-development-card {
     background: rgba(255, 255, 255, 0.05);
@@ -544,7 +497,6 @@ header {
         letter-spacing: 0.3px;
     }
 
-        /* Efecto de brillo al pasar el mouse */
         .skill-filter button::before {
             content: '';
             position: absolute;
@@ -602,9 +554,7 @@ header {
         animation: fadeIn 0.3s ease-in-out;
     }
 
-
     /* ====== HARD SKILLS ====== */
-
     .hard-skills-content > ul {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -673,7 +623,6 @@ header {
                         padding: 0;
                     }
 
-
     /* ====== SOFT SKILLS ====== */
     .soft-skills-content ul {
         display: grid;
@@ -705,7 +654,6 @@ header {
             }
 
 /* _Education */
-
 .academic-training-card h4,
 .professional-development-card h5,
 .credentials-container h4 {
@@ -745,7 +693,6 @@ header {
 }
 
 /* _Project */
-
 .project-filter {
     display: flex;
     gap: 1rem;
@@ -807,7 +754,7 @@ header {
         box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.1);
     }
 
-/* Modal Dialogs*/
+/* Modal Dialogs */
 
 /* ====== MODAL DE IMAGEN COMPLETA ====== */
 .image-modal {

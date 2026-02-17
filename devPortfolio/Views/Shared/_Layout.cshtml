@@ -15,9 +15,7 @@
     <link rel="stylesheet" href="~/css/languages.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/carousel.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/responsive.css" asp-append-version="true" />
-	<script src="~/js/vocational-charts.js"></script>
-
-    <script src="~/js/stars.js"></script>
+    <link rel="stylesheet" href="~/css/vocational-charts.css" asp-append-version="true" />
 </head>
 <body>
     <header>
@@ -29,7 +27,6 @@
             <div class="stars-layer stars-large"></div>
             <div class="shooting-stars"></div>
         </div>
-
 
         <div class="top-panel">
             <h2 data-translate="header.hello">#HOLA MUNDO</h2>
@@ -54,9 +51,12 @@
     <script src="~/js/carousel.js" asp-append-version="true"></script>
     <script src="~/js/translation.js" asp-append-version="true"></script>
     <script src="~/js/menu-toggle.js" asp-append-version="true"></script>
-	<script src="~/js/typewritting_effect.js"></script>
-	<script src="~/js/vocational-charts.js"></script>
+    <script src="~/js/typewritting_effect.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.5.0/chart.min.js" 
+        integrity="sha512-n/G+dROKbKL3GVngGWmWfwK0yPctjZQM752diVYnXZtD/48agpUKLIn0xDQL9ydZ91x6BiOmTIFwWjjFi2kEFg==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <script src="~/js/vocational-charts.js"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

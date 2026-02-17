@@ -10,4 +10,8 @@
     <Folder Include="wwwroot\images\projects\Datathons\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Chart.js" Version="3.7.1" />
+  </ItemGroup>
+
 </Project>
