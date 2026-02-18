@@ -151,19 +151,19 @@
       "challenge3": "Implementación de mejoras continuas en sistemas legacy",
       "projectsTitle": "Proyectos Destacados",
       "overtime": {
-        "title": "Aplicacion de escritorio 'OverTime Request'",
+        "title": "Aplicacion de escritorio OverTime Request",
         "description": "Desarrollo y soporte del módulo de cálculo automatizado de costos de tiempo extra, incluyendo la estimación de gastos de alimentación y transporte para personal de producción. Implementación de lógica de negocio compleja y validaciones de datos."
       },
       "etiquetas": {
-        "title": "Aplicacion de escritorio 'Etiquetas'",
+        "title": "Aplicacion de escritorio Etiquetas",
         "description": "Desarrollo de aplicación para el área de almacén que consulta información de proveedores en Oracle, genera etiquetas dinámicas y gestiona la impresión automatizada. Sistema configurable mediante archivos JSON para máxima flexibilidad operativa."
       },
       "masterLabel": {
-        "title": "Aplicacion web 'Master Label'",
+        "title": "Aplicacion web Master Label",
         "description": "Diseño e implementación de sistema web para el registro y análisis de errores en Master Labels, facilitando la identificación de patrones y causas raíz mediante reportes y dashboards."
       },
       "budgetControl": {
-        "title": "Aplicacion web 'Budget Control'",
+        "title": "Aplicacion web Budget Control",
         "description": "Desarrollo de aplicación para el área de finanzas que automatiza procesos repetitivos, integra múltiples fuentes de datos Excel, y calcula presupuestos y costos de manera eficiente. Reducción significativa de tiempos de procesamiento manual."
       }
     },
@@ -190,7 +190,7 @@
     "datathon2022": {
       "name": "WiDS Datathon 2022",
       "shortDescription": "Datathon enfocado en temas de salud",
-      "title": "WiDS Datathon 2022 – Detección temprana de cáncer de mama",
+      "title": "WiDS Datathon 2022 - Detección temprana de cáncer de mama",
       "description": "Desarrollo de modelo predictivo para la detección temprana de cáncer de mama mediante técnicas de machine learning aplicadas a datos clínicos, enfocado en la clasificación precisa de riesgo.",
       "featuresTitle": "Características Técnicas",
       "feature1": "Limpieza y preprocesamiento de datasets médicos complejos",
@@ -207,7 +207,7 @@
     "datathon2025": {
       "name": "WiDS Datathon 2025",
       "shortDescription": "Datathon enfocado en temas de salud",
-      "title": "WiDS Datathon 2025 – Detección de TDAH y TDA en mujeres adolescentes",
+      "title": "WiDS Datathon 2025 - Detección de TDAH y TDA en mujeres adolescentes",
       "description": "Desarrollo de modelo predictivo para la identificación temprana de patrones asociados a TDAH y TDA en población femenina adolescente, abordando el desafío de síntomas atípicos y subrepresentación en datos de entrenamiento.",
       "featuresTitle": "Características Técnicas",
       "feature1": "Limpieza y estructuración de datasets neurocognitivos complejos",
@@ -226,7 +226,7 @@
     },
     "bookshelf": {
       "name": "BookShelf",
-      "shortDescription": "Portafolio profesional de desarrollador con diseño espacial y glasmorfismo",
+      "shortDescription": "Sistema de gestión de biblioteca personal",
       "description": "Sistema de gestión de biblioteca personal con catalogación de libros, autores y géneros literarios, proporcionando una solución completa para organizar y administrar colecciones bibliográficas.",
       "featuresTitle": "Caracteristicas Principales",
       "feature1": "Administración integral de libros, autores y géneros",
@@ -369,6 +369,7 @@
     }
   },
   "modal": {
-    "close": "Cerrar"
+    "close": "Cerrar",
+    "imageAlt": "Imagen ampliada"
   }
 }

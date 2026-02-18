@@ -120,10 +120,9 @@
                 ticks: { stepSize: 20, color: 'rgba(0,0,0,0)', backdropColor: 'transparent', font: { size: 9 } },
                 grid: { color: 'rgba(255,255,255,0.15)', circular: true },
                 pointLabels: {
-                    color: '#ffffff',
+                    color: 'rgb(160, 161, 163)',
                     font: { size: 12, weight: '600' },
                     padding: 12,
-                    backdropColor: 'rgba(10,3,47,0.65)',
                     backdropPadding: { x: 5, y: 2 },
                 },
                 angleLines: { color: 'rgba(255,255,255,0.12)' }
