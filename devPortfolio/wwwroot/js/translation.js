@@ -113,8 +113,7 @@ const updateURL = (language) => {
     window.history.pushState({ language }, '', newPath);
 };
 
-// Cambiar idioma — las traducciones se aplican directamente sin depender
-// del éxito del backend, evitando que un fallo de CSRF bloquee el cambio.
+// Cambiar idioma
 const changeLanguage = async (language) => {
     console.log(`Changing language to: ${language}`);
 
@@ -134,6 +133,11 @@ const changeLanguage = async (language) => {
 
         if (window.initTypewriter) {
             window.initTypewriter(language);
+        }
+
+        // ── Actualizar gráficos vocacionales con el nuevo idioma ──
+        if (window.refreshVocationalCharts) {
+            window.refreshVocationalCharts();
         }
 
         console.log(`✓ Language applied: ${language}`);
