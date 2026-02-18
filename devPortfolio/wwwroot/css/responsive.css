@@ -228,6 +228,32 @@
     .radar-card .chart-container {
         height: 400px;
     }
+
+    .vocational-container {
+        gap: 1.5rem;
+    }
+
+    .chart-container {
+        height: 350px;
+    }
+
+    .chart-container-bar {
+        height: 210px;
+    }
+
+    .vocational-bars-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 1.25rem;
+    }
+
+    .radar-card .chart-container {
+        height: 400px;
+    }
+
+    .radar-title-badge span {
+        font-size: 1.05rem;
+        padding: 0.45rem 1.8rem;
+    }
 }
 
 /* ====== MOBILE LANDSCAPE (orientación horizontal) ====== */
@@ -569,6 +595,8 @@
     .radar-card .chart-container {
         height: 220px;
     }
+
+
 }
 
 /* ====== LANDSCAPE muy pequeños (altura < 400px) ====== */
@@ -627,6 +655,40 @@
 
     .content-section p {
         font-size: 0.85rem;
+    }
+
+    .chart-container {
+        height: 250px;
+    }
+
+    .chart-container-bar {
+        height: 160px;
+    }
+
+    .vocational-chart-card {
+        padding: 0.75rem;
+    }
+
+        .vocational-chart-card h5 {
+            font-size: 0.9rem;
+            margin-bottom: 0.75rem;
+        }
+
+    .vocational-bars-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.75rem;
+    }
+
+    .radar-card .chart-container {
+        height: 220px;
+    }
+
+    .radar-legend {
+        gap: 0.6rem 1rem;
+    }
+
+    .radar-legend-item {
+        font-size: 0.78rem;
     }
 }
 
@@ -989,6 +1051,60 @@
     .vocational-section-btn {
         padding: 0.75rem 1.2rem;
         font-size: 0.85rem;
+    }
+
+    .vocational-container {
+        gap: 1.25rem;
+    }
+
+    .vocational-chart-card {
+        padding: 1.25rem;
+        border-radius: 12px;
+    }
+
+        .vocational-chart-card h5 {
+            font-size: 1rem;
+            margin-bottom: 1rem;
+        }
+
+    .chart-container {
+        height: 300px;
+    }
+
+    .chart-container-bar {
+        height: 195px;
+    }
+
+    .vocational-bars-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .radar-card .chart-container {
+        height: 320px;
+    }
+
+    .radar-title-badge span {
+        font-size: 1rem;
+        padding: 0.4rem 1.5rem;
+    }
+
+    .radar-legend {
+        gap: 0.8rem 1.2rem;
+    }
+
+    .radar-legend-item {
+        font-size: 0.8rem;
+    }
+
+    .vocational-grid-lists {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        padding: 0.5rem;
+    }
+
+    .proyecto-top-grid {
+        grid-template-columns: 1fr;
     }
 }
 
@@ -1432,6 +1548,34 @@
 
     .chart-container-bar {
         height: 180px;
+    }
+
+    .radar-card .chart-container {
+        height: 280px;
+    }
+
+    .radar-legend {
+        gap: 0.6rem 1rem;
+    }
+
+    .radar-legend-item {
+        font-size: 0.75rem;
+    }
+
+    .vocational-chart-card {
+        padding: 1rem;
+    }
+
+        .vocational-chart-card h5 {
+            font-size: 0.95rem;
+        }
+
+    .chart-container {
+        height: 280px;
+    }
+
+    .chart-container-bar {
+        height: 175px;
     }
 
     .radar-card .chart-container {
