@@ -97,8 +97,12 @@
 
         <div class="vocational-container">
 
-            @* RADAR CARD *@
-            <div class="vocational-chart-card radar-card">
+            @* ═══════════════════════════════════════════════════════════════
+               RADAR CARD — FUERA del sistema de sub-secciones.
+               Siempre visible mientras la tab "Estadísticas" esté activa.
+               Su ciclo de vida es gestionado de forma independiente en JS.
+               ═══════════════════════════════════════════════════════════════ *@
+            <div class="vocational-chart-card radar-card" id="radarCardWrapper">
                 <div class="radar-title-badge">
                     <span data-translate="skills.vocationalStats.radarBadge">Vocacional</span>
                 </div>
@@ -195,57 +199,9 @@
 
             @* SECCIÓN 2: APTITUDES Y COMPETENCIAS *@
             <div class="vocational-section-content" data-section-content="aptitudes">
-                <div class="vocational-bars-grid">
-                    <div class="vocational-chart-card">
-                        <h5 data-translate="skills.vocationalStats.aptitudesDesarrolladas">Mis Aptitudes Desarrolladas</h5>
-                        <div class="chart-container chart-container-bar">
-                            <canvas id="aptitudesDesarrolladasChart"></canvas>
-                        </div>
-                    </div>
-                    <div class="vocational-chart-card">
-                        <h5 data-translate="skills.vocationalStats.competenciasEspecificas">Mis Competencias Específicas</h5>
-                        <div class="chart-container chart-container-bar">
-                            <canvas id="competenciasEspecificasChart"></canvas>
-                        </div>
-                    </div>
-                    <div class="vocational-chart-card">
-                        <h5 data-translate="skills.vocationalStats.aptitudesPorDesarrollar">Mis Aptitudes por Desarrollar</h5>
-                        <div class="chart-container chart-container-bar">
-                            <canvas id="aptitudesPorDesarrollarChart"></canvas>
-                        </div>
-                    </div>
-                </div>
-                <div class="vocational-bars-grid">
-                    <div class="vocational-chart-card">
-                        <h5 data-translate="skills.vocationalStats.competenciasPorDesarrollar">Mis Competencias por Desarrollar</h5>
-                        <div class="chart-container chart-container-bar">
-                            <canvas id="competenciasPorDesarrollarChart"></canvas>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
-            @* SECCIÓN 3: PROYECTO DE VIDA Y VALORES *@
-            <div class="vocational-section-content" data-section-content="proyecto">
-                <div class="vocational-text-section">
-                    <h5 data-translate="skills.vocationalStats.asignaturas.title">Mis Asignaturas</h5>
-                    <ul>
-                        <li>
-                            <strong data-translate="skills.vocationalStats.asignaturas.favorita">La que más me gusta:</strong>
-                            <span data-translate="skills.vocationalStats.asignaturas.favorita_value">Actividades tecnológicas</span>
-                        </li>
-                        <li>
-                            <strong data-translate="skills.vocationalStats.asignaturas.menosGusta">La que menos me gusta:</strong>
-                            <span data-translate="skills.vocationalStats.asignaturas.menosGusta_value">Metodología de la Investigación</span>
-                        </li>
-                        <li>
-                            <strong data-translate="skills.vocationalStats.asignaturas.dificil">La que se me hace más difícil:</strong>
-                            <span data-translate="skills.vocationalStats.asignaturas.dificil_value">Matemáticas</span>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="vocational-bars-grid">
+                @* Gráfico de Valores Ocupacionales — movido aquí desde "proyecto" *@
+                <div class="vocational-bars-grid vocational-bars-grid--single">
                     <div class="vocational-chart-card">
                         <h5 data-translate="skills.vocationalStats.valoresOcupacionales">Valores Ocupacionales</h5>
                         <div class="chart-container chart-container-bar">
@@ -254,16 +210,109 @@
                     </div>
                 </div>
 
+                <div class="vocational-grid-lists">
+
+                    @* Bloque 1: Aptitudes Desarrolladas *@
+                    <div class="vocational-list-card">
+                        <h5 data-translate="skills.vocationalStats.aptitudesDesarrolladas">Mis Aptitudes Desarrolladas</h5>
+                        <ul>
+                            <li data-translate="skills.aptitudes.developed.numeric">Capacidad numérica</li>
+                            <li data-translate="skills.aptitudes.developed.analysis">Analizar para encontrar soluciones a problemas o situaciones</li>
+                            <li data-translate="skills.aptitudes.developed.reading">Inclinación a la lectura y al estudio</li>
+                            <li data-translate="skills.aptitudes.developed.observation">Capacidad de observación</li>
+                            <li data-translate="skills.aptitudes.developed.organize">Organizar y dirigir actividades</li>
+                        </ul>
+                    </div>
+
+                    @* Bloque 2: Aptitudes por Desarrollar *@
+                    <div class="vocational-list-card">
+                        <h5 data-translate="skills.vocationalStats.aptitudesPorDesarrollar">Mis Aptitudes por Desarrollar</h5>
+                        <ul>
+                            <li data-translate="skills.aptitudes.toDevelop.authority">Autoridad</li>
+                            <li data-translate="skills.aptitudes.toDevelop.fitness">Buen estado físico (Deportes)</li>
+                            <li data-translate="skills.aptitudes.toDevelop.persuasion">Convencer o persuadir a otros</li>
+                            <li data-translate="skills.aptitudes.toDevelop.reflexes">Reflejos rápidos, intuición, vivacidad</li>
+                            <li data-translate="skills.aptitudes.toDevelop.composure">Sangre fría ante situaciones extremas</li>
+                        </ul>
+                    </div>
+
+                    @* Bloque 3: Competencias Específicas *@
+                    <div class="vocational-list-card">
+                        <h5 data-translate="skills.vocationalStats.competenciasEspecificas">Mis Competencias Específicas</h5>
+                        <ul>
+                            <li data-translate="skills.competencies.specific.teamwork">Trabajo en Equipo</li>
+                            <li data-translate="skills.competencies.specific.confidence">Confianza y seguridad</li>
+                            <li data-translate="skills.competencies.specific.independence">Independencia</li>
+                            <li data-translate="skills.competencies.specific.initiative">Iniciativa</li>
+                            <li data-translate="skills.competencies.specific.problemSolving">Solución de Problemas</li>
+                        </ul>
+                    </div>
+
+                    @* Bloque 4: Competencias por Desarrollar *@
+                    <div class="vocational-list-card">
+                        <h5 data-translate="skills.vocationalStats.competenciasPorDesarrollar">Mis Competencias por Desarrollar</h5>
+                        <ul>
+                            <li data-translate="skills.competencies.toDevelop.optimism">Optimismo</li>
+                            <li data-translate="skills.competencies.toDevelop.patience">Paciencia</li>
+                            <li data-translate="skills.competencies.toDevelop.empathy">Empatía</li>
+                            <li data-translate="skills.competencies.toDevelop.competitiveness">Competitividad</li>
+                            <li data-translate="skills.competencies.toDevelop.creativity">Creatividad</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+
+            @* SECCIÓN 3: PROYECTO DE VIDA Y VALORES *@
+            <div class="vocational-section-content" data-section-content="proyecto">
+
+                @* Fila superior: dos columnas — Asignaturas | Visión de Proyecto de Vida *@
+                <div class="proyecto-top-grid">
+
+                    <div class="vocational-text-section">
+                        <h5 data-translate="skills.vocationalStats.asignaturas.title">Mis asignaturas</h5>
+                        <ul>
+                            <li>
+                                <strong data-translate="skills.vocationalStats.asignaturas.favorita">La que más me gusta:</strong>
+                                <span data-translate="skills.vocationalStats.asignaturas.favorita_value"> Actividades tecnológicas</span>
+                            </li>
+                            <li>
+                                <strong data-translate="skills.vocationalStats.asignaturas.menosGusta">La que menos me gusta:</strong>
+                                <span data-translate="skills.vocationalStats.asignaturas.menosGusta_value"> Metodología de la Investigación</span>
+                            </li>
+                            <li>
+                                <strong data-translate="skills.vocationalStats.asignaturas.dificil">La que se me hace más difícil:</strong>
+                                <span data-translate="skills.vocationalStats.asignaturas.dificil_value"> Matemáticas</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="vocational-text-section">
+                        <h5 data-translate="skills.vocationalStats.proyectoVida.title">Mi visión de proyecto de vida</h5>
+                        <ul>
+                            <li data-translate="skills.vocationalStats.proyectoVida.vision1">Quiero formar una familia e inculcarles buenos valores a mis hijos.</li>
+                            <li data-translate="skills.vocationalStats.proyectoVida.vision2">Deseo poder llevar adelante mi vocación personal.</li>
+                            <li data-translate="skills.vocationalStats.proyectoVida.vision3">Aspiro a alcanzar mi realización profesional y personal.</li>
+                            <li data-translate="skills.vocationalStats.proyectoVida.vision4">Busco lograr un equilibrio entre lo laboral y lo afectivo.</li>
+                            <li data-translate="skills.vocationalStats.proyectoVida.vision5">Me comprometo a estar en constante formación académica e intelectual.</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                @* Fila inferior: Valores Ocupacionales como lista de texto *@
                 <div class="vocational-text-section">
-                    <h5 data-translate="skills.vocationalStats.proyectoVida.title">Mi Visión de Proyecto de Vida</h5>
+                    <h5 data-translate="skills.vocationalStats.valoresOcupacionales">Mis valores ocupacionales</h5>
                     <ul>
-                        <li data-translate="skills.vocationalStats.proyectoVida.vision1">Formar una familia e inculcarles buenos valores a los hijos.</li>
-                        <li data-translate="skills.vocationalStats.proyectoVida.vision2">Poder llevar adelante la vocación personal.</li>
-                        <li data-translate="skills.vocationalStats.proyectoVida.vision3">Alcanzar la realización profesional y personal.</li>
-                        <li data-translate="skills.vocationalStats.proyectoVida.vision4">Lograr un equilibrio entre lo laboral y lo afectivo.</li>
-                        <li data-translate="skills.vocationalStats.proyectoVida.vision5">Estar en constante formación académica e intelectual.</li>
+                        <li data-translate="skills.vocationalStats.valores.esfuerzo">Esfuerzo</li>
+                        <li data-translate="skills.vocationalStats.valores.honestidad">Honestidad</li>
+                        <li data-translate="skills.vocationalStats.valores.respeto">Respeto</li>
+                        <li data-translate="skills.vocationalStats.valores.responsabilidad">Responsabilidad</li>
+                        <li data-translate="skills.vocationalStats.valores.servicio">Servicio</li>
                     </ul>
                 </div>
+
             </div>
 
         </div>

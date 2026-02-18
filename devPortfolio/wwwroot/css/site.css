@@ -34,7 +34,6 @@ header {
     margin-top: 2%;
 }
 
-    /* FIX #7: una sola regla consolidada para h2 */
     .top-panel h2 {
         color: #FFF;
         font-size: clamp(1.2rem, 2.5vw, 1.8rem);
@@ -47,7 +46,6 @@ header {
         z-index: 2;
     }
 
-    /* FIX #7: una sola regla consolidada para h1 */
     .top-panel h1 {
         color: #FFF;
         font-size: clamp(1.4rem, 4vw, 2rem);
@@ -540,15 +538,18 @@ header {
     min-height: 300px;
 }
 
+/* ====== FIX CRÍTICO: las tres secciones de skills ocultas por defecto ====== */
 .hard-skills-content,
-.soft-skills-content {
+.soft-skills-content,
+.vocational-stats-content {
     display: none;
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
 }
 
     .hard-skills-content.active,
-    .soft-skills-content.active {
+    .soft-skills-content.active,
+    .vocational-stats-content.active {
         display: block;
         opacity: 1;
         animation: fadeIn 0.3s ease-in-out;
@@ -1122,3 +1123,28 @@ header {
     .cv-download-btn:active {
         transform: translateY(0);
     }
+
+/* ====== ANIMACIONES GLOBALES ====== */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

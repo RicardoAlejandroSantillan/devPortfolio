@@ -4,7 +4,6 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - Alex Portfolio</title>
-    <script type="importmap"></script>
     <link rel="icon" type="image/x-icon" href="~/icons/icon.ico">
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/reset.css" asp-append-version="true" />
@@ -47,15 +46,13 @@
 
     <script src="~/js/stars.js"></script>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    @* Chart.js — una sola versión UMD para evitar conflictos de registro global *@
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     <script src="~/js/carousel.js" asp-append-version="true"></script>
     <script src="~/js/translation.js" asp-append-version="true"></script>
     <script src="~/js/menu-toggle.js" asp-append-version="true"></script>
     <script src="~/js/typewritting_effect.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.5.0/chart.min.js" 
-        integrity="sha512-n/G+dROKbKL3GVngGWmWfwK0yPctjZQM752diVYnXZtD/48agpUKLIn0xDQL9ydZ91x6BiOmTIFwWjjFi2kEFg==" 
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
     <script src="~/js/vocational-charts.js"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
