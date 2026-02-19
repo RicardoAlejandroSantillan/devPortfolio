@@ -274,6 +274,13 @@
       "period": "November 2025 - December 2025",
       "current": "Professional skills development program",
       "focus": "Specialization in skills for corporate work environment",
+      "trabajo": {
+        "en": {
+          "equipo": {
+            "date": "February 2026"
+          }
+        }
+      },
       "liderazgo": {
         "date": "January 2026"
       },
@@ -350,6 +357,15 @@
   },
   "insignia": {
     "forge": {
+      "trabajo": {
+        "en": {
+          "equipo": {
+            "f_title": "Forge",
+            "name": "Trabajo en Equipo",
+            "alt": "Forge Teamwork Badge"
+          }
+        }
+      },
       "liderazgo": {
         "personal": {
           "f_title": "Forge",

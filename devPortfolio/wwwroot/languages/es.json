@@ -274,6 +274,13 @@
       "period": "Noviembre 2025 - Diciembre 2025",
       "current": "Programa de desarrollo de competencias profesionales",
       "focus": "Especialización en habilidades para el entorno laboral corporativo",
+      "trabajo": {
+        "en": {
+          "equipo": {
+            "date": "Febrero 2026"
+          }
+        }
+      },
       "liderazgo": {
         "date": "Enero 2026"
       },
@@ -350,6 +357,15 @@
   },
   "insignia": {
     "forge": {
+      "trabajo": {
+        "en": {
+          "equipo": {
+            "f_title": "Forge",
+            "name": "Trabajo en Equipo",
+            "alt": "Insignia Trabajo en Equipo Forge"
+          }
+        }
+      },
       "liderazgo": {
         "personal": {
           "f_title": "Forge",
