@@ -762,14 +762,13 @@ header {
 .image-modal {
     display: none;
     position: fixed;
-    top: 0;
-    left: 0;
+    inset: 0;
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.85);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
-    z-index: 9999;
+    z-index: 99999;
     justify-content: center;
     align-items: center;
     opacity: 0;
@@ -784,7 +783,7 @@ header {
 
 .modal-content {
     position: relative;
-    max-width: 90vw;
+    max-width: min(90vw, 900px);
     max-height: 90vh;
     width: auto;
     background: rgba(255, 255, 255, 0.05);
@@ -825,8 +824,8 @@ header {
 
 .modal-close-btn {
     position: absolute;
-    top: -12px;
-    right: -12px;
+    top: 12px;
+    right: 12px;
     width: 36px;
     height: 36px;
     background: rgba(255, 255, 255, 0.15);
@@ -839,7 +838,7 @@ header {
     transition: all 0.3s ease;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    z-index: 10000;
+    z-index: 100000;
 }
 
     .modal-close-btn:hover {
@@ -855,8 +854,6 @@ header {
         stroke-width: 2;
         stroke-linecap: round;
     }
-
-
 
 /* ====== FILTROS DE EDUCACIÓN ====== */
 .education-filter {
@@ -1019,17 +1016,23 @@ header {
     }
 
 /* ====== MODAL DE CERTIFICADO ====== */
+/*
+ * IMPORTANTE: Este modal se mueve al <body> vía JS (site.js) en tiempo de
+ * ejecución. Esto es necesario porque su posición original dentro del
+ * .panel-content.glass está afectada por backdrop-filter, el cual crea un
+ * nuevo stacking context que confina position:fixed y recorta el overlay.
+ * Al moverlo al <body> queda fuera de ese contexto y cubre toda la pantalla.
+ */
 .certificate-modal {
     display: none;
     position: fixed;
-    top: 0;
-    left: 0;
+    inset: 0;
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.85);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
-    z-index: 9999;
+    z-index: 99999;
     justify-content: center;
     align-items: center;
     opacity: 0;
@@ -1044,7 +1047,7 @@ header {
 
     .certificate-modal .modal-content {
         position: relative;
-        max-width: 90vw;
+        max-width: min(90vw, 800px);
         max-height: 90vh;
         width: auto;
         background: rgba(255, 255, 255, 0.05);

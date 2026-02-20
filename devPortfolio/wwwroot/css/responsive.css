@@ -557,8 +557,8 @@
     .modal-close-btn {
         width: 28px;
         height: 28px;
-        top: -6px;
-        right: -6px;
+        top: 8px;
+        right: 8px;
     }
 
     /* Academic cards compactas */
@@ -962,8 +962,8 @@
         }
 
     .modal-close-btn {
-        top: -8px;
-        right: -8px;
+        top: 8px;
+        right: 8px;
         width: 32px;
         height: 32px;
     }

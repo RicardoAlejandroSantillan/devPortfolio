@@ -246,14 +246,17 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
     }
 
+    // Mover el modal al <body> para evitar que quede atrapado en el
+    // stacking context creado por backdrop-filter en el panel padre.
+    if (modal.parentElement !== document.body) {
+        document.body.appendChild(modal);
+    }
+
     const openModal = (imageSrc, imageAlt) => {
         modalImage.src = imageSrc;
         modalImage.alt = imageAlt;
         modal.classList.add('active');
-        setTimeout(() => {
-            const modalContent = modal.querySelector('.modal-content');
-            if (modalContent) modalContent.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        }, 100);
+        document.body.style.overflow = 'hidden';
     };
 
     const closeModal = () => {
@@ -332,6 +335,14 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
     }
 
+    // Mover el modal al <body> para evitar que quede atrapado en el
+    // stacking context creado por backdrop-filter en el panel padre.
+    // Sin esto, position: fixed queda confinado dentro del panel y el
+    // overlay se recorta en lugar de cubrir toda la pantalla.
+    if (modal.parentElement !== document.body) {
+        document.body.appendChild(modal);
+    }
+
     const openCertificateModal = (card) => {
         const img = card.querySelector('.certificate-image-container img');
         const titleText = card.querySelector('.certificate-info p').textContent;
@@ -344,11 +355,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
         modal.classList.add('active');
         document.body.style.overflow = 'hidden';
-
-        setTimeout(() => {
-            const modalContent = modal.querySelector('.modal-content');
-            if (modalContent) modalContent.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        }, 100);
     };
 
     const closeCertificateModal = () => {
