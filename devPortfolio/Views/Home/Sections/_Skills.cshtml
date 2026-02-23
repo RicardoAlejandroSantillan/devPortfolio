@@ -97,11 +97,7 @@
 
         <div class="vocational-container">
 
-            @* ═══════════════════════════════════════════════════════════════
-               RADAR CARD — FUERA del sistema de sub-secciones.
-               Siempre visible mientras la tab "Estadísticas" esté activa.
-               Su ciclo de vida es gestionado de forma independiente en JS.
-               ═══════════════════════════════════════════════════════════════ *@
+            @* RADAR CARD *@
             <div class="vocational-chart-card radar-card" id="radarCardWrapper">
                 <div class="radar-title-badge">
                     <span data-translate="skills.vocationalStats.radarBadge">Vocacional</span>
@@ -199,6 +195,29 @@
 
             @* SECCIÓN 2: APTITUDES Y COMPETENCIAS *@
             <div class="vocational-section-content" data-section-content="aptitudes">
+
+                @* Gráfico Cognitivo Triangular *@
+                <div class="vocational-bars-grid vocational-bars-grid--cognitive">
+                    <div class="vocational-chart-card cognitive-card">
+                        <div class="cognitive-badge">
+                            <span data-translate="skills.vocationalStats.cognitiveBadge">Perfil Cognitivo</span>
+                        </div>
+                        <h5 data-translate="skills.vocationalStats.cognitiveTitle">Aptitudes Cognitivas (Escala 0–60)</h5>
+                        <div class="chart-container chart-container--cognitive">
+                            <canvas id="cognitiveRadarChart"></canvas>
+                        </div>
+                        <div class="cognitive-legend">
+                            <div class="cognitive-legend-item" data-cognitive="mine">
+                                <div class="cognitive-legend-diamond"></div>
+                                <span data-translate="skills.vocationalStats.cognitiveMe">Mi Resultado</span>
+                            </div>
+                            <div class="cognitive-legend-item" data-cognitive="avg">
+                                <div class="cognitive-legend-diamond"></div>
+                                <span data-translate="skills.vocationalStats.cognitiveAvg">Promedio General</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
                 @* Gráfico de Valores Ocupacionales — movido aquí desde "proyecto" *@
                 <div class="vocational-bars-grid vocational-bars-grid--single">
