@@ -109,6 +109,10 @@
       "aptitudesPorDesarrollar": "Mis Aptitudes por Desarrollar",
       "competenciasPorDesarrollar": "Mis Competencias por Desarrollar",
       "valoresOcupacionales": "Valores Ocupacionales",
+      "cognitiveBadge": "Perfil Cognitivo",
+      "cognitiveTitle": "Aptitudes Cognitivas (Escala 0–60)",
+      "cognitiveMe": "Mi Resultado",
+      "cognitiveAvg": "Promedio General",
       "asignaturas": {
         "title": "Tus Asignaturas",
         "favorita": "La que más te gusta:",
@@ -125,6 +129,45 @@
         "vision3": "Alcanzar la realización profesional y personal.",
         "vision4": "Lograr un equilibrio entre lo laboral y lo afectivo.",
         "vision5": "Estar en constante formación académica e intelectual."
+      },
+      "valores": {
+        "esfuerzo": "Esfuerzo",
+        "honestidad": "Honestidad",
+        "respeto": "Respeto",
+        "responsabilidad": "Responsabilidad",
+        "servicio": "Servicio"
+      }
+    },
+    "aptitudes": {
+      "developed": {
+        "numeric": "Capacidad numérica",
+        "analysis": "Analizar para encontrar soluciones a problemas o situaciones",
+        "reading": "Inclinación a la lectura y al estudio",
+        "observation": "Capacidad de observación",
+        "organize": "Organizar y dirigir actividades"
+      },
+      "toDevelop": {
+        "authority": "Autoridad",
+        "fitness": "Buen estado físico (Deportes)",
+        "persuasion": "Convencer o persuadir a otros",
+        "reflexes": "Reflejos rápidos, intuición, vivacidad",
+        "composure": "Sangre fría ante situaciones extremas"
+      }
+    },
+    "competencies": {
+      "specific": {
+        "teamwork": "Trabajo en Equipo",
+        "confidence": "Confianza y seguridad",
+        "independence": "Independencia",
+        "initiative": "Iniciativa",
+        "problemSolving": "Solución de Problemas"
+      },
+      "toDevelop": {
+        "optimism": "Optimismo",
+        "patience": "Paciencia",
+        "empathy": "Empatía",
+        "competitiveness": "Competitividad",
+        "creativity": "Creatividad"
       }
     }
   },

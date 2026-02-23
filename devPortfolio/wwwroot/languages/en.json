@@ -109,6 +109,10 @@
       "aptitudesPorDesarrollar": "My Aptitudes to Develop",
       "competenciasPorDesarrollar": "My Competencies to Develop",
       "valoresOcupacionales": "Occupational Values",
+      "cognitiveBadge": "Cognitive Profile",
+      "cognitiveTitle": "Cognitive Aptitudes (Scale 0–60)",
+      "cognitiveMe": "My Score",
+      "cognitiveAvg": "General Average",
       "asignaturas": {
         "title": "Your Subjects",
         "favorita": "Your favorite:",
@@ -125,6 +129,45 @@
         "vision3": "Achieve professional and personal fulfillment.",
         "vision4": "Find a balance between work and personal life.",
         "vision5": "Be in constant academic and intellectual training."
+      },
+      "valores": {
+        "esfuerzo": "Effort",
+        "honestidad": "Honesty",
+        "respeto": "Respect",
+        "responsabilidad": "Responsibility",
+        "servicio": "Service"
+      }
+    },
+    "aptitudes": {
+      "developed": {
+        "numeric": "Numerical ability",
+        "analysis": "Analyze to find solutions to problems or situations",
+        "reading": "Inclination towards reading and study",
+        "observation": "Observation skills",
+        "organize": "Organize and lead activities"
+      },
+      "toDevelop": {
+        "authority": "Authority",
+        "fitness": "Good physical fitness (Sports)",
+        "persuasion": "Convince or persuade others",
+        "reflexes": "Quick reflexes, intuition, liveliness",
+        "composure": "Composure in extreme situations"
+      }
+    },
+    "competencies": {
+      "specific": {
+        "teamwork": "Teamwork",
+        "confidence": "Confidence and security",
+        "independence": "Independence",
+        "initiative": "Initiative",
+        "problemSolving": "Problem Solving"
+      },
+      "toDevelop": {
+        "optimism": "Optimism",
+        "patience": "Patience",
+        "empathy": "Empathy",
+        "competitiveness": "Competitiveness",
+        "creativity": "Creativity"
       }
     }
   },
