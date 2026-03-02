@@ -324,6 +324,11 @@
           }
         }
       },
+      "compromiso": {
+        "aprendizaje": {
+          "date": "Febrero 2026"
+        }
+      },
       "liderazgo": {
         "date": "Enero 2026"
       },
@@ -407,6 +412,13 @@
             "name": "Trabajo en Equipo",
             "alt": "Insignia Trabajo en Equipo Forge"
           }
+        }
+      },
+      "compromiso": {
+        "aprendizaje": {
+          "f_title": "Forge",
+          "name": "Compromiso con el aprendizaje",
+          "alt": "Insignia Compromiso con el aprendizaje Forge"
         }
       },
       "liderazgo": {

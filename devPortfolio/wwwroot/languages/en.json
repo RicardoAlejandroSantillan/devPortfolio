@@ -324,6 +324,11 @@
           }
         }
       },
+      "compromiso": {
+        "aprendizaje": {
+          "date": "February 2026"
+        }
+      },
       "liderazgo": {
         "date": "January 2026"
       },
@@ -367,13 +372,13 @@
         }
       },
       "js": {
-        "name": "JavaScript desde Principiante hasta Experto",
+        "name": "JavaScript from Beginner to Expert",
         "date": "October 2025",
         "alt": "JavaScript Udemy Certificate"
       },
       "python": {
         "datascience": {
-          "name": "Python desde Cero + Data Analysis y Matplot",
+          "name": "Python from Scratch + Data Analysis and Matplot",
           "date": "March 2025",
           "alt": "Python for Data Science Udemy Certificate"
         }
@@ -404,15 +409,22 @@
         "en": {
           "equipo": {
             "f_title": "Forge",
-            "name": "Trabajo en Equipo",
+            "name": "Teamwork",
             "alt": "Forge Teamwork Badge"
           }
+        }
+      },
+      "compromiso": {
+        "aprendizaje": {
+          "f_title": "Forge",
+          "name": "Commitment to Learning",
+          "alt": "Forge Commitment to Learning Badge"
         }
       },
       "liderazgo": {
         "personal": {
           "f_title": "Forge",
-          "name": "Liderazgo Personal",
+          "name": "Personal Leadership",
           "alt": "Forge Personal Leadership Badge"
         }
       },
@@ -420,7 +432,7 @@
         "al": {
           "logro": {
             "f_title": "Forge",
-            "name": "Orientación al Logro",
+            "name": "Achievement Orientation",
             "alt": "Forge Achievement Orientation Badge"
           }
         }

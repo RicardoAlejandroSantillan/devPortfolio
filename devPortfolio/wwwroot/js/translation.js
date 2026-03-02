@@ -31,6 +31,16 @@ const loadTranslations = async (language) => {
     }
 };
 
+// Resolver una clave de traducción punteada sobre un objeto de traducciones
+const resolveKey = (translations, key) => {
+    const keys = key.split('.');
+    let value = translations;
+    for (const k of keys) {
+        value = value?.[k];
+    }
+    return value;
+};
+
 // Actualizar contenido de elementos con traducciones
 const updateContent = (translations) => {
     if (!translations) {
@@ -38,6 +48,7 @@ const updateContent = (translations) => {
         return;
     }
 
+    // ── Elementos con data-translate (texto visible) ──
     const elements = document.querySelectorAll('[data-translate]');
     console.log(`Found ${elements.length} translatable elements`);
 
@@ -49,12 +60,7 @@ const updateContent = (translations) => {
             return;
         }
 
-        const keys = key.split('.');
-
-        let value = translations;
-        for (const k of keys) {
-            value = value?.[k];
-        }
+        const value = resolveKey(translations, key);
 
         if (value) {
             if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') {
@@ -71,16 +77,26 @@ const updateContent = (translations) => {
         }
     });
 
-    // Actualizar tooltips de los íconos sociales
+    // ── Elementos con data-translate-alt (atributo alt de imágenes) ──
+    const altElements = document.querySelectorAll('[data-translate-alt]');
+    console.log(`Found ${altElements.length} translatable alt elements`);
+
+    altElements.forEach(element => {
+        const key = element.dataset.translateAlt;
+        const value = resolveKey(translations, key);
+
+        if (value) {
+            element.alt = value;
+        } else {
+            console.warn(`Missing alt translation: ${key}`);
+        }
+    });
+
+    // ── Tooltips de los íconos sociales ──
     const tooltipElements = document.querySelectorAll('[data-tooltip-translate]');
     tooltipElements.forEach(element => {
         const key = element.dataset.tooltipTranslate;
-        const keys = key.split('.');
-
-        let value = translations;
-        for (const k of keys) {
-            value = value?.[k];
-        }
+        const value = resolveKey(translations, key);
 
         if (value) {
             element.dataset.tooltip = value;
